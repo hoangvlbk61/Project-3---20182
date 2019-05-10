@@ -1,0 +1,68 @@
+<% include ./template/main_header %>
+<% include ./template/main_top_navigation %>
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <!-- top tiles -->
+        <div class="row tile_count">
+      
+        </div>
+        <!-- /top tiles -->
+      
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12" >
+            <h3 style="text-align:center">Forum
+            </h3>
+            <a class="btn btn-success" href="/forum/thembaidang"><i class="fa fa-plus m-right-xs" ></i> New Post</a>
+            <div class="col-md-12 col-sm-6 col-xs-12">
+              <div class="x_panel">
+                <div class="x_content">
+                  <ul class="list-unstyled timeline">
+
+                    <% list_post.forEach((_post)=>{%>
+                      <%if(data.is_admin){%>
+                      <a href="/forum/<%=_post._id%>/delete" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
+                      <%}%>
+                    <li>
+                      <div class="block">
+                          <div class="tags">
+                            <a href="/forum/<%=_post._id%>" class="tag">
+                              <span>Ans:<%=_post.answers.length%></span>
+                            </a>
+                            <a href="/forum/<%=_post._id%>" class="tag">
+                              <span>Vote:<%=_post.reputations%></span>
+                            </a>
+                            <a href="/forum/<%=_post._id%>" class="tag">
+                              <span>View:<%=_post.views%></span>
+                            </a>
+                          </div>
+                        
+                        <div class="block_content">
+                          <h2 class="title">
+                            <a href="/forum/<%=_post._id%>"><%=_post.title%></a>
+                          </h2>
+                          <div class="byline">
+                            <span><%=_post.time.getDate() + "/" + (_post.time.getMonth()+1) + "/"+ _post.time.getFullYear() %></span> by <a><%=_post.author_id%> </a>
+                          </div>
+                          <p class="excerpt"><%=_post.content%> 
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <br/>
+                    <%})%>
+
+                  </ul>
+            
+                </div>
+              </div>
+            </div>
+
+          </div>
+      
+        </div>
+        <br/> 
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+<% include ./template/main_footer %>

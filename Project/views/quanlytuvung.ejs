@@ -1,0 +1,93 @@
+<% include ./template/main_header %>
+<% include ./template/main_top_navigation %>
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3> Danh sách từ vựng - <%=list_vocab.length%> </h3>
+            </div>
+      
+            <div class="title_right">
+              <div class="col-md-9 col-sm-12 col-xs-12 form-group pull-center top_search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Tìm kiếm !</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="clearfix"></div>
+      
+          <div class="row">
+            <div class="col-md-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li><a href="../quanlytuvung/themmoituvung"><i class="fa fa-plus"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                          class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+      
+                  <!-- start project list -->
+                  <table class="table table-striped project text-center">
+                    <thead>
+                      <tr>
+                        <th style="width: 10%" class="text-center"> Vocab </th>
+                        <th style="width: 15%" class="text-center"> Meanings </th>
+                        <th style="width: 20%" class="text-center"> Examples </th>
+                        <th style="width: 20%" class="text-center"> Synonyms </th>
+                        <th style="width: 20%" class="text-center"> Actions </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+      
+                      <% list_vocab.forEach((vocab)=>{%>
+                      <tr>
+                        <td> <a href="../quanlytuvung/<%=vocab._id%>" ><%=vocab.word%></a> </td>
+                        <td> <%=vocab.meaning%> </td>
+                        <td> <%=vocab.examples%> </td>
+                        <td> <%=vocab.synonyms%> </td>
+                        <td>
+                          <a href="../quanlytuvung/<%=vocab._id%>" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> </a>
+                          <a href="../quanlytuvung/<%=vocab._id%>/capnhattuvung" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> </a>
+                          <a href="../quanlytuvung/<%=vocab._id%>/delete" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> </a>
+                        </td>
+                      </tr>
+                      <%})%>
+                      
+                      
+                    </tbody>
+                  </table>
+                  <!-- end project list -->
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+<% include ./template/main_footer %>

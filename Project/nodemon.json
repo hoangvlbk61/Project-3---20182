@@ -1,0 +1,10 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "@Lehoang606",
+        "SECRET_KEY":"authnodesecretkey",
+        "MONGO_ATLAS_PATH_ONLINE": "mongodb+srv://hoangvlbk61:@Lehoang606@cluster0-z9rem.mongodb.net/ESS?retryWrites=true",
+        "MONGO_ATLAS_PATH": "mongodb: //localhost:27017",
+        "DATABASE_NAME": "englishWebsite"
+    }
+}
+

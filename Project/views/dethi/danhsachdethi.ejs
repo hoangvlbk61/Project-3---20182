@@ -1,0 +1,758 @@
+<% include ../template/header_dethi %>
+
+<body>
+
+
+    <!-- start top -->
+    <header data-sticky data-class-name="bg-blue" class="clearfix header1">
+        <div class="content">
+            <div class="logo">
+                <a href="/?r=nav" title="Gia sư TOEIC">
+                    <img src="/static/RealEdu/images/logo.png" alt="Gia sư TOEIC Logo">
+                </a>
+            </div>
+            <div class="logo-text">
+                <a href="/?r=nav" title="Luyện thi TOEIC Online">
+                    <img src="/static/RealEdu/images/logo_text_nhu_co_giasu.png" alt="Luyện thi TOEIC Online">
+                </a>
+            </div>
+            <div class="header__menu header__menu--desktop">
+                <div data-sub-menu class="header__menu__left">
+                    <ul class="list-menu">
+                        <li class="list-menu__item menu-in-li">
+                            <div data-btn-submenu-user class="user-block user-avatar">
+                                <img src="/static/RealEdu/images/user_icon.png" alt="User icon" class="icon-user">
+                                <p class="name-user">Tôi</p>
+                                <img src="/static/RealEdu/images/show_menu_icon.png" alt="Menu icon" class="icon-show">
+                            </div>
+                            <ul data-sub-menu-user class="list-menu submenu">
+                                <li class="list-menu__item">
+                                    <a href="/user/quetoi/?r=nav" title="Thiết lập tài khoản">
+                                        <figure><img src="/static/RealEdu/images/profile_page_icon.png"
+                                                alt="Thiết lập tài khoản"></figure>
+                                        <span>Thiết lập tài khoản</span>
+                                    </a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/notes/?r=nav" title="Ghi chú của tôi">
+                                        <figure><img src="/static/RealEdu/images/learning_notes_icon.png"
+                                                alt="Những ghi chú của tôi"></figure>
+                                        <span>Ghi chú của tôi</span>
+                                    </a>
+                                </li>
+                                <li class="list-menu__item learning-guide">
+                                    <a href="/huong-dan/cach-hoc-tren-gia-su-toeic/?r=account"
+                                        title="Hướng dẫn cách học">
+                                        <figure><img src="/static/RealEdu/images/learning_guide_icon.png"
+                                                alt="Hướng dẫn cách học"></figure>
+                                        <span>Hướng dẫn cách học</span>
+                                    </a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/pay/?r=account" title="Hướng dẫn thanh toán">
+                                        <figure><img src="/static/RealEdu/images/payment_guide.png"
+                                                alt="Hướng dẫn thanh toán"></figure>
+                                        <span>Hướng dẫn thanh toán</span>
+                                    </a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/affiliate/?r=nav" title="Giới thiệu cho GSToeic">
+                                        <figure><img src="/static/RealEdu/images/refer_gst_icon.png"
+                                                alt="Giới thiệu cho GSToeic"></figure>
+                                        <span>Giới thiệu cho GSToeic</span>
+                                    </a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/contact/?r=account" title="Gửi góp ý">
+                                        <figure><img src="/static/RealEdu/images/feedback_icon.png" alt="Gửi góp ý">
+                                        </figure>
+                                        <span>Gửi góp ý</span>
+                                    </a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/logout/" title="Thoát">
+                                        <figure><img src="/static/RealEdu/images/logout_icon.png" alt="Thoát">
+                                        </figure>
+                                        <span>Thoát</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="padding:0;" class="list-menu__item ">
+                            <div data-btn-submenu-user class="user-block" style="display: block;">
+                                <a href="/dashboard/?r=nav" class="name-user submit-btn oval-btn">
+                                    Góc học tập theo lộ trình
+                                </a>
+                            </div>
+                        </li>
+                        <li style="padding: 0;">
+                            <div data-btn-submenu-user class="user-block" style="display: block;">
+                                <div class="name-user submit-btn oval-btn">
+                                    Học tùy thích
+                                    <img style="float: none; margin-top: 0"
+                                        src="/static/RealEdu/images/show_menu_icon.png" alt="Menu icon"
+                                        class="icon-show">
+                                </div>
+                            </div>
+                            <ul data-sub-menu-user class="submenu learn-freely">
+                                <li class="list-menu__item">
+                                    <a href="/de-thi-toeic/?r=nav#secdeluyentap" title="Đề luyện tập">
+                                        <span>Đề luyện tập</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/de-thi-toeic/?r=nav#secdethitoeic" title="Đề thi thử">
+                                        <span>Đề thi thử</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/de-thi-toeic/?r=nav#detoeic_rutgon" title="Đề thi rút gọn">
+                                        <span>Đề thi rút gọn</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/ngu-phap-tieng-anh/?r=nav" title="Ngữ pháp PRO">
+                                        <span>Ngữ pháp PRO</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/tu-vung-tieng-anh/toeic-pro/?r=nav" title="Từ vựng TOEIC PRO">
+                                        <span>Từ vựng PRO</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/600-tu-vung-toeic/?r=nav" title="600 Từ vựng TOEIC">
+                                        <span>600 Từ TOEIC</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/luyen-nghe-toeic/?r=nav" title="Game luyện nghe">
+                                        <span>Game luyện nghe</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/phan-tich-de-thi-toeic/?r=nav" title="Chiến lược làm bài">
+                                        <span>Chiến lược làm bài</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/meo-thi-toeic/?r=nav" title="Mẹo làm bài">
+                                        <span>Mẹo làm bài</span></a>
+                                </li>
+                                <li class="list-menu__item">
+                                    <a href="/questions/?r=nav" title="Đặt câu hỏi">
+                                        <span>Đặt câu hỏi</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="padding:0;" class="list-menu__item">
+                            <div data-btn-submenu-user class="user-block" style="display: block;">
+                                <a href="/huong-dan/?r=nav" title="Hướng dẫn" class="name-user submit-btn oval-btn">
+                                    Hướng dẫn
+                                </a>
+                            </div>
+                        </li>
+                        <li class="list-menu__item hotline">
+                            <span class="glyphicon glyphicon-earphone"></span> &nbsp;
+                            0916 92 1419
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__menu__right">
+                    <div data-btn-submenu-user class="user-block">
+                        <img src="/static/RealEdu/images/user_icon.png" alt="User icon" class="icon-user">
+                        <p class="name-user">Cong</p>
+                        <img src="/static/RealEdu/images/show_menu_icon.png" alt="Menu icon" class="icon-show">
+                    </div>
+                    <ul data-sub-menu-user class="list-menu submenu">
+                        <li class="list-menu__item">
+                            <a href="/user/quetoi/?r=nav" title="Thiết lập tài khoản">
+                                <figure><img src="/static/RealEdu/images/profile_page_icon.png"
+                                        alt="Thiết lập tài khoản"></figure>
+                                <span>Thiết lập tài khoản</span>
+                            </a>
+                        </li>
+                        <li class="list-menu__item">
+                            <a href="/notes/?r=nav" title="Ghi chú của tôi">
+                                <figure><img src="/static/RealEdu/images/learning_notes_icon.png"
+                                        alt="Những ghi chú của tôi"></figure>
+                                <span>Ghi chú của tôi</span>
+                            </a>
+                        </li>
+                        <li class="list-menu__item learning-guide">
+                            <a href="/huong-dan/cach-hoc-tren-gia-su-toeic/?r=account" title="Hướng dẫn cách học">
+                                <figure><img src="/static/RealEdu/images/learning_guide_icon.png"
+                                        alt="Hướng dẫn cách học"></figure>
+                                <span>Hướng dẫn cách học</span>
+                            </a>
+                        </li>
+                        <li class="list-menu__item">
+                            <a href="/pay/?r=account" title="Hướng dẫn thanh toán">
+                                <figure><img src="/static/RealEdu/images/payment_guide.png" alt="Hướng dẫn thanh toán">
+                                </figure>
+                                <span>Hướng dẫn thanh toán</span>
+                            </a>
+                        </li>
+                        <li class="list-menu__item">
+                            <a href="/affiliate/?r=nav" title="Giới thiệu cho GSToeic">
+                                <figure><img src="/static/RealEdu/images/refer_gst_icon.png"
+                                        alt="Giới thiệu cho GSToeic"></figure>
+                                <span>Giới thiệu cho GSToeic</span>
+                            </a>
+                        </li>
+                        <li class="list-menu__item">
+                            <a href="/contact/?r=account" title="Gửi góp ý">
+                                <figure><img src="/static/RealEdu/images/feedback_icon.png" alt="Gửi góp ý">
+                                </figure>
+                                <span>Gửi góp ý</span>
+                            </a>
+                        </li>
+                        <li class="list-menu__item logout-menu">
+                            <a href="/logout/" title="Thoát">
+                                <figure><img src="/static/RealEdu/images/logout_icon.png" alt="Thoát"></figure>
+                                <span>Thoát</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-menu list-menu--mobile">
+                        <li class="list-menu__item">
+                            <a href="/dashboard/?r=nav" title="goc hoc tap">GÓC HỌC TẬP</a>
+                        </li>
+                    </ul>
+                    <button type="button" data-btn-submenu class="btn-menu">
+                        <img src="/static/RealEdu/images/icon_menu_closed.png" alt="menu closed" data-submenu-close>
+                        <img src="/static/RealEdu/images/icon_menu_open.png" alt="menu opened"
+                            data-submenu-open></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="width content-container">
+        <!-- left sidebar -->
+        <div class="sidebar-left">
+            <a class="list l4" href="/category/4">&nbsp;</a>
+            <a class="list l1" href="/category/1">&nbsp;</a>
+            <a class="list l2" href="/category/2">&nbsp;</a>
+            <a class="list l3" href="/category/3">&nbsp;</a>
+            <img src="/img/left-sidebar.png" />
+            <br><span style="float: right;">
+                <div class="fb-like" data-href="https://www.toeic123.vn:443/category/4" data-layout="button_count"
+                    data-action="like" data-show-faces="true" data-share="true"></div>
+            </span>
+
+        </div>
+        <!-- end left sidebar -->
+        <!-- content -->
+        <div class="content">
+            <div class="content-box">
+                <div class="header">
+                    <div class="h3-container">
+                        <h3 class="title_link">Thi thử TOEIC</h3>
+                        <!--<span>454 bộ đề, 34295 bài tập</span>-->
+                        <a class="learn-all" href="/">&lang; Quay trở lại </a>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="info">
+                        <p>Tổng hợp các đề <a href="http://www.toeic123.vn/category/4">thi thử toeic</a> online thực tế
+                            được được biên soạn từ nhiều tài liệu đề thi Toeic từ trước đến nay.</p>
+
+                        <h2>Giới thiệu sơ về chuyên mục đề thi thử toeic:</h2>
+
+                        <p>Các đề thi toeic trong phần thi thử toeic này được phân ra thành các chuyên mục thi thử riêng
+                            biệt từng phần đề người dùng tiện thi thử theo bài thi thử riêng biệt trong đề thi
+                            toeic.<br />
+                            Sau khi làm bài thi thử toeic xong, website sẽ trả kết quả số câu trả lời đúng sai về cho
+                            người dùng (Cùng với hiển thị kết quả đáp án đúng sai) để đánh giá chính xác nhất về khả
+                            năng của mình.</p>
+
+                        <p>Dưới mỗi đề thi đều đi kèm với Video hướng dẫn giải chi tiết.</p>
+
+                        <h2>PHẦN THI THỬ TOEIC NÀY BAO GỒM :</h2>
+
+                        <ol>
+                            <li><em>- <a href="http://www.toeic123.vn/category/33">Thi thử Toeic Full (Phần
+                                        Listening)</a> </em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/34">Thi thử Toeic Full (Phần Reading)</a>
+                                </em></li>
+                            <li><a href="http://www.toeic123.vn/category/35"><em>- Thi thử Toeic Full Toàn Bộ</em></a>
+                            </li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/20">Thi Thử Toeic Part 1</a></em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/19">Thi Thử Toeic Part 2</a></em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/13">Thi Thử Toeic Part 3</a></em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/14">Thi Thử Toeic Part 4</a></em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/15">Thi Thử Toeic Part 5</a></em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/16">Thi Thử Toeic Part 6</a></em></li>
+                            <li><em>- <a href="http://www.toeic123.vn/category/17">Thi Thử Toeic Part 7</a></em></li>
+                        </ol>
+
+                        <p><em><strong><u>Lưu ý</u></strong></em>: Phần thi thử toeic online trực tuyến này chỉ miễn phí
+                            một số bài học. Để đăng ký làm bài thi thử được toàn bộ <a
+                                href="http://www.toeic123.vn/vip-upgrade">tại đây</a>. </p>
+
+                        <p><span style="color:#1ab9e0"><em><u><strong>Tags</strong>:</u> Thi thử toeic online có chấm
+                                    điểm, Thi thử toeic trực tuyến, Test toeic online free , Thi thử toeic miễn phí, đề
+                                    thi thử toeic, đề thi thử toeic có đáp án, thi thử toeic free, thi thử toeic có kết
+                                    quả ngay</em></span></p>
+                    </div>
+                </div>
+                <a href="/category/34">
+                    <h3 class="sub-header">Thi thử toeic Full - Phần Reading</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/4867">
+                            <div class="img" style="background:url(/upload/2016/08/11522.png); background-size: cover;">
+                                <p>0/100</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 1</h4>
+                            <a class="learn" href='/exam/4867'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/4868">
+                            <div class="img" style="background:url(/upload/2016/08/11522.png); background-size: cover;">
+                                <p>0/100</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/4868'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/4869">
+                            <div class="img" style="background:url(/upload/2016/08/11522.png); background-size: cover;">
+                                <p>0/100</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/4869'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/4870">
+                            <div class="img" style="background:url(/upload/2016/08/11522.png); background-size: cover;">
+                                <p>0/100</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/4870'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/34">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/33">
+                    <h3 class="sub-header">Thi thử toeic Full - Phần Listening</h3>
+                </a>
+
+
+               
+                <div class="box">
+
+                    <% data.forEach(function(dethi) {%>
+                    <% stt=1; %>
+                    <div class="box-item">
+                        <a href="/dethi/part1/<%=dethi._id%>">
+                            <div class="img" style="background:url(/upload/2016/08/11524.png); background-size: cover;">
+                                <p>0/100</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề <%=stt%></h4>
+                           
+                            <a class="learn" href='/dethi/part1/<%=dethi._id%>'>Luyện ngay</a>
+                        </a>
+                    </div>
+
+                    <% stt=stt+1; %>
+                    <%})%>
+                </div>
+                
+                <div class='paging viewall'><a href="/dethi/list_part1">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/35">
+                    <h3 class="sub-header">Thi thử toeic Full</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/48466">
+                            <div class="img" style="background:url(/upload/2016/09/13579.jpg); background-size: cover;">
+                                <p>0/200</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề thi thử FULL 1</h4>
+                            <a class="learn" href='/exam/48466'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/48467">
+                            <div class="img" style="background:url(/upload/2016/09/13579.jpg); background-size: cover;">
+                                <p>0/200</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề thi thử FULL 2</h4>
+                            <a class="learn" href='/exam/48467'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/48475">
+                            <div class="img" style="background:url(/upload/2016/09/13579.jpg); background-size: cover;">
+                                <p>0/200</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề thi thử FULL 3</h4>
+                            <a class="learn" href='/exam/48475'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/48476">
+                            <div class="img" style="background:url(/upload/2016/09/13579.jpg); background-size: cover;">
+                                <p>0/200</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề thi thử FULL 4</h4>
+                            <a class="learn" href='/exam/48476'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/35">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/20">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 1</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/54">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 1</h4>
+                            <a class="learn" href='/exam/54'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/221">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/221'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/222">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/222'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/223">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/223'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/20">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/19">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 2</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/53">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/30</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 1</h4>
+                            <a class="learn" href='/exam/53'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/250">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/30</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/250'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/251">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/30</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/251'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/252">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/30</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/252'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/19">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/13">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 3</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/52">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 1</h4>
+                            <a class="learn" href='/exam/52'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/279">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/279'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/280">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/280'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/281">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/281'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/13">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/14">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 4</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/51">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 1</h4>
+                            <a class="learn" href='/exam/51'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/308">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/308'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/310">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/310'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/311">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/10</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/311'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/14">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/15">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 5</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/338">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/40</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/338'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/339">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/40</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/339'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/340">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/40</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/340'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/341">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/40</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 5</h4>
+                            <a class="learn" href='/exam/341'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/15">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/16">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 6</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/50">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/4</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 1</h4>
+                            <a class="learn" href='/exam/50'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/367">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/4</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/367'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/368">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/4</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/368'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/369">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/4</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/369'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/16">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+                <a href="/category/17">
+                    <h3 class="sub-header">Thi Thử TOEIC PART 7</h3>
+                </a>
+                <div class="box">
+                    <div class="box-item">
+                        <a href="/exam/396">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/13</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 2</h4>
+                            <a class="learn" href='/exam/396'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/397">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/13</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 3</h4>
+                            <a class="learn" href='/exam/397'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/398">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/13</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 4</h4>
+                            <a class="learn" href='/exam/398'>Luyện ngay</a>
+                        </a>
+                    </div>
+                    <div class="box-item">
+                        <a href="/exam/399">
+                            <div class="img" style="background:url(/upload/2016/04/3004.png); background-size: cover;">
+                                <p>0/13</p>
+                            </div>
+                            <div class="meter"><span style="width: 0%"></span></div>
+                            <h4>Bộ đề 5</h4>
+                            <a class="learn" href='/exam/399'>Luyện ngay</a>
+                        </a>
+                    </div>
+                </div>
+                <div class='paging viewall'><a href="/category/17">Xem tất cả &nbsp;&nbsp;&nbsp; &rang;</a></div>
+                <div class="spacing"></div>
+            </div>
+        </div>
+        <!-- end content -->
+        <!-- right sidebar -->
+        <div class="sidebar-right">
+           
+            <div class="sidebar-spacing">&nbsp;</div>
+           
+            <div class="sidebar-spacing">&nbsp;</div>
+
+
+        </div>
+        <!-- end right sidebar -->
+    </div>
+    <% include ../template/footer %>

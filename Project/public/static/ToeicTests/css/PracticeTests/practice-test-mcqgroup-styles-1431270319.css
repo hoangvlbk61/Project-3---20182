@@ -1,0 +1,244 @@
+.quiz-wrapper {
+	width: auto;
+	max-width: 1100px; 
+}
+
+.mcq-feedback .mcq-feedback-button {
+	left: 32px;
+}
+.mcq-notes .mcq-notes-button {
+	left: 20px;
+}
+.quiz-wrapper .next-mcq-button {
+	right: 20px;
+}
+
+ul.mcq-group-wrapper {
+	list-style: none;
+
+	display: flex;
+    overflow: hidden;
+   
+    height: 100vh; /* needed to show the scrolling bar */
+    
+	margin-top: 15px;
+	font-size: 16px;
+}
+.mcq-group-wrapper > li {
+    height: auto;
+    overflow: auto;
+    display: block;
+    
+}
+.mcq-group-wrapper > li:nth-child(1) {/* para content */ 
+	flex: 1;
+	padding: 0 5px;
+}
+.mcq-group-wrapper > li:nth-child(2) {/* mcqs content */ 
+	width: 40%;
+	padding: 0 5px 0 15px;
+}
+/* hide the browswer's scrolling bar
+ is more beautiful but may create a UX problem for computer novices
+.mcq-group-wrapper > li::-webkit-scrollbar {
+    display: none;
+}*/
+
+.mcq-group-wrapper table {
+	width: 100% !important;
+}
+
+.mcq-group-wrapper table.has-borders, 
+.mcq-group-wrapper table.has-borders td {
+	border: 1px solid;
+	border-collapse: collapse;
+	text-align: center; 
+	padding: 5px;
+}
+
+
+/* our inserted span may cause the strong outside to loose the bold effect */ 
+.mcq-group-wrapper strong span {
+	font-weight: bold;
+}
+
+
+.mcq-group-wrapper .quote {
+	font-style: italic;
+	color: #0478d1;
+    box-shadow: inset 0 -1px 0 #0478d1;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+.mcq-group-wrapper .quote:hover {
+	cursor: pointer;
+	/*text-decoration: underline;*/
+}
+
+/*
+.mcq-group-wrapper .located, 
+.mcq-group-wrapper .located span {
+	font-weight: bold;
+}*/
+
+.mcq-group-wrapper .highlighted {
+    background: #33abe5;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+
+.mcq-group-wrapper .mcq-group-content {
+    text-align: justify;
+}
+
+.mcq-group-wrapper .para-header {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.mcq-group-wrapper .para-sep {
+	margin: 0 0  20px auto;
+}
+
+.mcq-group-wrapper .one-reading-text img {
+	width: 100%;
+}
+    
+.mcq-group-wrapper .submit-answers {
+	margin: 0;
+	min-width: 120px;
+}
+
+
+.mcq-group-wrapper .mcq-group-content .paragraph-subparagraph {
+	margin-bottom: 30px;
+}
+
+.mcq-group-wrapper .mcq-group-content-exp {
+	display: none;
+	margin: 30px auto 30px;
+}
+
+.mcq-group-wrapper .mcq-group-content-exp .content-transcript, 
+.mcq-group-wrapper .mcq-group-content-exp .content-translation {
+	text-align: justify;
+	margin-bottom: 30px;
+	position: relative; 
+}
+.mcq-group-wrapper .mcq-group-content-exp .content-transcript, 
+.mcq-group-wrapper .mcq-group-content {
+	padding: 30px 15px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.mcq-group-wrapper .mcq-group-content-exp  .paragraph-sentence {
+    display: block;
+    margin-bottom: 15px;
+    line-height: 25px;
+    font-weight: inherit;
+}
+
+.mcq-group-wrapper .read-questions-instructions .time-in-secs {
+	font-style: italic;
+	font-weight: bold; 
+	color: #e10;
+}
+
+.mcq-group-wrapper .p34-image {
+	display: block;
+    margin: 30px auto;
+    max-width: 100%;
+}
+}
+
+.mcq-group-wrapper .mcq-group-content ol,
+.mcq-group-wrapper .mcq-group-content-exp ol {
+	list-style: decimal inside;	
+}
+
+.mcq-group-wrapper .mcq-group-content-exp  .audio-player-wrapper {
+    /*width: 300px;*/
+    margin: 30px auto;
+}
+
+.mcq-group-wrapper .mcqs-wrapper {
+	margin-top: 30px;
+	text-align: left;
+}
+
+.mcq-group-wrapper .mcqs-wrapper > li { 
+	list-style: decimal inside;	
+	display: block;
+	margin-bottom: 30px;
+}
+
+.mcq-group-wrapper .mcqs-wrapper .mcq-question {
+	margin-bottom: 15px;
+}
+
+.mcq-group-wrapper .mcqs-wrapper .mcq-question .question-translation {
+	display: block;
+	font-weight: normal;
+}
+
+.mcq-group-wrapper .question-translation, 
+.mcq-group-wrapper .option-translation {
+	color: #555;
+}
+
+.mcq-group-wrapper .mcqs-wrapper .options {
+    margin: 0px 0 0 25px;	
+}
+.mcq-group-wrapper .mcqs-wrapper .no-answer-msg {
+	margin-left: 25px;
+}
+
+.mcq-group-wrapper .mcqs-wrapper .options > li {
+	margin-bottom: 0;
+    line-height: 1.7;
+    padding: 0;
+    max-width: none;
+    min-height: initial;
+    text-align: left;
+}
+
+.mcq-group-wrapper .mcqs-wrapper .options > li input,
+.mcq-group-wrapper .mcqs-wrapper .options > li label {
+	font-size: 1.6rem;
+	margin: 0; 
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight: normal;
+	
+}
+
+.mcq-group-wrapper .mcqs-wrapper .options > li input {
+	margin-right: 1px;
+}
+
+.mcq-group-wrapper .options .correct-option {
+	color: #0478d1;
+	font-weight: bold;
+}
+.mcq-group-wrapper .options .wrong-option {
+	color: red;
+}
+
+.mcq-group-wrapper .options .wrong-icon, 
+.mcq-group-wrapper .options .correct-icon {
+	max-width: 32px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+
+.mcq-group-wrapper .mcqs-wrapper .explanation {
+	
+}
+

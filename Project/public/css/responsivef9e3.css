@@ -1,0 +1,344 @@
+/* under 1200 then it's still a computer*/
+@media (max-width: 1200px) {
+	.width{
+		width:100%;
+	}
+	.sidebar-left{
+		display:none;
+	}
+	.menu-top{
+		overflow:hidden;
+		width:100%;
+	}
+	.menu-left{
+		width:100%;
+		padding-left:20px;
+		text-align:center;
+	}
+	.menu-right{
+		display:block;
+		width:100%;
+		text-align:center;
+	}
+}
+@media (max-width: 992px) {
+	.content{
+		min-width:550px;
+		padding:0 5px;
+		width:70%;
+	}
+	.sidebar-right{
+	}
+}
+/* under 800 then it's tablet or mobile */
+@media (max-width: 820px) {
+	.logo-bar .logo-left{
+		width:100%;
+		display:block;
+		text-align:center;
+	}
+	.logo-bar .logo-middle{
+		padding:5px 0 5px 20px;
+		text-align:center;
+	}
+	.logo-bar .logo-right{
+		min-width:250px;
+		-webkit-padding-start: 0;
+	}
+	.main-banner{
+		padding-top:100px;
+	}
+	.modal-body, .ui-dialog{
+		max-width:420px;
+	}
+	.ui-dialog-titlebar-close{
+		
+	}
+	.form-modal .row{
+		margin:2px 0;
+	}
+	.form-modal input[type=text], .form-modal input[type=password]{
+		width:240px;
+	}
+	.form-modal div.form-control{
+		width:auto;
+	}
+	.form-modal input[type=submit]{
+		width:260px;
+	}
+	.form-modal .social-login{
+		width:225px;
+		margin-left:125px;
+	}
+    .main-banner{
+		background-size: auto 100%;
+		background-repeat:no-repeat;
+		height:300px;
+		padding-top:30px;
+	}
+    .main-banner h3{
+		font-size:20px;
+	}
+    .main-banner h4{
+        font-size:15px;
+    }
+	.main-banner a{
+		font-size:13px;
+	}
+	.learn-all, .content-box .header .learn-all{
+		display:none;
+	}
+	.content{
+		width:100%;
+		padding:0 5px;
+	}
+	.box .box-item{
+		width:30%;
+		margin-right:5px;
+		margin-bottom:10px;
+	}
+	.box .box-item a.learn{
+		width:80%;
+	}
+	.box .box-item h4{
+		margin:5px;
+	}
+	.sidebar-right{
+		width:100%;
+		padding:0 10px;
+	}
+	.sidebar-right .sidebar-item.userinfo{
+		margin:0 auto;
+		width:100%;
+	}
+	.sidebar-userinfo{
+		width:100%;
+	}
+	.sidebar-right .sidebar-item.member{
+		margin:0 auto;
+		width:226px;
+	}
+	.sidebar-userinfo > .row:last-child{
+		width:70%;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.sidebar-userinfo > .row:first-child{
+		width:30%;
+		display:table-cell;
+		vertical-align:middle;
+		min-width:170px;
+	}
+	.quick-question-label{
+		margin:0 auto;
+		width:226px;
+	}
+	.form.new_comment{
+		text-align:center;
+	}
+	.form.new_comment input[type=submit]{
+		float:none;
+		width:230px;
+	}
+	.sidebar-chatbox{
+		max-height:300px;
+		height:auto;
+	}
+	.vip-box{
+		width:100%;
+	}
+	.vip-box .header{
+		margin:0 auto;
+	}
+	.vip-box .vip-box-body > div > div{
+		width:auto;
+	}
+	.tabs > div{
+		width:100%;
+	}
+    .sidebar-item.login{
+        display:block;
+		margin:0 auto;
+		width: 226px;
+    }
+    .footer{
+        height:50px;
+        text-align:center;
+    }
+    .footer .logo{
+        display:none;
+    }
+    .footer .copyright{
+        display:none;
+    }
+    .footer .icons{
+        float:none;
+    }
+    .footer .icons ul{
+        padding-left:0;
+    }
+    .content-box .box-body .img{
+        max-width:180px;
+        width:40%;
+    }
+    .content-box .box-body .info{
+        max-width:390px;
+        width:60%;
+    }
+    .content-box .box-body .info .button{
+        max-width:390px;
+        width:100%;
+    }
+    #exam-comment{
+        display:table-cell;
+        width:100%;
+    }
+    .comment-box .img{
+        display:table-cell;
+    }
+    .comment-new .form.new_comment textarea{
+        width:90%;
+    }
+    .comment-new{
+        display:table-row;
+    }
+    #reply-form{
+        text-align:center;
+    }
+    .form.profile{
+        padding-left:31px;
+    }
+    .content-box.vip-upgrade{
+        text-align:center;
+    }
+    .content-box.vip-upgrade .vip-box{
+        margin-bottom:10px;
+    }
+    .content-box.vip-upgrade .box-body{
+        width:364px;
+        margin:0 auto;
+    }
+}
+@media (max-width: 600px) {
+	.type2-chooser .chooser{
+		width: 100%;
+		height: auto;
+	}
+	.logo-bar .logo-middle{
+		padding: 5px;
+	}
+	.main-banner{
+		height:200px;
+		padding-top:10px;
+	}
+	.main-banner h3{
+		font-size:15px;
+	}
+    .main-banner h4{
+        font-size:10px;
+    }
+	.main-banner a{
+		font-size:12px;
+	}
+	.content-container{
+		display:flex;
+		flex-flow: column;
+	}
+	.sidebar-left{
+		width:100%;
+		text-align:center;
+		order:2;
+		display:block;
+	}
+	.sidebar-right{
+		order:3;
+	}
+	.box .box-item{
+		width:48%;
+	}
+	.comment-box{
+		padding:0;
+	}
+    .content{
+		min-width:0;
+		order:1;
+    }
+	.content-box .box{
+		padding:0;
+	}
+	.content-box .infobox{
+		padding: 0;
+	}
+	.form.profile{
+        padding-left:0;
+    }
+    .profile label{
+        width:100px;
+    }
+    .profile .row > span, .profile .row > div{
+        width:200px;
+        display:inline-block;
+    }
+	.form-modal .label{
+		padding-left:7px;
+		width:70px;
+	}
+	.ui-dialog-titlebar-close{
+		right:0;
+	}
+	.modal-body, .ui-dialog{
+		max-width:300px;
+		margin:2px;
+	}
+	.form-modal .row{
+		margin:2px 0;
+		max-width:100%;
+	}
+	.form-modal input[type=text], .form-modal input[type=password]{
+		width:170px;
+	}
+	.form-modal div.form-control{
+		width:auto;
+	}
+	.form-modal input[type=submit]{
+		width:170px;
+	}
+	.form-modal .social-login{
+		width:170px;
+		margin-left:70px;
+	}
+	.t2-type2 .col1{
+		width: 100%;
+	}
+	.t2-type2 .col2{
+		width: 100%;
+	}
+	.content-box .question-body .t2-type2 .col2 .answer_media_audio{
+		padding: 7px 120px;
+	}
+	.content-box .question-body .t2-type2 .q{
+		text-align: center;
+	}
+	.content-box .question-body .t2-type5 .col2 .answer_media_audio{
+		padding: 7px;
+		width: 240px;
+	}
+	.content-box .question-body .t2-type5 .col1 .qsub{
+		text-align: center;
+	}
+	.content-box .question-body .type13 .col2{
+		width: 100%;
+	}
+}
+@media (max-width: 360px) {
+	.logo-bar .logo-middle{
+		padding: 5px;
+		width:100%;
+		text-align:center;
+	}
+	.logo-bar .logo-right{
+		width:100%;
+		text-align:center;
+		padding-right:25%;
+	}
+}

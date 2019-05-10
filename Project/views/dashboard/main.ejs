@@ -1,0 +1,1798 @@
+<%include ../template/header %>
+
+<body class="gochoctap">
+    <div id="page-container">
+        <header data-sticky data-class-name="bg-blue" class="clearfix header1">
+            <div class="content">
+                <div class="logo">
+                    <a href="/?r=nav" title="Gia sư TOEIC">
+                        <img src="/static/RealEdu/images/logo.png" alt="Gia sư TOEIC Logo">
+                    </a>
+                </div>
+                <div class="logo-text">
+                    <a href="/?r=nav" title="Luyện thi TOEIC Online">
+                        <img src="/static/RealEdu/images/logo_text_nhu_co_giasu.png" alt="Luyện thi TOEIC Online">
+                    </a>
+                </div>
+                <div class="header__menu header__menu--desktop">
+                    <div data-sub-menu class="header__menu__left">
+                        <ul class="list-menu">
+                            <li class="list-menu__item menu-in-li">
+                                <div data-btn-submenu-user class="user-block user-avatar">
+                                    <img src="/static/RealEdu/images/user_icon.png" alt="User icon" class="icon-user">
+                                    <p class="name-user">Tôi</p>
+                                    <img src="/static/RealEdu/images/show_menu_icon.png" alt="Menu icon"
+                                        class="icon-show">
+                                </div>
+                                <ul data-sub-menu-user class="list-menu submenu">
+                                    <li class="list-menu__item">
+                                        <a href="/user/quetoi/?r=nav" title="Thiết lập tài khoản">
+                                            <figure><img src="/static/RealEdu/images/profile_page_icon.png"
+                                                    alt="Thiết lập tài khoản"></figure>
+                                            <span>Thiết lập tài khoản</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/notes/?r=nav" title="Ghi chú của tôi">
+                                            <figure><img src="/static/RealEdu/images/learning_notes_icon.png"
+                                                    alt="Những ghi chú của tôi"></figure>
+                                            <span>Ghi chú của tôi</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-menu__item learning-guide">
+                                        <a href="/huong-dan/cach-hoc-tren-gia-su-toeic/?r=account"
+                                            title="Hướng dẫn cách học">
+                                            <figure><img src="/static/RealEdu/images/learning_guide_icon.png"
+                                                    alt="Hướng dẫn cách học"></figure>
+                                            <span>Hướng dẫn cách học</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/pay/?r=account" title="Hướng dẫn thanh toán">
+                                            <figure><img src="/static/RealEdu/images/payment_guide.png"
+                                                    alt="Hướng dẫn thanh toán"></figure>
+                                            <span>Hướng dẫn thanh toán</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/affiliate/?r=nav" title="Giới thiệu cho GSToeic">
+                                            <figure><img src="/static/RealEdu/images/refer_gst_icon.png"
+                                                    alt="Giới thiệu cho GSToeic"></figure>
+                                            <span>Giới thiệu cho GSToeic</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/contact/?r=account" title="Gửi góp ý">
+                                            <figure><img src="/static/RealEdu/images/feedback_icon.png" alt="Gửi góp ý">
+                                            </figure>
+                                            <span>Gửi góp ý</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/logout/" title="Thoát">
+                                            <figure><img src="/static/RealEdu/images/logout_icon.png" alt="Thoát">
+                                            </figure>
+                                            <span>Thoát</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="padding:0;" class="list-menu__item ">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="/dashboard/?r=nav" class="name-user submit-btn oval-btn">
+                                        Góc học tập theo lộ trình
+                                    </a>
+                                </div>
+                            </li>
+                            <li style="padding: 0;">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <div class="name-user submit-btn oval-btn">
+                                        Học tùy thích
+                                        <img style="float: none; margin-top: 0"
+                                            src="/static/RealEdu/images/show_menu_icon.png" alt="Menu icon"
+                                            class="icon-show">
+                                    </div>
+                                </div>
+                                <ul data-sub-menu-user class="submenu learn-freely">
+                                    <li class="list-menu__item">
+                                        <a href="/de-thi-toeic/?r=nav#secdeluyentap" title="Đề luyện tập">
+                                            <span>Đề luyện tập</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/de-thi-toeic/?r=nav#secdethitoeic" title="Đề thi thử">
+                                            <span>Đề thi thử</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/de-thi-toeic/?r=nav#detoeic_rutgon" title="Đề thi rút gọn">
+                                            <span>Đề thi rút gọn</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/ngu-phap-tieng-anh/?r=nav" title="Ngữ pháp PRO">
+                                            <span>Ngữ pháp PRO</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/tu-vung-tieng-anh/toeic-pro/?r=nav" title="Từ vựng TOEIC PRO">
+                                            <span>Từ vựng PRO</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/600-tu-vung-toeic/?r=nav" title="600 Từ vựng TOEIC">
+                                            <span>600 Từ TOEIC</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/luyen-nghe-toeic/?r=nav" title="Game luyện nghe">
+                                            <span>Game luyện nghe</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/phan-tich-de-thi-toeic/?r=nav" title="Chiến lược làm bài">
+                                            <span>Chiến lược làm bài</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/meo-thi-toeic/?r=nav" title="Mẹo làm bài">
+                                            <span>Mẹo làm bài</span></a>
+                                    </li>
+                                    <li class="list-menu__item">
+                                        <a href="/questions/?r=nav" title="Đặt câu hỏi">
+                                            <span>Đặt câu hỏi</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="padding:0;" class="list-menu__item">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="/huong-dan/?r=nav" title="Hướng dẫn" class="name-user submit-btn oval-btn">
+                                        Hướng dẫn
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="list-menu__item hotline">
+                                <span class="glyphicon glyphicon-earphone"></span> &nbsp;
+                                0916 92 1419
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__menu__right">
+                        <div data-btn-submenu-user class="user-block">
+                            <img src="/static/RealEdu/images/user_icon.png" alt="User icon" class="icon-user">
+                            <p class="name-user"><%=data.first_name %></p>
+                            <img src="/static/RealEdu/images/show_menu_icon.png" alt="Menu icon" class="icon-show">
+                        </div>
+                        <ul data-sub-menu-user class="list-menu submenu">
+                            <li class="list-menu__item">
+                                <a href="/user/quetoi/?r=nav" title="Thiết lập tài khoản">
+                                    <figure><img src="/static/RealEdu/images/profile_page_icon.png"
+                                            alt="Thiết lập tài khoản"></figure>
+                                    <span>Thiết lập tài khoản</span>
+                                </a>
+                            </li>
+                            <li class="list-menu__item">
+                                <a href="/notes/?r=nav" title="Ghi chú của tôi">
+                                    <figure><img src="/static/RealEdu/images/learning_notes_icon.png"
+                                            alt="Những ghi chú của tôi"></figure>
+                                    <span>Ghi chú của tôi</span>
+                                </a>
+                            </li>
+                            <li class="list-menu__item learning-guide">
+                                <a href="/huong-dan/cach-hoc-tren-gia-su-toeic/?r=account" title="Hướng dẫn cách học">
+                                    <figure><img src="/static/RealEdu/images/learning_guide_icon.png"
+                                            alt="Hướng dẫn cách học"></figure>
+                                    <span>Hướng dẫn cách học</span>
+                                </a>
+                            </li>
+                            <li class="list-menu__item">
+                                <a href="/pay/?r=account" title="Hướng dẫn thanh toán">
+                                    <figure><img src="/static/RealEdu/images/payment_guide.png"
+                                            alt="Hướng dẫn thanh toán"></figure>
+                                    <span>Hướng dẫn thanh toán</span>
+                                </a>
+                            </li>
+                            <li class="list-menu__item">
+                                <a href="/affiliate/?r=nav" title="Giới thiệu cho GSToeic">
+                                    <figure><img src="/static/RealEdu/images/refer_gst_icon.png"
+                                            alt="Giới thiệu cho GSToeic"></figure>
+                                    <span>Giới thiệu cho GSToeic</span>
+                                </a>
+                            </li>
+                            <li class="list-menu__item">
+                                <a href="/contact/?r=account" title="Gửi góp ý">
+                                    <figure><img src="/static/RealEdu/images/feedback_icon.png" alt="Gửi góp ý">
+                                    </figure>
+                                    <span>Gửi góp ý</span>
+                                </a>
+                            </li>
+                            <li class="list-menu__item logout-menu">
+                                <a href="/logout/" title="Thoát">
+                                    <figure><img src="/static/RealEdu/images/logout_icon.png" alt="Thoát"></figure>
+                                    <span>Thoát</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-menu list-menu--mobile">
+                            <li class="list-menu__item">
+                                <a href="/dashboard/?r=nav" title="goc hoc tap">GÓC HỌC TẬP</a>
+                            </li>
+                        </ul>
+                        <button type="button" data-btn-submenu class="btn-menu">
+                            <img src="/static/RealEdu/images/icon_menu_closed.png" alt="menu closed" data-submenu-close>
+                            <img src="/static/RealEdu/images/icon_menu_open.png" alt="menu opened"
+                                data-submenu-open></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article class="playfield " id="dashboard-id">
+        
+            <div class="container">
+                <div class="milestone">
+                    <div id="sec1" class="heading-milestone">
+                        <h2 class="learing-title hidden-md hidden-lg">Cột mốc hiện tại</h2>
+                        <h2 class="learing-title hidden-sm hidden-xs">Lộ trình luyện thi của bạn</h2>
+                        <div class="notif">
+
+                            <div class="notif-wrapper">
+                                <span class="icon-notif"></span>
+                            </div>
+                            <div class="notif-show">
+                                <ul class="notif-list">
+                                    <li class="item notif-empty ">
+                                        <div class="item-wrapper">
+                                            <span class="small-col">
+                                                <img src="/static/LearningPlan/images/new/icon_mess.png" alt="message">
+                                            </span>
+                                            <span><i>Bạn không có thông báo mới.</i></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <%
+                    var canduoi;
+                    var cantren=data.entry_score;
+                    if(cantren%50===0){
+                        canduoi=cantren-50;
+                    }else{
+                        canduoi=Math.floor(cantren/50)*50;
+                    }
+                    var distance=Math.floor((data.target_score-data.entry_score)/50);
+                    var start=canduoi+100;
+
+                    %>
+                    <div class="milestone-process hidden-lg hidden-md">
+                        <ul>
+                            <li><span> <%=canduoi %> - <%=cantren %></span></li>
+                            <li>
+                                <img src="/static/LearningPlan/images/new/icon_lo_trinh_hoc.png" alt="">
+                                <span class="xem-lo-trinh">Xem lộ trình <br> học của bạn</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learing-process">
+                        <ul class="process-list">
+                            <li class="not-finish">
+                                <span class="start-date">Bắt đầu: <%=data.start_study.getDate()%>/<%=(data.start_study.getMonth()+1)%>/<%=data.start_study.getFullYear()%></span>
+                                <span class="point start-point"><%=canduoi %></span>
+                                <span class="img"><img src="/static/LearningPlan/images/new/upload/icon_pin.png"
+                                        alt=""></span>
+                                <span class="point"><%=cantren %></span>
+                                <span class="target-tooltip">
+                                    <span>Đây là cột mốc hiện tại bạn đang học</span>
+                                </span>
+                            </li>
+                            <%for(var i=1;i<distance;i++){%>
+                            <li>
+                                <span class="point"><%=start%></span>
+                            </li>
+                                <%start+=50;%>
+                            <%}%>
+                            <li>
+                                <span class="point"><%=start%></span>
+                                <span class="flag">
+                                    <img src="/static/LearningPlan/images/new/icon_flag.png" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                        <a class="update-goal-score" href="/dashboard/capnhatmuctieu/<%=data._id%>">Cập nhật Điểm mục
+                            tiêu</a>
+                        <a href="javascript:;" class="point-close hidden-lg hidden-md">
+                            <img src="/static/LearningPlan/images/new/icon_close.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <section class="how-to-learn-wrapper">
+                            <div class="inner">
+                                <div class="learning-approach">
+                                    <h2 class="learing-title blue-color">Lấy lại nền tảng tiếng Anh căn bản</h2>
+                                    <h4>Bạn muốn <strong>lấy lại nền tảng tiếng Anh</strong> trước khi bắt đầu luyện
+                                        thi?</h4>
+                                    <ul class="review-topics clearfix">
+                                        <li style="margin-right: 30px;">
+                                            <img src="/static/Grammar/images/ngu_phap_toeic.png" />
+                                            <h3>Học ngữ pháp tiếng Anh căn bản</h3>
+                                            với Chương trình Ngữ Pháp PRO
+                                            <p class="text-center">
+                                                <a href="/ngu-phap-tieng-anh/?r=dashboard-h2learn"
+                                                    class="button-link style-1">Học ngữ pháp căn bản</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="/static/Vocabulary/images/600_tu_vung_toeic.png" />
+                                            <h3>Học 600 từ vựng hay gặp trong TOEIC</h3>
+                                            được chia theo chủ đề, với đầy đủ thông tin về từ
+                                            <p class="text-center">
+                                                <a href="/600-tu-vung-toeic/?r=dashboard-h2learn"
+                                                    class="button-link style-1">Học 600 từ vựng TOEIC</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="/static/Listening/images/luyen_nghe_toeic.png" />
+                                            <h3>Cải thiện kĩ năng nghe tiếng Anh</h3>
+                                            Vừa luyện nghe, vừa chơi game!
+                                            <p class="text-center">
+                                                <a href="/luyen-nghe-toeic/?r=dashboard-h2learn"
+                                                    class="button-link style-1">Cải thiện kĩ năng Nghe</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="faded" style="margin: 20px auto;" />
+                                <div class="learning-approach">
+                                    <h2 class="learing-title blue-color">Luyện thi TOEIC</h2>
+                                    <h4>Bạn <strong>đã nắm được ngữ pháp và từ vựng</strong> tiếng Anh căn bản?
+                                    </h4>
+                                    <p class="text-center">
+                                        <a href="/dethi" class="button-link style-1"
+                                            style="background-color: #87c52e;">
+                                            Bắt đầu Luyện Ngay
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="suggest-block" id="suggested-unit">
+                            <div style="background: #fff; padding: 5px;">
+                                <a href="https://giasutoeic.com/huong-dan/cach-hoc-tren-gia-su-toeic/?r=video-guide-link#cach-luyen-thi"
+                                    target="_blank">
+                                    <img src="/static/RealEdu/images/learning_guide_icon.png"
+                                        alt="Hướng dẫn cách học" />
+                                    <span style="display: inline-block; vertical-align: middle;">Xem video hướng dẫn
+                                        cách học</span>
+                                </a>
+                            </div>
+                            <div id="sec2" class="block-milestone block-milestone-2">
+                                <div class="inner">
+                                    <h2 class="learing-title">Hôm nay Gia sư TOEIC đề xuất bạn học</h2>
+                                    <img src="/static/LearningPlan/images/new/upload/icon_de_xuat_ngu_phap.png" alt=""
+                                        class="hidden-sm hidden-xs">
+                                    <div class="milestone-group">
+                                        <div class="name">
+                                            <img src="/static/Grammar/images/dong_tu_phuc.png" alt="">
+                                            <h3>Động từ Phức</h3>
+                                        </div>
+                                        <a href="/ngu-phap-tieng-anh/chu-de-dong-tu-phuc/?r=dashboard"
+                                            class="button-link style-1" title="Kích để học">Học</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="sec3" class="toeic-milestone">
+                            <div class="toeic-milestone-item">
+                                <h2 class="learing-title">
+                                    <span class="bold">Các phần TOEIC </span> cần luyện trong cột mốc này
+                                    <div>
+                                        <span class="status">0/4</span>
+                                    </div>
+                                </h2>
+                                <div class="milestone-desc">
+                                    <p>Để vượt qua cột mốc này, bạn cần đạt được số phần trăm mục tiêu
+                                        <br />của các phần TOEIC cần luyện ở dưới đây
+                                    </p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">
+                                        (Luyện theo các phần này sẽ giúp bạn tăng điểm TOEIC nhanh nhất.
+                                        <a target="_blank"
+                                            href="https://giasutoeic.com/huong-dan/nhung-cau-hoi-thuong-gap-faq/?r=dashboard#goc-hoc-tap">
+                                            Xem giải thích vì sao</a>)
+                                    </p>
+                                </div>
+                                <div class="block-milestone">
+                                    <div class="inner">
+                                        <div class="name">
+                                            <img src="/static/ToeicTests/images/de_luyen_tap_phan_1.png" alt="">
+                                            <h3>Listening P1</h3>
+                                            <a href="https://giasutoeic.com/meo-thi-toeic/meo-thi-toeic-phan-1/?r=dashboard"
+                                                target="_blank" class="tips-link">
+                                                (Mẹo làm Listening P1)
+                                            </a>
+                                        </div>
+                                        <a href='/de-luyen-tap/toeic-p1/'
+                                            class="button-link style-1 hidden-md hidden-lg">Luyện</a>
+                                    </div>
+                                    <div class="progress-wrapper">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91"
+                                                aria-valuemin="91" aria-valuemax="97" style="width: 0%">
+                                                <span class="value-min target">91%
+                                                    <span class="target-tooltip">
+                                                        <img src="/static/LearningPlan/images/new/icon_question.png"
+                                                            alt="">
+                                                        <span>
+                                                            Độ chính xác của bạn khi vừa bắt đầu cột mốc hiện tại.<br />
+                                                            Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có
+                                                            nghĩa là làm 10 câu thì làm đúng 5 câu.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="value-current ">
+                                                    91%
+                                                </span>
+                                                <span class="sr-only">91% Complete</span>
+                                            </div>
+                                        </div>
+                                        <p class="target">
+                                            Mục tiêu: <span class="taget-point">97%</span>
+                                            <span class="target-tooltip">
+                                                <img src="/static/LearningPlan/images/new/icon_question.png" alt="">
+                                                <span>
+                                                    Độ chính xác bạn cần đạt được để hoàn thành cột mốc.<br />
+                                                    Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm
+                                                    10 câu thì làm đúng 5 câu.
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <a href='/de-luyen-tap/toeic-p1/?r=dashboard'
+                                        class="button-link style-1 hidden-sm hidden-xs"
+                                        title="Kích để luyện phần này (có tính kết quả)">Luyện</a>
+                                </div>
+                                <div class="block-milestone">
+                                    <div class="inner">
+                                        <div class="name">
+                                            <img src="/static/ToeicTests/images/de_luyen_tap_phan_3.png" alt="">
+                                            <h3>Listening P3</h3>
+                                            <a href="https://giasutoeic.com/meo-thi-toeic/meo-thi-toeic-part-3/?r=dashboard"
+                                                target="_blank" class="tips-link">
+                                                (Mẹo làm Listening P3)
+                                            </a>
+                                        </div>
+                                        <a href='/de-luyen-tap/toeic-p3/'
+                                            class="button-link style-1 hidden-md hidden-lg">Luyện</a>
+                                    </div>
+                                    <div class="progress-wrapper">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91"
+                                                aria-valuemin="91" aria-valuemax="96" style="width: 0%">
+                                                <span class="value-min target">91%
+                                                    <span class="target-tooltip">
+                                                        <img src="/static/LearningPlan/images/new/icon_question.png"
+                                                            alt="">
+                                                        <span>
+                                                            Độ chính xác của bạn khi vừa bắt đầu cột mốc hiện tại.<br />
+                                                            Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có
+                                                            nghĩa là làm 10 câu thì làm đúng 5 câu.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="value-current ">
+                                                    91%
+                                                </span>
+                                                <span class="sr-only">91% Complete</span>
+                                            </div>
+                                        </div>
+                                        <p class="target">
+                                            Mục tiêu: <span class="taget-point">96%</span>
+                                            <span class="target-tooltip">
+                                                <img src="/static/LearningPlan/images/new/icon_question.png" alt="">
+                                                <span>
+                                                    Độ chính xác bạn cần đạt được để hoàn thành cột mốc.<br />
+                                                    Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm
+                                                    10 câu thì làm đúng 5 câu.
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <a href='/de-luyen-tap/toeic-p3/?r=dashboard'
+                                        class="button-link style-1 hidden-sm hidden-xs"
+                                        title="Kích để luyện phần này (có tính kết quả)">Luyện</a>
+                                </div>
+                                <div class="block-milestone">
+                                    <div class="inner">
+                                        <div class="name">
+                                            <img src="/static/ToeicTests/images/de_luyen_tap_phan_5.png" alt="">
+                                            <h3>Reading P5</h3>
+                                            <a href="https://giasutoeic.com/meo-thi-toeic/meo-thi-toeic-part-5/?r=dashboard"
+                                                target="_blank" class="tips-link">
+                                                (Mẹo làm Reading P5)
+                                            </a>
+                                        </div>
+                                        <a href='/de-luyen-tap/toeic-p5/'
+                                            class="button-link style-1 hidden-md hidden-lg">Luyện</a>
+                                    </div>
+                                    <div class="progress-wrapper">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91"
+                                                aria-valuemin="91" aria-valuemax="96" style="width: 0%">
+                                                <span class="value-min target">91%
+                                                    <span class="target-tooltip">
+                                                        <img src="/static/LearningPlan/images/new/icon_question.png"
+                                                            alt="">
+                                                        <span>
+                                                            Độ chính xác của bạn khi vừa bắt đầu cột mốc hiện tại.<br />
+                                                            Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có
+                                                            nghĩa là làm 10 câu thì làm đúng 5 câu.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="value-current ">
+                                                    91%
+                                                </span>
+                                                <span class="sr-only">91% Complete</span>
+                                            </div>
+                                        </div>
+                                        <p class="target">
+                                            Mục tiêu: <span class="taget-point">96%</span>
+                                            <span class="target-tooltip">
+                                                <img src="/static/LearningPlan/images/new/icon_question.png" alt="">
+                                                <span>
+                                                    Độ chính xác bạn cần đạt được để hoàn thành cột mốc.<br />
+                                                    Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm
+                                                    10 câu thì làm đúng 5 câu.
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <a href='/de-luyen-tap/toeic-p5/?r=dashboard'
+                                        class="button-link style-1 hidden-sm hidden-xs"
+                                        title="Kích để luyện phần này (có tính kết quả)">Luyện</a>
+                                </div>
+                                <div class="block-milestone">
+                                    <div class="inner">
+                                        <div class="name">
+                                            <img src="/static/ToeicTests/images/de_luyen_tap_phan_7.png" alt="">
+                                            <h3>Reading P7: Đoạn Đơn</h3>
+                                            <a href="https://giasutoeic.com/meo-thi-toeic/meo-thi-toeic-part-7/?r=dashboard"
+                                                target="_blank" class="tips-link">
+                                                (Mẹo làm Reading P7: Đoạn Đơn)
+                                            </a>
+                                        </div>
+                                        <a href='/de-luyen-tap/toeic-p7/'
+                                            class="button-link style-1 hidden-md hidden-lg">Luyện</a>
+                                    </div>
+                                    <div class="progress-wrapper">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91"
+                                                aria-valuemin="91" aria-valuemax="96" style="width: 0%">
+                                                <span class="value-min target">91%
+                                                    <span class="target-tooltip">
+                                                        <img src="/static/LearningPlan/images/new/icon_question.png"
+                                                            alt="">
+                                                        <span>
+                                                            Độ chính xác của bạn khi vừa bắt đầu cột mốc hiện tại.<br />
+                                                            Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có
+                                                            nghĩa là làm 10 câu thì làm đúng 5 câu.
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span class="value-current ">
+                                                    91%
+                                                </span>
+                                                <span class="sr-only">91% Complete</span>
+                                            </div>
+                                        </div>
+                                        <p class="target">
+                                            Mục tiêu: <span class="taget-point">96%</span>
+                                            <span class="target-tooltip">
+                                                <img src="/static/LearningPlan/images/new/icon_question.png" alt="">
+                                                <span>
+                                                    Độ chính xác bạn cần đạt được để hoàn thành cột mốc.<br />
+                                                    Số phần trăm là độ chính xác khi làm bài. Ví dụ: 50% có nghĩa là làm
+                                                    10 câu thì làm đúng 5 câu.
+                                                </span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <a href='/de-luyen-tap/toeic-p7/?r=dashboard'
+                                        class="button-link style-1 hidden-sm hidden-xs"
+                                        title="Kích để luyện phần này (có tính kết quả)">Luyện</a>
+                                </div>
+                            </div>
+                            <div class="toeic-milestone-item">
+                                <h2 class="learing-title">
+                                    <span class="bold">Ngữ pháp</span> cần học trong cột mốc này
+                                    <div>
+                                        <span class="status">0/2</span>
+                                    </div>
+                                </h2>
+                                <div class="milestone-desc">
+                                    Bạn cần hoàn thành các chủ đề ngữ pháp dưới đây
+                                    để vượt qua cột mốc này
+                                </div>
+                                <div class="milestone-grammar-wrapper">
+                                    <div class="block-milestone milestone-grammar">
+                                        <div class="inner">
+                                            <div class="name">
+                                                <img src="/static/Grammar/images/dong_tu_phuc.png" alt="Động từ Phức">
+                                                <h3>Động từ Phức</h3>
+                                            </div>
+                                            <a href="/ngu-phap-tieng-anh/chu-de-dong-tu-phuc/?r=dashboard"
+                                                class="button-link style-1" title="Kích để học">học</a>
+                                        </div>
+                                    </div>
+                                    <div class="block-milestone milestone-grammar">
+                                        <div class="inner">
+                                            <div class="name">
+                                                <img src="/static/Grammar/images/cau_dieu_kien_nang_cao.png"
+                                                    alt="Câu điều kiện (Nâng cao)">
+                                                <h3>Câu điều kiện (Nâng cao)</h3>
+                                            </div>
+                                            <a href="/ngu-phap-tieng-anh/chu-de-cau-dieu-kien-nang-cao/?r=dashboard"
+                                                class="button-link style-1" title="Kích để học">học</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toeic-milestone-item">
+                                <h2 class="learing-title">
+                                    <span class="bold">Từ vựng</span> cần học trong cột mốc này
+                                    <div>
+                                        <span class="status">0/2</span>
+                                    </div>
+                                </h2>
+                                <div class="milestone-desc">
+                                    Bạn cần hoàn thành các chủ đề từ vựng dưới đây
+                                    để vượt qua cột mốc này
+                                </div>
+                                <div class="milestone-grammar-wrapper">
+                                    <div class="block-milestone milestone-grammar">
+                                        <div class="inner">
+                                            <div class="name">
+                                                <img src="/static/Vocabulary/images/topic_images/conference.png"
+                                                    title="Conferences" alt="Conferences">
+                                                <h3>
+                                                    Conferences
+                                                    <span class="red-color">(Free)</span>
+                                                </h3>
+                                            </div>
+                                            <a href="/600-tu-vung-toeic/chu-de-conferences/?r=dashboard"
+                                                class="button-link style-1">học</a>
+                                        </div>
+                                    </div>
+                                    <div class="block-milestone milestone-grammar">
+                                        <div class="inner">
+                                            <div class="name">
+                                                <img src="/static/Vocabulary/images/topic_images/electronics.png"
+                                                    title="Electronics" alt="Electronics">
+                                                <h3>
+                                                    Electronics
+                                                    <span class="red-color">(Free)</span>
+                                                </h3>
+                                            </div>
+                                            <a href="/600-tu-vung-toeic/chu-de-electronics/?r=dashboard"
+                                                class="button-link style-1">học</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                       
+                    </div>
+                    <div class="col-md-4">
+                        <section id="sec5" class="block-account">
+                            <div class="account-heading">
+                                <img src="/static/RealEdu/images/user_icon.png" alt="<%=data.first_name%>" class="avt">
+                                <div class="account-name">
+                                    <span><%=data.first_name %></span>
+                                    <img width="23" height="29" src="/static/LearningPlan/images/badges/level_1.png"
+                                        alt="Mầm non" title="Mầm non">
+                                </div>
+                            </div>
+                            <div class="account-info">
+                                <ul>
+                                    <li>
+                                        <div class="inner">
+                                            Điểm tuần này <span>0</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            Hạng tuần này
+                                            <span>&gt; 100</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            Tổng điểm <span class="green">0</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            Xếp hạng
+                                            <span class="blue">&gt; 100</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="sec6" class="block-charts block-charts-tab">
+                            <span class="flag">
+                                <img src="/static/LearningPlan/images/new/upload/icon_ranking.png" alt="bxh">
+                            </span>
+                            <h3 class="chart-title">
+                                Bảng xếp hạng
+                                <span class="target-tooltip">
+                                    <img src="/static/LearningPlan/images/new/icon_question.png" alt="">
+                                    <span>
+                                        <strong>Xếp hạng tuần</strong> là xếp hạng dựa trên số điểm bạn đạt được trong
+                                        tuần, số điểm sẽ quay về 0 khi qua tuần mới.
+                                        <br />
+                                        <strong>Tổng xếp hạng</strong> là xếp hạng dựa trên tổng số điểm bạn đạt được từ
+                                        khi bắt đầu học tại Gia Sư Toeic.<br />
+                                    </span>
+                                </span>
+                            </h3>
+
+                            <ul class="nav nav-tabs nav-tabs-charts" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#home1" aria-controls="home" role="tab" data-toggle="tab"
+                                        aria-expanded="true">
+                                        <span>Xếp hạng tuần</span>
+                                    </a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#profile1" aria-controls="profile" role="tab" data-toggle="tab"
+                                        aria-expanded="false">
+                                        <span>Tổng xếp hạng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content tab-content-charts">
+                                <div role="tabpanel" class="tab-pane active" id="home1">
+                                    <div class="chart-list">
+                                        <ul>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">1</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/media/images/avatars/hienWQ3.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Hien
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            3624
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">2</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Mai
+                                                            <img src="/static/LearningPlan/images/badges/level_40.png"
+                                                                class="cup" alt="Cử nhân" title="Cử nhân" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            2428
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">3</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Đặng Minh Hiền
+                                                            <img src="/static/LearningPlan/images/badges/level_60.png"
+                                                                class="cup" alt="Phó giáo" title="Phó giáo" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            2325
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">4</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Mèo
+                                                            <img src="/static/LearningPlan/images/badges/level_35.png"
+                                                                class="cup" alt="Đại học" title="Đại học" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            1501
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">5</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Trang
+                                                            <img src="/static/LearningPlan/images/badges/level_30.png"
+                                                                class="cup" alt="Cao đẳng" title="Cao đẳng" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            1458
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">6</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Tam
+                                                            <img src="/static/LearningPlan/images/badges/level_35.png"
+                                                                class="cup" alt="Đại học" title="Đại học" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            1228
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">7</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/media/images/avatars/thangnd.jpeg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Jim
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            1128
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">8</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Liên Nguyễn
+                                                            <img src="/static/LearningPlan/images/badges/level_60.png"
+                                                                class="cup" alt="Phó giáo" title="Phó giáo" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            1097
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">9</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Nghia
+                                                            <img src="/static/LearningPlan/images/badges/level_40.png"
+                                                                class="cup" alt="Cử nhân" title="Cử nhân" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            999
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">10</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            H29104
+                                                            <img src="/static/LearningPlan/images/badges/level_50.png"
+                                                                class="cup" alt="Tiến sĩ" title="Tiến sĩ" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            951
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile1">
+                                    <div class="chart-list">
+                                        <ul>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">1</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/media/images/avatars/hienWQ3.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Hien
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            318145
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">2</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/sample-avatars/flowers/3.jpg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Thu Thủy
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            94330
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">3</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/sample-avatars/slogans/13.jpg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Bảo Nhi
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            51527
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">4</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/media/images/avatars/phuong1910.jpeg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Phuong
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            34223
+                                                        </span>
+                                                        <a class="user-button" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Luyện thi
+                                                            PRO
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">5</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Thùy Duyên
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            32767
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">6</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/media/images/avatars/myanhthai.jpg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Anh
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            29254
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">7</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Trang
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            29062
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">8</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/media/images/avatars/xuanMJa.jpeg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Xuan
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            24698
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">9</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/user_icon.png
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Vu Quoc Hung
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            21118
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="inner">
+                                                    <div class="item-left">
+                                                        <span class="no chart-item">10</span>
+                                                        <div class="user-info chart-item">
+                                                            <div class="avt">
+                                                                <img src="
+												/static/RealEdu/images/sample-avatars/landscapes/2.jpg
+											" alt="Hình avatar">
+                                                                <span class="status">
+                                                                    <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                        title="Bạn này không online lúc này" alt="">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="user-name chart-item">
+                                                            Âu Thị Thúy Hà
+                                                            <img src="/static/LearningPlan/images/badges/level_70.png"
+                                                                class="cup" alt="Giáo sư" title="Giáo sư" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="point item-right">
+                                                        <span>
+                                                            21025
+                                                        </span>
+                                                        <a class="user-button" href="/pay/" target="_blank"
+                                                            title="Kích để tìm hiểu thêm về Tài khoản này">TK Tự Luyện
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="block-charts">
+                            <span class="flag"><img
+                                    src="/static/LearningPlan/images/new/upload/icon_ranking_rut_gon.png"
+                                    alt="bxh"></span>
+                            <h3 class="chart-title">
+                                Bảng xếp hạng<br>đề thi rút gọn mới nhất
+                                <span class="target-tooltip">
+                                    <img src="/static/LearningPlan/images/new/icon_question.png" alt="">
+                                    <span>Xếp hạng dựa trên kết quả làm <strong>đề thi rút gọn mới nhất</strong> của Gia
+                                        Sư Toeic.</span>
+                                </span>
+                            </h3>
+                            <div class="chart-button">
+                                <a href="/de-thi-toeic/?r=nav#dethitoeicrutgon">Làm đề thi rút gọn ngay!</a>
+                            </div>
+                            <div class="chart-list">
+                                <ul>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">1</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/user_icon.png
+												" alt="tung5yI">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Tùng
+                                                    <img src="/static/LearningPlan/images/badges/level_20.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>100</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">2</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/media/images/avatars/nguyena8m.jpeg
+												" alt="nguyena8m">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Nhìn chỗ khác
+                                                    <img src="/static/LearningPlan/images/badges/level_20.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>100</span>
+                                                <a class="user-button" target="_blank"
+                                                    title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Luyện thi PRO
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">3</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/media/images/avatars/phuongsst.jpeg
+												" alt="phuongsst">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Phương
+                                                    <img src="/static/LearningPlan/images/badges/level_25.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>100</span>
+                                                <a class="user-button" href="/pay/" target="_blank"
+                                                    title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Tự Luyện
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">4</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/user_icon.png
+												" alt="vanazt">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Van
+                                                    <img src="/static/LearningPlan/images/badges/level_30.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">5</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/user_icon.png
+												" alt="maiTgA">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Mai
+                                                    <img src="/static/LearningPlan/images/badges/level_25.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                                <a class="user-button"
+                                                    href="/interaction/confirm/email/?next=/dashboard/" target="_blank"
+                                                    target="_blank" title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Học Thử
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">6</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/user_icon.png
+												" alt="duong31J">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Dương
+                                                    <img src="/static/LearningPlan/images/badges/level_10.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                                <a class="user-button"
+                                                    href="/interaction/confirm/email/?next=/dashboard/" target="_blank"
+                                                    target="_blank" title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Học Thử
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">7</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/user_icon.png
+												" alt="uyenngo1sY">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Uyen Ngo
+                                                    <img src="/static/LearningPlan/images/badges/level_15.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                                <a class="user-button"
+                                                    href="/interaction/confirm/email/?next=/dashboard/" target="_blank"
+                                                    target="_blank" title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Học Thử
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">8</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/media/images/avatars/anniehannah.jpeg
+												" alt="anniehannah">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Hân
+                                                    <img src="/static/LearningPlan/images/badges/level_35.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                                <a class="user-button" href="/pay/" target="_blank"
+                                                    title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Tự Luyện
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">9</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/sample-avatars/slogans/7.jpg
+												" alt="lothyyy">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    Jessie
+                                                    <img src="/static/LearningPlan/images/badges/level_35.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                                <a class="user-button" href="/pay/" target="_blank"
+                                                    title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Tự Luyện
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="item-left">
+                                                <span class="no chart-item">10</span>
+                                                <div class="user-info chart-item">
+                                                    <div class="avt">
+                                                        <img src="
+													/static/RealEdu/images/user_icon.png
+												" alt="anKHl">
+                                                        <span class="status">
+                                                            <img src="/static/LearningPlan/images/new/icon_offline.png"
+                                                                title="Bạn này không online lúc này" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-name chart-item">
+                                                    An
+                                                    <img src="/static/LearningPlan/images/badges/level_35.png" alt=""
+                                                        class="cup">
+                                                </div>
+                                            </div>
+                                            <div class="point item-right">
+                                                <span>96</span>
+                                                <a class="user-button" target="_blank"
+                                                    title="Kích để tìm hiểu thêm về Tài khoản này">
+                                                    TK Luyện thi PRO
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="btn-view-more">
+                                <a href="/de-thi-toeic/?r=nav#de-rut-gon" class="view-all">Xem tất cả ></a>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+               
+                <div class="row" style="margin-bottom: 45px;">
+                    <div class="col-md-8">
+                        <div style="padding: 36px 0;">
+                            <h2 class="learing-title">Học & Đọc thêm ở Gia sư TOEIC Facebook Page</h2>
+                            <h4>Bạn hãy Like Page để tiện theo dõi bài mới</h4>
+                        </div>
+                        <div class="fb-page dl-desktop hidden-sm hidden-xs"
+                            data-href="https://www.facebook.com/giasutoeiconline/" data-tabs="timeline"
+                            data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                            data-show-facepile="true" data-width="500" data-height="640">
+                            <blockquote cite="https://www.facebook.com/giasutoeiconline/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/giasutoeiconline/">GiasuToeic.com - Học &amp; Luyện
+                                    thi Toeic Online</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="sec8" class="share-box">
+                            <h2 class="learing-title">Chia sẻ với bạn bè & Được thưởng!</h2>
+                            <h3 class="title">3 lý do để bạn chia sẻ link giới thiệu</h3>
+                            <ul class="reasons">
+                                <li class="item">
+                                    <ul>
+                                        <li><span>1</span></li>
+                                        <li>Người kích link sẽ <strong>được giảm 10%</strong>
+                                            khi mua tài khoản.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <ul>
+                                        <li><span>2</span></li>
+                                        <li>Bạn sẽ <strong>được thưởng 20%</strong>
+                                            - thay lời cảm ơn của Gia sư Toeic.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <ul>
+                                        <li><span>3</span></li>
+                                        <li>Giúp nhiều bạn biết đến một cách luyện thi Toeic hiệu quả với chi phí hợp
+                                            lý.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <a href="/affiliate/?r=dashboard" class="button-link style-1"
+                                style="display: block; margin: 30px auto;">
+                                Tạo link giới thiệu của bạn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-stickbar class="stick-circle hidden-lg hidden-md">
+                    <div data-open class="icon-main"></div>
+                    <ul data-menu class="stick-navbar clearfix">
+                        <li><a href="#sec1" title=""><img src="/static/LearningPlan/images/new/icon_nav_cot_moc.png"
+                                    alt="" /></a></li>
+                        <li><a href="#sec2" title=""><img src="/static/LearningPlan/images/new/icon_nav_de_xuat.png"
+                                    alt="" /></a></li>
+                        <li><a href="#sec3" title=""><img
+                                    src="/static/LearningPlan/images/new/icon_nav_ky_nang_can_luyen.png" alt="" /></a>
+                        </li>
+                        <li><a href="#sec4" title=""><img src="/static/LearningPlan/images/new/icon_nav_de_da_lam.png"
+                                    alt="" /></a></li>
+                        <li><a href="#sec5" title="">
+                                <img src="/static/RealEdu/images/user_icon.png" alt="Xem điểm của bạn">
+                            </a>
+                        </li>
+                        <li><a href="#sec6" title=""><img src="/static/LearningPlan/images/new/icon_nav_ranking.png"
+                                    alt="" /></a></li>
+                        <li><a href="#sec7" title=""><img src="/static/LearningPlan/images/new/icon_nav_blog.png"
+                                    alt="" /></a></li>
+                        <li><a href="#sec8" title=""><img src="/static/LearningPlan/images/new/icon_nav_chia_se.png"
+                                    alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="button-scrollTop">
+                <span data-scroll-top class="icon icon-bt_up"></span>
+            </button>
+            <a href="javascript:;" title="go to top" class="go-top" id="top"></a>
+        </article>
+        <div class="supporting-container">
+            <a href="/huong-dan/" title="Hướng dẫn học" target="_blank">
+                <img src="/static/RealEdu/images/help_icon.png" alt="help">
+            </a>
+            <a href="/contact/" title="Liên hệ" target="_blank">
+                <img src="/static/RealEdu/images/contact_icon.png" alt="contact">
+            </a>
+        </div>
+        
+        <%include ../template/footer %>

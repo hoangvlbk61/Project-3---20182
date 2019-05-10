@@ -1,0 +1,135 @@
+<% include ./template/main_header %>
+<% include ./template/main_top_navigation %>
+
+            <div class="right_col" role="main">
+        <!-- top tiles -->
+        <div class="row tile_count">
+          
+        </div>
+        <!-- /top tiles -->
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            
+            <div class="x_panel">
+              <div class="x_title">
+                <h2 class="title"> <b>Thông tin thành viên <%=data.firstname + " " + data.lastname %> : </b></h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a href="profile/capnhatthongtinnguoidung"><i class="fa fa-wrench"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <br />
+                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="" method="POST">
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Mã data:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=data.id%> </center>
+                    </label>
+                  </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Họ:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                        <center><%=data.firstname%> </center>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Tên:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                        <center><%=data.lastname%> </center>
+                    </label>
+                </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Email:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=data.email%> </center>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Số điện thoại:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=data.phonenumber%> </center>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Nơi làm việc:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center> <%=data.workplace%></center>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Danh tiếng:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center> <%=data.reputation%> </center>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Đăng nhập lần cuối:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center> <%=data.last_login.getDate() + "/" + (data.last_login.getMonth()+1) + "/"+ data.last_login.getFullYear() %></center>
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Là quản trị viên:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center>
+                        <% if(data.is_admin ) {%>  
+                          Yes 
+                        <% } else { %>
+                          No 
+                        <% } %>
+                      </center>
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Còn hoạt động:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center>
+                        <% if(data.is_active ) {%>
+                          Yes 
+                        <% } else { %>
+                          No 
+                        <% } %>
+                      </center>
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first_name"> Ngày tham gia:
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=data.date_joined.getDate() + "/" + (data.date_joined.getMonth()+1) + "/"+ data.date_joined.getFullYear() %> </center>
+                    </label>
+                  </div>
+                  <div class="ln_solid"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <br />
+
+
+
+      </div>
+            <!-- footer content -->
+<% include ./template/main_footer %>

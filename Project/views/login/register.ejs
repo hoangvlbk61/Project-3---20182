@@ -1,0 +1,150 @@
+<%include ../template/header %>
+
+<body>
+    <div id="page-container">
+        <header data-sticky data-class-name="bg-blue" class="clearfix header1">
+            <div class="content">
+                <div class="logo">
+                    <a href="https://giasutoeic.com/?r=nav" title="Gia sư TOEIC">
+                        <img src="/static/RealEdu/images/logo.png" alt="Gia sư TOEIC Logo">
+                    </a>
+                </div>
+                <div class="logo-text">
+                    <a href="https://giasutoeic.com/?r=nav" title="Luyện thi TOEIC Online">
+                        <img src="/static/RealEdu/images/logo_text_nhu_co_giasu.png" alt="Luyện thi TOEIC Online">
+                    </a>
+                </div>
+                <div class="header__menu header__menu--desktop">
+                    <div data-sub-menu class="header__menu__left">
+                        <ul class="list-menu">
+                            <li style="padding:0; display: block;" class="list-menu__item">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="https://giasutoeic.com/de-thi-toeic/?r=nav" title="Đề thi TOEIC"
+                                        class="name-user submit-btn oval-btn">
+                                        Đề thi TOEIC
+                                    </a>
+                                </div>
+                            </li>
+                            <li style="padding:0;" class="list-menu__item">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="https://giasutoeic.com/ngu-phap-tieng-anh/?r=nav" title="Ngữ pháp"
+                                        class="name-user submit-btn oval-btn">
+                                        Ngữ pháp
+                                    </a>
+                                </div>
+                            </li>
+                            <li style="padding:0;" class="list-menu__item">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="https://giasutoeic.com/600-tu-vung-toeic/?r=nav" title="Từ vựng"
+                                        class="name-user submit-btn oval-btn">
+                                        600 Từ TOEIC
+                                    </a>
+                                </div>
+                            </li>
+                            <li style="padding:0;" class="list-menu__item">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="https://giasutoeic.com/meo-thi-toeic/?r=nav" title="Mẹo thi"
+                                        class="name-user submit-btn oval-btn">
+                                        Mẹo thi
+                                    </a>
+                                </div>
+                            </li>
+                            <li style="padding:0;" class="list-menu__item">
+                                <div data-btn-submenu-user class="user-block" style="display: block;">
+                                    <a href="https://giasutoeic.com/huong-dan/?r=nav" title="Hướng dẫn"
+                                        class="name-user submit-btn oval-btn">
+                                        Hướng dẫn
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+        </header>
+
+        <article class="playfield " id="login-article">
+            <section class="login">
+
+
+                <div class="container">
+                    <div id="signupbox" style="margin-top:50px"
+                        class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="panel-title">Sign Up</div>
+                            </div>
+                            <div class="panel-body">
+                                <form id="signupform" class="form-horizontal" role="form" method="POST"
+                                    action="/register">
+
+                                    <div id="signupalert" style="<%if (!data || !data.error) {%> display:none; <%}%>" class="alert alert-danger">
+                                            <p>Error:</p>
+                                            <%if(data && data.error) {%> <span><%=data.error %></span>
+                                        <%}%>
+                                        </div>
+                
+                
+                                        <div class="form-group">
+                                            <label for="email" class="col-md-3 control-label">Email</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <label for="password" class="col-md-3 control-label">Password</label>
+                                            <div class="col-md-9">
+                                                <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <label for="password" class="col-md-3 control-label">Re-Type</label>
+                                            <div class="col-md-9">
+                                                <input type="password" class="form-control" name="repasswd" placeholder="Re-Type Password">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group">
+                                            <!-- Button -->
+                                            <div class="col-md-offset-3 col-md-9"> 
+                                                <input id="btn-signup" type="submit" onclick="signup()" class="btn btn-info" value="Sign Up" />
+                                            </div>
+                                        </div>
+                
+                                    </form>
+                                 </div>
+                            </div>
+                
+                         </div>
+                    </div>
+
+
+
+            </section>
+            <button type="button" class="button-scrollTop">
+                <span data-scroll-top class="icon icon-bt_up"></span>
+            </button>
+            <a href="javascript:;" title="go to top" class="go-top" id="top"></a>
+        </article>
+
+
+
+       
+    </div>
+
+    <%include ../template/footer %>

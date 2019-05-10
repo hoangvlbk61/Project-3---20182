@@ -1,0 +1,87 @@
+<% include ./template/main_header2%>
+<% include ./template/main_top_navigation2%>
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <!-- top tiles -->
+        
+        <!-- /top tiles -->
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_content">
+            
+              <div class="bs-example" data-example-id="simple-jumbotron">
+                <div class="jumbotron">
+                  <h3><b><%=post.title%></b>
+                    <a href="/forum/<%=post._id%>/downvote" class="btn btn-primary btn-xs"><i class="fa fa-caret-down"></i> Downvote </a>
+                    <a href="/forum/<%=post._id%>/upvote" class="btn btn-primary btn-xs"><i class="fa fa-caret-up"></i> Upvote </a>  
+                  </h3> 
+                  <span><b>Reputations: <%=post.reputations%></b> <i class="fa fa-heart"></i>  </span>
+                  <span><b>Views: <%=post.views%></b> <i class="fa fa-eye"></i> </span>
+                  <span><b>Answers: <%=post.answers.length%></b> <i class="fa fa-comments"></i> </span>
+                  <br />
+                  <span><%=post.time.getDate() + "/" + (post.time.getMonth()+1) + "/"+ post.time.getFullYear() %></span> by
+                  <a><%=post.author_id%> </a> 
+                  <br/>
+                  <div class="clearfix"></div>
+                  <p><%=post.content%></p>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+
+          
+          <div class="col-md-10">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Comments: <%=post.answers.length%> </h2>
+                <div class="clearfix"></div>
+              </div>
+
+            <form class="form-horizontal form-label-left" action="" method="POST">
+              <div class="item form-group">
+                <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12"> Comment
+                </label>
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <textarea name="content" rows="4" class="form-control col-md-7 col-xs-12" required="required"> </textarea>
+                </div>
+              </div>
+              <div class="form-group" style="text-align:center">
+                  <button type="submit" class="btn btn-success"><a style="color:white; text-align:center">Comment ! </a> </button>
+              </div>
+</form>
+              <div class="x_content">
+                <ul class="list-unstyled msg_list">
+                    <% var list_ans = post.answers %>
+                    <%list_ans.forEach((ans) => {%>
+                  <li>
+                    <a>
+                      <span class="image">
+                        <img src="../images/img.jpg" alt="img" />
+                      </span>
+                      <span>
+                        <span> <%=ans.author%> </span>
+                        
+                        <span class="time"><%=ans.time.getDate() + "/" + (ans.time.getMonth()+1) + "/"+ ans.time.getFullYear() %>
+                        <%=ans.time.getHours()+":" + ans.time.getMinutes() + ":" +ans.time.getSeconds() %> </span>
+                      </span>
+                      <span class="message"> 
+                        <%=ans.content%>  asdasda sdasd asd asd as das dasd asd asd asd asda sd asd asd asd as das da dasd asd as d
+                      </span>
+                    </a>
+                  </li>
+                  <%})%>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <br />
+
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+<%include ./template/main_footer2 %>

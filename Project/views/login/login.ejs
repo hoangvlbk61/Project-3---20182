@@ -1,0 +1,148 @@
+<%include ../template/header %>
+<body>
+	<div id="page-container">
+		<header data-sticky data-class-name="bg-blue" class="clearfix header1">
+			<div class="content">
+				<div class="logo">
+					<a href="https://giasutoeic.com/?r=nav" title="Gia sư TOEIC">
+						<img src="/static/RealEdu/images/logo.png" alt="Gia sư TOEIC Logo">
+					</a>
+				</div>
+				<div class="logo-text">
+					<a href="https://giasutoeic.com/?r=nav" title="Luyện thi TOEIC Online">
+						<img src="/static/RealEdu/images/logo_text_nhu_co_giasu.png"
+							alt="Luyện thi TOEIC Online">
+					</a>
+				</div>
+				<div class="header__menu header__menu--desktop">
+					<div data-sub-menu class="header__menu__left">
+						<ul class="list-menu">
+							<li style="padding:0; display: block;" class="list-menu__item">
+								<div data-btn-submenu-user class="user-block" style="display: block;">
+									<a href="https://giasutoeic.com/de-thi-toeic/?r=nav" title="Đề thi TOEIC"
+										class="name-user submit-btn oval-btn">
+										Đề thi TOEIC
+									</a>
+								</div>
+							</li>
+							<li style="padding:0;" class="list-menu__item">
+								<div data-btn-submenu-user class="user-block" style="display: block;">
+									<a href="https://giasutoeic.com/ngu-phap-tieng-anh/?r=nav" title="Ngữ pháp"
+										class="name-user submit-btn oval-btn">
+										Ngữ pháp
+									</a>
+								</div>
+							</li>
+							<li style="padding:0;" class="list-menu__item">
+								<div data-btn-submenu-user class="user-block" style="display: block;">
+									<a href="https://giasutoeic.com/600-tu-vung-toeic/?r=nav" title="Từ vựng"
+										class="name-user submit-btn oval-btn">
+										600 Từ TOEIC
+									</a>
+								</div>
+							</li>
+							<li style="padding:0;" class="list-menu__item">
+								<div data-btn-submenu-user class="user-block" style="display: block;">
+									<a href="https://giasutoeic.com/meo-thi-toeic/?r=nav" title="Mẹo thi"
+										class="name-user submit-btn oval-btn">
+										Mẹo thi
+									</a>
+								</div>
+							</li>
+							<li style="padding:0;" class="list-menu__item">
+								<div data-btn-submenu-user class="user-block" style="display: block;">
+									<a href="https://giasutoeic.com/huong-dan/?r=nav" title="Hướng dẫn"
+										class="name-user submit-btn oval-btn">
+										Hướng dẫn
+									</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+		<article class="playfield " id="login-article">
+			<section class="login">
+            <div class="container">
+            <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+    
+                    </div>
+    
+                    <div style="padding-top:30px" class="panel-body">
+                        <% if(data && data.error){%>
+    
+    
+    
+                        <div id="login-alert" class="alert alert-danger col-sm-12">
+                            <%=data.error%>
+                        </div>
+    
+                        <%}%>
+                                    
+                                <form id="loginform" class="form-horizontal" role="form" method="POST" action="/login">
+                                            
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                <input id="login-email" type="text" class="form-control" name="email" value="" placeholder="Email">                                        
+                                            </div>
+                                        
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                <input id="login-password" type="password" class="form-control" name="password" placeholder="Password">
+                                            </div>
+                                            
+        
+        
+                                        
+                                        <div style="margin-top:10px" class="form-group">
+                                            <!-- Button -->
+        
+                                            <div class="col-sm-12 controls">
+                                              <input id="btn-login" type="submit" class="btn btn-success" value="Login" />  
+                                            
+        
+                                            </div>
+                                        </div>
+        
+        
+                                        <div class="form-group">
+                                            <div class="col-md-12 control">
+                                                <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                                    Don't have an account! 
+                                                <a href="/register" >
+                                                    Sign Up Here
+                                                </a>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        
+                                        
+                                    </form>     
+        
+        
+        
+                                </div>                     
+                            </div>  
+                </div>
+            </div>       
+    
+    
+			</section>
+			<button type="button" class="button-scrollTop">
+				<span data-scroll-top class="icon icon-bt_up"></span>
+			</button>
+			<a href="javascript:;" title="go to top" class="go-top" id="top"></a>
+		</article>
+		<div class="supporting-container">
+			<a href="https://giasutoeic.com/huong-dan/" title="Hướng dẫn học" target="_blank">
+				<img src="/static/RealEdu/images/help_icon.png" alt="help">
+			</a>
+			<a href="https://giasutoeic.com/contact/" title="Liên hệ" target="_blank">
+				<img src="/static/RealEdu/images/contact_icon.png" alt="contact">
+			</a>
+		</div>
+		<%include ../template/footer %>

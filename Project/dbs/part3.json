@@ -1,0 +1,20 @@
+{
+    
+        "id_exam":187103,
+        "Part3":{
+            "id_part":14310,
+            "audio_src":"/upload/2016/08/11510.mp3",
+            "bo_cau_hoi":[{"id_cauhoi":14304,"image_src":"/upload/2016/04/1089.png","sign":"a1", "a1":"0","explain":"Đán án: (A) He is riding his bicycle."},
+                { "id_cauhoi":12176,"a2":"1","image_src":"/upload/2016/04/2133.png","sign":"a2", "explain":"ĐÁP ÁN: (B) The women are checking the map." },
+                {"id_cauhoi":12177,"a3":"0","image_src":"/upload/2016/04/2136.png", "sign":"a3","explain":"ĐÁP ÁN: (A) He is calling from a public phone" },
+                {"id_cauhoi":12178,"a4":"2","image_src":"/upload/2016/04/2139.png","sign":"a4","explain":"ĐÁP ÁN: (C) Many bags are displayed for sale."},
+                {"id_cauhoi":12179, "a5":"2","image_src":"/upload/2016/04/2141.png","sign":"a5", "explain":"ĐÁP ÁN: (C) The man is riding a horse." } 
+                ,{"id_cauhoi":12180,"a6":"1","image_src":"/upload/2016/04/2143.png","sign":"a6","explain":"ĐÁP ÁN: (B) The shelves are filled with books." },
+                {"id_cauhoi":12181,"a7":"2","image_src":"/upload/2016/04/2145.png","sign":"a7","explain":"ĐÁP ÁN: (C) People are waiting to cross the street."},
+                {"id_cauhoi":12182,"a8":"3","image_src":"/upload/2016/04/2147.png","sign":"a8","explain":"ĐÁP ÁN: (D) There are many buildings near the lake"},
+                {"id_cauhoi":12183, "a9":"0", "image_src":"/upload/2016/04/2149.png","sign":"a9","explain":"ĐÁP ÁN: (A) The woman is browsing in a bookstore" },
+                {"id_cauhoi":12184, "a10":"3","image_src":"/upload/2016/04/2151.png","sign":"a10", "explain":"ĐÁP ÁN: (D) The people are sitting outdoors at a cafe." }]
+                
+        } 
+    
+}

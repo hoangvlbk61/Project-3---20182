@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> English Self-Study Supporter </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+      <a class="hiddenanchor" id="forgot"></a>
+      
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form>
+              <h1>Login Form</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="Email" 
+                name="email" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Password" 
+                name="password" required="" />
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="index">Log in</a>
+                <a class="reset_pass" href="#forgot">Lost your password?</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">New to site?
+                  <a href="#signup" class="to_register"> Create Account </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1><i class="fa fa-paw"></i> English Self-study Supporter </h1>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form col-md-12">
+          <section class="login_content">
+            <form class="form-horizontal form-label-left" action="" method="POST" >
+              <h1>Create Account</h1>
+              <div class="item form-group">
+                <input id="name" class="form-control" placeholder="Id" data-validate-length-range="6,18" data-validate-words="1"
+                          name="id" required="required" type="text" />
+              </div>
+              <div class="item form-group">
+                <input id="name" class="form-control " data-validate-length-range="2,50" data-validate-words="1,10"
+                  name="username" required="required" type="text" placeholder="Fullname"/>
+              </div>
+              <div class="item form-group">
+                <input type="text" class="form-control" placeholder="Workplace" required="required" />
+              </div>
+              <div class="item form-group">
+                <input type="email" class="form-control" placeholder="Email" id="email" name="email" required="required" />
+              </div>
+              <div class="item form-group">
+                <input type="email" class="form-control" id="email2" name="confirm_email" placeholder="Confirm Email" data-validate-linked="email" required=""/>
+              </div>
+              <div class="item form-group">
+                <input id="password" type="password" name="password" data-validate-length-range="6,12" 
+                          class="form-control " required="required" placeholder="Password" />
+              </div>
+              <div class="item form-group">
+                <input id="password2" type="password" name="password2" data-validate-linked="password" 
+                          class="form-control " required="required" placeholder="Confirm Password" />
+              </div>
+              <div >
+                <a class="btn btn-default submit" href="index">Submit</a>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">Already a member ?
+                  <a href="#signin" class="to_register"> Log in </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1><i class="fa fa-paw"></i>  English Self-study Supporter</h1>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+      </div>
+    </div>
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
+  </body>
+</html>
