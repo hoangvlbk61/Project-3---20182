@@ -28,7 +28,9 @@ router.get('/', (req, res, next) => {
 })
 
 router.get('/themmoituvung', (req, res, next) => {
-    res.render('admin/themmoituvung');
+    User.findById(req.session.user._id, (err, _user) => {
+        res.render('themmoituvung', {data: _user});
+    })
 })
 
 router.get('/:_id', (req, res, next) => {
@@ -36,7 +38,9 @@ router.get('/:_id', (req, res, next) => {
         .exec()
         .then(result => {
             if (result) {
-                res.render('chitiettuvung', { vocab: result });
+                User.findById(req.session.user._id, (err, _user) => {
+                    res.render('chitiettuvung', { vocab: result,data: _user });
+                })
             }
             else {
                 res.render('page_404', { message: "Vocab not exist !" });
@@ -55,7 +59,9 @@ router.get('/:_id/capnhattuvung', (req, res, next) => {
         .exec()
         .then(result => {
             if (result) {
-                res.render('admin/capnhattuvung', { vocab: result });
+                User.findById(req.session.user._id, (err, _user) => {
+                    res.render('capnhattuvung', { vocab: result, data: _user });
+                })
             }
             else {
                 res.render('admin/page_404', { message: "Vocab not exist !" });
@@ -80,7 +86,7 @@ router.post('/:_id/capnhattuvung', (req, res, next) => {
     Vocab.update({ _id: id }, { $set: updateOps })
         .exec()
         .then(result => {
-            res.redirect("../");
+            res.redirect('quanlytuvung');
         })
         .catch(err => {
             console.log(err);
@@ -108,46 +114,34 @@ router.get('/:_id/delete', (req, res, next) => {
 });
 
 router.post("/themmoituvung", (req, res, next) => {
-    var vid;
-    console.log("SO LUONG BAN GHI LA: " + vid);
-    MongoClient.connect(process.env.MONGO_ATLAS_PATH, { useNewUrlParser: true }, function (err, db) {
-        var dbo = db.db("ESS");
-        dbo.collection("vocabs").find().toArray((err, result) => {
-            vid = result.length;
-            console.log("VID = " + vid);
-            //
-            Vocab.findOne({ word: req.body.word })
-                .exec()
-                .then(vocab => {
-                    if (vocab) {
-                        console.log(vocab);
-                        res.render('admin/page_404', { message: "vocab not exist !" });
-                    } else {
-                        console.log(req.body);
-                        const vocab = new Vocab({
-                            _id: new mongoose.Types.ObjectId(),
-                            word: req.body.word,
-                            meaning: req.body.meaning,
-                            examples: req.body.examples,
-                            synonyms: req.body.synonyms
-                        });
-                        vocab
-                            .save()
-                            .then(result => {
-                                console.log(result);
-                                res.redirect('/quanlytuvung');
-                            })
-                            .catch(err => {
-                                console.log(err);
-                                res.status(500).json({
-                                    error: err
+        Vocab.findOne({ word: req.body.word })
+            .exec()
+            .then(vocab => {
+                if (vocab) {
+                    console.log(vocab);
+                    res.render('admin/page_404', { message: "vocab not exist !" });
+                } else {
+                    console.log(req.body);
+                    const vocab = new Vocab({
+                        _id: new mongoose.Types.ObjectId(),
+                        word: req.body.word,
+                        meaning: req.body.meaning,                            
+                        examples: req.body.examples,
+                        synonyms: req.body.synonyms
+                    });
+                    vocab
+                        .save()
+                        .then(result => {
+                            console.log(result);
+                            res.redirect('/quanlytuvung');
+                        })
+                        .catch(err => {
+                            console.log(err);
+                            res.status(500).json({
+                                error: err
                                 });
                             });
-                            }
-                        });
-            //
-        });
-    });
-    //
+                        }
+                    });
 })
 module.exports = router;

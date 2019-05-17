@@ -39,7 +39,10 @@ router.post('/thembaidang', (req, res, next) => {
         var dd = String(today.getDate()).padStart(2, '0');
         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         var yyyy = today.getFullYear();
-        today = mm + '/' + dd + '/' + yyyy;
+        //today = mm + '/' + dd + '/' + yyyy;
+        var time = today.getTime();
+        today = time;
+    
         const newpost = new Post({
             _id: new mongoose.Types.ObjectId(),
             author_id: _user.firstname + " " + _user.lastname,
