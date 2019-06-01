@@ -10,13 +10,7 @@ const bodyParser = require('body-parser');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/user');
 var dashboardRouter=require('./routes/dashboard');
-var dethiRouter=require("./routes/dethi");
-
-var productRoutes = require('./routes/products');
-var orderRoutes = require('./routes/orders')
 var vocabListSettingRoutes = require('./routes/vocablistsetting');
-
-var adminRoutes = require('./routes/admin');
 
 var memberManager = require('./routes/memberManager');
 var testManager = require('./routes/testManager');
@@ -61,17 +55,12 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false }
 }))
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static',express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
 app.use('/dashboard',dashboardRouter);
-app.use("/dethi",dethiRouter);
-
 app.use('/thietlapdanhsachhoc', vocabListSettingRoutes);
-app.use('/products', productRoutes); 
-app.use('/orders',orderRoutes);
-app.use('/admin',adminRoutes);
 
 app.use('/quanlythanhvien', memberManager);
 app.use('/quanlytuvung', vocabManager);

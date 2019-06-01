@@ -1,6 +1,5 @@
 var express = require('express');
 var bcrypt = require('bcrypt');
-var user_md=require("../models/user_c");
 const User = require("../models/User");
 var router = express.Router();
 
@@ -55,7 +54,7 @@ router.post("/register", function (req, res, next) {
 router.get('/login', function (req, res, next) {
   if (req.session.user)
   {
-    res.redirect("/dashboard/");
+    res.redirect("/dashboard");
   }
   else 
     res.render("login", { data: {} });
@@ -91,61 +90,6 @@ router.post("/login", function (req, res, next) {
     });
   }
 })
-
-
-
-// /* GET dat muc tieu */
-// router.get('/kiemtradauvao/datmuctieu', function (req, res, next) {
-//   if(req.session.user){
-//     res.render("kiemtradauvao/datmuctieu",{data: req.session.user});
-//   }else{
-//     res.redirect("/login");
-//   }
-// });
-
-
-// router.post("/kiemtradauvao/datmuctieu",function(req,res){
-
-//   if(req.session.user){
-//    var data=req.body;
-//    var idcansua=chuyenthanhObjectId(req.session.user._id);
-//    user_md.findById(idcansua,function(err,dulieu){
-//      dulieu.entry_score=data.entry_score;
-//      dulieu.target_score=data.target_score;
-//      dulieu.start_study=new Date();
-//      dulieu.save();
-//      req.session.user=dulieu;
-//    });
-
-  
-//    console.log(req.session.user);
-//    res.redirect("/dashboard/"+req.session.user._id);
-
-   
- 
-  
-    
-//   }else{
-//     res.redirect("/login");
-//   }
-// });
-
-// /* GET dat muc tieu */
-// router.get('/dashboard/:id', function (req, res, next) {
-
-//   if(req.session.user){
-//     var id= chuyenthanhObjectId(req.params.id);
-
-//     user_md.findById(id,function(err,dulieu){
-//       res.render("dashboard",{data:dulieu});
-//     })
-
-//   }else{
-//     res.redirect("/login");
-//   }
- 
-// });
-
 router.get("/logout",function(req,res,next){
   req.session.user=null;
   res.redirect("/login");

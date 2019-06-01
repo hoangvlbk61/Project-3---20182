@@ -1,5 +1,4 @@
 var express = require('express');
-var user_md=require("../models/user_c");
 const User = require("../models/User");
 var router = express.Router();
 

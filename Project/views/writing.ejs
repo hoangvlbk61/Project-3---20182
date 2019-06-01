@@ -10,16 +10,16 @@
 
   <title>English Self-Study Supporter </title>
 
-    <!-- Bootstrap -->
-    <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- iCheck -->
-    <link href="../../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
-    <!-- Custom Theme Style -->
+  <!-- Custom Theme Style -->
   <link href="../../build/css/custom.min.css" rel="stylesheet">
 </head>
 
@@ -41,7 +41,7 @@
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2> Vũ Lê Hoàng </h2>
+              <h2> <%= data.firstname + " " + data.lastname %> </h2>
             </div>
           </div>
           <!-- /menu profile quick info -->
@@ -122,7 +122,7 @@
               <li class="">
                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../../images/img.jpg" alt="">Vũ Lê Hoàng
+                  <img src="../../images/img.jpg" alt=""> <%= data.firstname + " " + data.lastname %>
                   <span class=" fa fa-angle-down"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -146,7 +146,7 @@
                 <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                   <li>
                     <a>
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="../../images/img.jpg" alt="Profile Image" /></span>
                       <span>
                         <span>John Smith</span>
                         <span class="time">3 mins ago</span>
@@ -158,7 +158,7 @@
                   </li>
                   <li>
                     <a>
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="../../images/img.jpg" alt="Profile Image" /></span>
                       <span>
                         <span>John Smith</span>
                         <span class="time">3 mins ago</span>
@@ -170,7 +170,7 @@
                   </li>
                   <li>
                     <a>
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="../../images/img.jpg" alt="Profile Image" /></span>
                       <span>
                         <span>John Smith</span>
                         <span class="time">3 mins ago</span>
@@ -182,7 +182,7 @@
                   </li>
                   <li>
                     <a>
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="../../images/img.jpg" alt="Profile Image" /></span>
                       <span>
                         <span>John Smith</span>
                         <span class="time">3 mins ago</span>
@@ -241,17 +241,31 @@
                       </div>
                     </div>
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Content<span class="required">*</span>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" > Name <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="content" class="form-control col-md-7 col-xs-12" name="file" required="required" type="text">
+                        <input id="content" class="form-control col-md-7 col-xs-12" rows="10" name="name" required="required" type="text"/> 
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" > Content<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="content" required="required" type="text"> </textarea>
+                      </div>
+                    </div>
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation" required="required" type="text"> </textarea>
                       </div>
                     </div>
               
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
-                        <button class="btn btn-primary" type="button"><a href="../../quanlydethi" style="color:white ">Cancel</a> </button>
+                        <button class="btn btn-primary" type="button"><a href="." style="color:white ">Cancel</a> </button>
                         <button class="btn btn-primary" type="reset"><a style="color:white ">Reset</a></button>
                         <button type="submit" class="btn btn-success"><a style="color:white ">Save and back</a> </button>
                       </div>
@@ -280,7 +294,7 @@
     document.getElementById("part").addEventListener("change", student_timetable_function); 
     function student_timetable_function() {
         var x = document.getElementById("part");
-        var sUrl = "themmoidethi/" + x.value ; 
+        var sUrl = "/quanlydethi/themmoidethi/" + x.value ; 
         window.location = sUrl ; 
     }
 </script>

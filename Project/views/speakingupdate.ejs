@@ -15,7 +15,7 @@
             
             <div class="x_panel">
               <div class="x_title">
-                <h2 class="title"> <b> Thay đổi thông tin đề thi: <%=writing.name%>  </b></h2>
+                <h2 class="title"> <b> Thay đổi thông tin đề thi: <%=speaking.name%>  </b></h2>
                 <div class="clearfix"></div>
               </div>
               <div class="x_content">
@@ -24,7 +24,7 @@
                   <div class="item form-group">
                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Types<span class="required">*</span>
                     </label>
-                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Writing
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Speaking
                     </label>
                   </div>
                   <div class="item form-group">
@@ -32,7 +32,7 @@
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <input id="content" class="form-control col-md-7 col-xs-12" rows="10"
-                      value="<%=writing.name%>" name="name" required="required" type="text"/> 
+                      value="<%=speaking.name%>" name="name" required="required" type="text"/> 
                     </div>
                   </div>
                   <div class="item form-group">
@@ -40,7 +40,15 @@
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" 
-                      name="content" required="required" type="text"> <%=writing.content%> </textarea>
+                      name="content" required="required" type="text"> <%=speaking.content%> </textarea>
+                    </div>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" > Cue Cards<span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <textarea id="content" class="form-control col-md-7 col-xs-12" rows="5" 
+                      name="cuecards" required="required" type="text"> <%=speaking.cuecards%> </textarea>
                     </div>
                   </div>
                   <div class="item form-group">
@@ -48,7 +56,7 @@
                     </label>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation" 
-                       required="required" type="text"> <%=writing.explanation%> </textarea>
+                       required="required" type="text"> <%=speaking.explanation%> </textarea>
                     </div>
                   </div>
             
@@ -68,11 +76,6 @@
 
         </div>
         <br />
-
-
-
-
-
       </div>
       <!-- /page content -->
 

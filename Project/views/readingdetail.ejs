@@ -1,0 +1,89 @@
+<% include ./template/main_header3 %>
+<% include ./template/main_top_navigation3 %>
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <!-- top tiles -->
+        <div class="row tile_count">
+          
+        </div>
+        
+        <!-- /top tiles -->
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            
+            <div class="x_panel">
+              <div class="x_title">
+                <h2 class="title"> <b>Chi tiết đề thi: <%=reading.name%> </b></h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a href="<%=reading._id%>/addpart"><i class="fa fa-plus"></i></a>
+                  </li>
+                  <li><a class="close-link" href="<%=reading._id%>/delete"><i class="fa fa-close"></i></a>
+                  </li>
+                  <li><a href="../../quanlydethi/reading/<%=reading._id%>/edit"><i class="fa fa-wrench"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              
+              <div class="x_content">
+                <br />
+                <form class="form-horizontal form-label-left" action="" method="POST">
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Types<span class="required">*</span>
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center> reading </center>
+                    </label>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" > Id <span class="required">*</span>
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=reading._id%> </center>
+                    </label>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" > Name <span class="required">*</span>
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=reading.name%> </center>
+                    </label>
+                  </div>
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" > Content<span class="required">*</span>
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=reading.content%> </center>
+                    </label>
+                  </div>
+                  
+                  <div class="item form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
+                    </label>
+                    <label class="control-label col-md-6 col-sm-3 col-xs-12" for="first_name">
+                      <center><%=reading.explanation%> </center>
+                    </label>
+                  </div>
+            
+                  
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+        
+        
+          
+        <br />
+
+
+
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+<% include ./template/main_footer3 %>

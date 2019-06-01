@@ -12,10 +12,9 @@ var VocabSchema = new Schema({
     examples: { 
         type: String
     },
-    synonyms: 
-        {
-            type: String
-        }
+    synonyms: {
+        type: String
+    }
     }, 
     {
         collection:"vocab"

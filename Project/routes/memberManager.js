@@ -1,12 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
 const User = require('../models/User');
 const Vocab = require('../models/Vocab');
 var MongoClient = require('mongodb').MongoClient;
 
-var user_md = require("../models/user_c");
 
 var chuyenthanhObjectId = require('mongodb').ObjectID;
 const assert = require('assert');

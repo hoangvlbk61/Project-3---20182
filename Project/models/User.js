@@ -53,7 +53,6 @@ var UserSchema = new Schema({
     },
     list_vocab: [
         {
-            vocab_id: Number 
         }
     ],
 }, {
