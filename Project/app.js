@@ -49,6 +49,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// ........Them de hien giao dien
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
