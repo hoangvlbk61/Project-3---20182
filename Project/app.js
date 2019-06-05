@@ -20,6 +20,8 @@ var forum = require('./routes/forum');
 
 var profile = require('./routes/profile');
 
+var checkin = require('./routes/diemdanh');
+
 var app = express();
 
 
@@ -71,6 +73,8 @@ app.use('/quanlytuvung', vocabManager);
 app.use('/quanlydethi', testManager);
 app.use('/forum', forum) ; 
 app.use('/profile', profile);
+
+app.use('/checkin', checkin);
 // var memberManager = require('./routes/memberManager');
 // app.use('/quanlythanhvien', memberManager);
 
