@@ -1,0 +1,35 @@
+{ 
+    "_id" : ObjectId("5ce4ab4865bddf0814a51ba0"), 
+    "content" : "hq hafkjahsfkj    ầqwlflkjflkjwlkjlkj  ", 
+    "name" : "akjshfasf", 
+    "questionlist" : [
+
+    ], 
+    "author_id" : "5cc0f83824ab372d98b5faaa", 
+    "explanation" : "abc explanation ádasfasf ádasfasfasfasf   ", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce4b01eb11a562f70a838e3"), 
+    "name" : "THe writing 2", 
+    "content" : "Contentnetkaslkfj ", 
+    "author_id" : "5cc0f83824ab372d98b5faaa", 
+    "explanation" : "post to ielts viet to get explanation", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce51a2128df5b19889b2138"), 
+    "name" : "New", 
+    "content" : "New ", 
+    "explanation" : "New ", 
+    "author_id" : "5cc0f83824ab372d98b5faaa", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5ce526a00f37c33de4383264"), 
+    "name" : "Speaking", 
+    "content" : " SpeakingSpeakinSpeaking\r\nSpeaking\r\nSpeakingSpeakingSpeaking\r\nSpeakingSpeakingSpeakingSpeaking\r\nSpeakingSpeakingSpeakingSpeakingSpeakingg", 
+    "explanation" : " SpeakingSpeakingSpeaking\r\nSpeakingSpeaking\r\nSpeakingSpeakingSpeaking", 
+    "author_id" : "5cc0f83824ab372d98b5faaa", 
+    "__v" : NumberInt(0)
+}
