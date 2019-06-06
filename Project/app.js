@@ -61,7 +61,16 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false }
 }))
+
 app.use('/static',express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
+app.use('/vendor', express.static('/vendor'));
+app.use('/build', express.static('/build'));
+app.use('/stylesheets', express.static('/stylesheets'));
+app.use('/img', express.static('/img'));
+app.use('/images', express.static('/images'));
+// app.use('/ImagesProduct', express.static('/ImagesProduct'));
+
 
 app.use('/', indexRouter);
 app.use('/user', usersRouter);
