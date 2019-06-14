@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const Writing = require('../models/Writing');
 const Speaking = require('../models/Speaking');
 const Reading = require('../models/Reading');
+const Listening = require('../models/Listening');
 const User = require('../models/User');
 const Part = require('../models/Part');
 const auth = require('../api/middleware/checkAuth');
@@ -115,8 +116,12 @@ router.get('/', (req, res, next) => {
                                 if(err)
                                     throw(err)
                                 else 
-                                    res.render('quanlydethi', { data:req.session.user, writinglist: writinglist,
-                                         'speakinglist': speakinglist, 'readinglist':readinglist });
+                                {
+                                    Listening.find({}, (err, listeninglist) => {
+                                        res.render('quanlydethi', { data:req.session.user, writinglist: writinglist,
+                                            'speakinglist': speakinglist, 'readinglist':readinglist, 'listeninglist':listeninglist });
+                                    } )
+                                }
                             })
                         }
                     })
@@ -334,6 +339,8 @@ router.post('/speaking/:_id/edit', (req, res, next) => {
         });
 });
 
+//READING
+
 router.get('/themmoidethi/reading', (req, res, next) => {
     res.render('reading', data= req.session.user);
 })
@@ -427,11 +434,218 @@ router.post('/reading/:_id/addpart', (req, res, next ) => {
     })
 })
 
+router.get('/reading/:pid/delete', (req, res, next) => { 
+    const id = req.params.pid;
+    Reading.remove({
+        _id: id
+    })
+        .exec()
+        .then(result => {
+            res.redirect('/quanlydethi');
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+})
 
+router.get('/reading/:_id/edit', (req, res, next) => {
+    Reading.findById(req.params._id)
+        .exec()
+        .then(result => {
+            if (result) {
+                res.render('readingupdate', { reading: result, data:req.session.user });
+            }
+            else {
+                res.render('admin/page_404', { message: "Vocab not exist !" });
+            }
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+})
+
+router.post('/reading/:_id/edit', (req, res, next) => {
+    const id = req.params._id;
+    const updateOps = {};
+    const input = req.body;
+    for (const ops of Object.keys(input)) {
+        updateOps[ops] = input[ops];
+        console.log(ops + "  " + input[ops])
+    }
+    Reading.update({ _id: id }, { $set: updateOps })
+        .exec()
+        .then(result => {
+            res.redirect("/quanlydethi/reading/"+id);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+});
+
+//LISTENING
+
+router.get('/themmoidethi/listening', (req, res, next) => {
+    res.render('listening', data= req.session.user);
+})
+
+router.post('/themmoidethi/listening', (req, res, next) => {
+    params = req.body ; 
+    var newtest = new Listening() ; 
+    newtest._id = new mongoose.Types.ObjectId;
+    newtest.name = params.name ; 
+    newtest.content = params.content; 
+    newtest.author_id = req.session.user._id ; 
+    newtest.explanation = params.explanation; 
+    newtest.part_list = [] ; 
+    newtest.save() 
+    res.redirect('/quanlydethi/listening/'+newtest._id +'/addpart');
+})
+
+router.get('/listening/:_id', (req, res, next) => {
+    Listening.findById(req.params._id)
+    .exec()
+    .then( result => {
+        if(result)
+        {
+            res.render('listeningdetail', { listening: result, data: req.session.user });
+        }
+        else 
+        {
+            res.render('page_404', { message: "Test not exist !" });
+        }
+    })
+    .catch(err => {
+        console.log(err);
+        res.render('page_404', { message: "Test not exist !" });
+    });
+})
+
+router.get('/listening/:_id/addpart', (req, res, next ) => { 
+    Listening.findById(req.params._id, (err, listening) => {
+        if (err)
+            throw err ; 
+        else 
+        {
+            res.render('addpart',{ data: req.session.user, listeningtest: listening });
+        }
+    })
+})
+
+router.post('/listening/:_id/addpart', (req, res, next ) => {
+    Listening.findById(req.params._id, (err, listening) => {
+        if (err)
+            throw err ; 
+        else 
+        {
+            part_info = req.body ; 
+            switch(part_info.type) 
+            {
+                case("UL"): 
+                    res.status(200).json({
+                        data: part_info 
+                    });
+                    // listening.part_list.push(UL(part_info, req.session.user.email));  
+                    break;
+                case("IN"): 
+                    res.status(200).json({
+                        data: "IN"
+                    });
+                    listening.part_list.push(IN(part_info, req.session.user.email));  
+                    break; 
+                case("RD"): 
+                    res.status(200).json({
+                        data: "RD"
+                    });
+                    listening.part_list.push(RD(part_info, req.session.user.email));  
+                    break; 
+                case("CB"): 
+                    res.status(200).json({
+                        data: "CB"
+                    });
+                    listening.part_list.push(CB(part_info, req.session.user.email));  
+                    break; 
+                case("FB"): 
+                    res.status(200).json({
+                        data: "FB"
+                    });
+                    listening.part_list.push(FB(part_info, req.session.user.email));  
+                    break;     
+            }
+            listening.save() ; 
+            res.render('addpart',{ data: req.session.user, listeningtest: listening });
+        }
+    })
+})
 
 
 router.get('/themmoidethi/listening', (req, res, next) => {
     res.render('listening');
 })
+
+router.get('/listening/:pid/delete', (req, res, next) => { 
+    const id = req.params.pid;
+    Listening.remove({
+        _id: id
+    })
+        .exec()
+        .then(result => {
+            res.redirect('/quanlydethi');
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+})
+
+router.get('/listening/:_id/edit', (req, res, next) => {
+    Listening.findById(req.params._id)
+        .exec()
+        .then(result => {
+            if (result) {
+                res.render('listeningupdate', { listening: result, data:req.session.user });
+            }
+            else {
+                res.render('admin/page_404', { message: "Vocab not exist !" });
+            }
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+})
+
+router.post('/listening/:_id/edit', (req, res, next) => {
+    const id = req.params._id;
+    const updateOps = {};
+    const input = req.body;
+    for (const ops of Object.keys(input)) {
+        updateOps[ops] = input[ops];
+        console.log(ops + "  " + input[ops])
+    }
+    Listening.update({ _id: id }, { $set: updateOps })
+        .exec()
+        .then(result => {
+            res.redirect("/quanlydethi/listening/"+id);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+});
 
 module.exports = router;

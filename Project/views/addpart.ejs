@@ -6,7 +6,13 @@
       <div class="right_col" role="main">
         <div class=>
           <div class="page-title">
-            <h3 style="text-align:center"><b>Thêm mới phần thi vào đề: <%=readingtest.name%></b></h3>
+            <h3 style="text-align:center"><b>Thêm mới phần thi vào đề: 
+              <% if (typeof readingtest!== "undefined"){%>
+                <%=readingtest.name%> 
+                <%} else {%> 
+                <%=listeningtest.name%> 
+                <%}%>
+            </b></h3>
             <div class="title_left">
               
             </div>

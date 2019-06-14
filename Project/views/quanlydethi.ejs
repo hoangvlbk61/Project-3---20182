@@ -103,6 +103,20 @@
                           </td>
                         </tr>
                       <%})%>
+
+                      <% listeninglist.forEach((part) => { %>
+                        <tr>
+                          <td> <a href="quanlydethi/listening/<%=part._id%>"> <%=part._id%></a> </td>
+                          <td > <%=part.name%> </td>
+                          <td> Listening </td>
+                          <td > <%=part.author_id%> </td>
+                          <td >
+                            <a href="quanlydethi/listening/<%=part._id%>" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> </a>
+                            <a href="quanlydethi/listening/<%=part._id%>/edit" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> </a>
+                            <a href="quanlydethi/listening/<%=part._id%>/delete" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> </a>
+                          </td>
+                        </tr>
+                      <%})%>
                       </tbody>
                     </table>
                     <!-- end project list -->

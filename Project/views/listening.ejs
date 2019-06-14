@@ -30,24 +30,43 @@
                           <option value="writing" >Writing</option>
                           <option value="speaking">Speaking</option>
                           <option value="listening" selected>Listening</option>
-                          <option value="reading">Reading</option>
+                          <option value="reading" >Reading</option>
                         </select>
                       </div>
                     </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Name<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="content" class="form-control col-md-7 col-xs-12" name="name" required="required" type="text">
+                      </div>
+                    </div>
+
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Content<span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="content" class="form-control col-md-7 col-xs-12" name="file" required="required" type="text">
+                        <input id="content" class="form-control col-md-7 col-xs-12" name="content" required="required" type="text">
                       </div>
                     </div>
+
+                    <div class="item form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="username"> Explanation<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <textarea id="content" class="form-control col-md-7 col-xs-12" name="explanation"
+                        rows="5" required="required" type="text"> </textarea>
+                      </div>
+                    </div>
+
               
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
                         <button class="btn btn-primary" type="button"><a href="." style="color:white ">Cancel</a> </button>
                         <button class="btn btn-primary" type="reset"><a style="color:white ">Reset</a></button>
-                        <button type="submit" class="btn btn-success"><a style="color:white ">Save and back</a> </button>
+                        <button type="submit" class="btn btn-success"><a style="color:white ">Save and add parts</a> </button>
                       </div>
                     </div>
                   </form>
@@ -60,17 +79,12 @@
       <!-- /page content -->
 
       <!-- footer content -->
-
-
-  <script>
-    document.getElementById("part").addEventListener("change", student_timetable_function); 
-    function student_timetable_function() {
-        var x = document.getElementById("part");
-        var sUrl = "/quanlydethi/themmoidethi/" + x.value ; 
-        window.location = sUrl ; 
-    }
-</script>
-
-
-  <!-- jQuery -->
-<% include ./template/main_footer%>
+      <script>
+        document.getElementById("part").addEventListener("change", student_timetable_function); 
+        function student_timetable_function() {
+            var x = document.getElementById("part");
+            var sUrl = "/quanlydethi/themmoidethi/" + x.value ; 
+            window.location = sUrl ; 
+        }
+    </script>
+<% include ./template/main_footer %>
