@@ -4,26 +4,40 @@
 
       <!-- page content -->
       <div class="right_col" role="main">
-        <!-- top tiles -->
-        <div class="row tile_count">
-      
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3> Điểm danh </h3>
+              </div>
+              
         </div>
-        <!-- /top tiles -->
-      
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12" style="color:red; text-align:center">
-            <h3> asdasdasd
-      
-            </h3>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 col-md-push-2"> 
+              <form action="checkin/chitietdiemdanh" method="POST" role="form" enctype="multipart/form-data">
+                  <legend>Điền nghĩa của từ vào ô trống</legend>
+                  
+                <!-- start project list -->
+                <table class="table table-striped project text-center">
+                  <tbody>
+                    <% list_vocab.forEach((vocab)=>{%>
+                    <tr>
+                      <td>                       
+                        <label for=""><%= vocab.word %></label>
+                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="1,70"
+                        data-validate-words="1" name="word" required="required" type="text"> 
+                      </td>
+                    </tr>
+                    <%})%> 
+                  </tbody>
+                </table>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              
+
+            </div>
           </div>
-      
-        </div>
-        <br />
-      
-      
-      
-      
-      
       </div>
       <!-- /page content -->
 
