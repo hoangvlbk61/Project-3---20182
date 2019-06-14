@@ -391,18 +391,33 @@ router.post('/reading/:_id/addpart', (req, res, next ) => {
             switch(part_info.type) 
             {
                 case("UL"): 
-                    reading.part_list.push(UL(part_info, req.session.user.email));  
+                    res.status(200).json({
+                        data: part_info 
+                    });
+                    // reading.part_list.push(UL(part_info, req.session.user.email));  
                     break;
                 case("IN"): 
+                    res.status(200).json({
+                        data: "IN"
+                    });
                     reading.part_list.push(IN(part_info, req.session.user.email));  
                     break; 
                 case("RD"): 
+                    res.status(200).json({
+                        data: "RD"
+                    });
                     reading.part_list.push(RD(part_info, req.session.user.email));  
                     break; 
                 case("CB"): 
+                    res.status(200).json({
+                        data: "CB"
+                    });
                     reading.part_list.push(CB(part_info, req.session.user.email));  
                     break; 
                 case("FB"): 
+                    res.status(200).json({
+                        data: "FB"
+                    });
                     reading.part_list.push(FB(part_info, req.session.user.email));  
                     break;     
             }

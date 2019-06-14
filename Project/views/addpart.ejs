@@ -76,26 +76,52 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                           </div>
                         </div>
                       <div class="item form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12" > Question List<span class="required">*</span>
-                          </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="qlist"  type="text"> </textarea>
-                          </div>
-                      </div>
-                      <div class="item form-group">
-                          <label class="control-label col-md-3 col-sm-3 col-xs-12" > Answer List<span class="required">*</span>
-                          </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="alist"  type="text"> </textarea>
-                          </div>
-                      </div>
-                      <div class="item form-group">
                           <label class="control-label col-md-3 col-sm-3 col-xs-12" > Selection List<span class="required">*</span>
                           </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="slist"  type="text"> </textarea>
+                          <div class="col-md-6 col-sm-6 col-xs-12" id="selectlist">
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary" id="add_s_ul"> <i class="fa fa-plus"></i> </button>
+                              </span>
+                            </div>
+                            </div>
+                      </div>
+
+                      <div class="item form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" > Question List<span class="required">*</span>
+                          </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12" id="questionlist">
+                          <div class="input-group">
+                              <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button type="button" class="btn btn-primary" id="add_q_ul"> <i class="fa fa-plus"></i> </button>
+                            </span>
                           </div>
+                          </div>
+
+                      </div>
+
+                      <div class="item form-group" >
+                        <label class="col-sm-3 control-label">Answer List</label>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12" id="answerlist">
+                          <div class="input-group">
+                              <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button type="button" class="btn btn-primary" id="add_a_ul"> <i class="fa fa-plus"></i> </button>
+                            </span>
+                          </div>
+                          <!-- <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                              <button type="button" class="btn btn-danger" > <i class="fa fa-close"></i> </button>
+                            </span>
+                          </div> -->
                         </div>
+
+                      
+                    </div>
                       <div class="item form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
                         </label>
@@ -204,19 +230,25 @@ Nhập danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                               </div>
                           </div>
                           <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" > Select List<span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12" id="selectlist_rd">
+                              <div class="input-group">
+                                  <input type="text" class="form-control" name="slist0">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-primary" id="add_s_rd"> <i class="fa fa-plus"></i> </button>
+                                </span>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Answer<span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="answer2"  type="text"> </textarea>
+                              <input id="content" class="form-control col-md-7 col-xs-12" rows="3" name="answer2"  type="text"/>
                             </div>
                           </div>
-                          <div class="item form-group">
-                              <label class="control-label col-md-3 col-sm-3 col-xs-12" > Select List<span class="required">*</span>
-                              </label>
-                              <div class="col-md-6 col-sm-6 col-xs-12">
-                                <textarea id="content" class="form-control col-md-7 col-xs-12" rows="6" name="slist2"  type="text"> </textarea>
-                              </div>
-                            </div>
+                          
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
                             </label>
@@ -265,19 +297,25 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                                 </div>
                             </div>
                             <div class="item form-group">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-12" > Select List<span class="required">*</span>
+                              </label>
+                              <div class="col-md-6 col-sm-6 col-xs-12" id="selectlist_cb">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="slist0">
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary" id="add_s_cb"> <i class="fa fa-plus"></i> </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="item form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" > Answer<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                   <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="answer"  type="text"> </textarea>
                                 </div>
                             </div>
-                            <div class="item form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" > Select List<span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="slist"  type="text"> </textarea>
-                                </div>
-                              </div>
+                            
                             <div class="item form-group">
                               <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
                               </label>
@@ -360,4 +398,120 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
       <!-- /page content -->
 
       <!-- footer content -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      
+      <script>
+          var _type = document.getElementById("parttype");
+          $('#UL').show();
+          $('#CB').hide();
+          $('#IN').hide();
+          $('#RD').hide();
+          $('#FB').hide();
+          document.getElementById("parttype").addEventListener("change", student_timetable_function); 
+          function student_timetable_function() {
+              var x = document.getElementById("parttype");
+              //$("#UL").hide();
+              $("#UL").hide();
+              $("#CB").hide();
+              $("#IN").hide();
+              $("#RD").hide();
+              $("#FB").hide();
+              $("#"+x.value).show();
+          }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+      <script>
+          $(document).ready(function() {
+            $("#add_q_ul").click(function() {
+                var lastField = $("#questionlist div:last");
+                var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
+                var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
+                fieldWrapper.data("idx", intId);
+                var fName = $("<input id=\"content\" class=\"form-control \" name=\"qlist" + intId + "\" type=\"text\"/>");
+                //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+                //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+                var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
+                removeButton.click(function() {
+                    $(this).parent().remove();
+                });
+                fieldWrapper.append(fName); 
+                fieldWrapper.append(removeButton);
+                $("#questionlist").append(fieldWrapper);
+            });
+
+            $("#add_a_ul").click(function() {
+              var lastField = $("#answerlist div:last");
+              var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
+              var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
+              fieldWrapper.data("idx", intId);
+              var fName = $("<input id=\"content\" class=\"form-control \" name=\"alist" + intId + "\" type=\"text\"/>");
+              //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+              //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+              var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
+              removeButton.click(function() {
+                  $(this).parent().remove();
+              });
+              fieldWrapper.append(fName);
+              // fieldWrapper.append(fType); 
+              fieldWrapper.append(removeButton);
+              $("#answerlist").append(fieldWrapper);
+          });
+
+          $("#add_s_ul").click(function() {
+            var lastField = $("#selectlist div:last");
+            var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
+            var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
+            fieldWrapper.data("idx", intId);
+            var fName = $("<input id=\"content\" class=\"form-control \" name=\"slist" + intId + "\" type=\"text\"/>");
+            //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+            //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+            var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
+            removeButton.click(function() {
+                $(this).parent().remove();
+            });
+            fieldWrapper.append(fName);
+            // fieldWrapper.append(fType); 
+            fieldWrapper.append(removeButton);
+            $("#selectlist").append(fieldWrapper);
+          });
+
+          $("#add_s_rd").click(function() {
+            var lastField = $("#selectlist_rd div:last");
+            var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
+            var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
+            fieldWrapper.data("idx", intId);
+            var fName = $("<input id=\"content\" class=\"form-control \" name=\"slist" + intId + "\" type=\"text\"/>");
+            //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+            //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+            var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
+            removeButton.click(function() {
+                $(this).parent().remove();
+            });
+            fieldWrapper.append(fName);
+            // fieldWrapper.append(fType); 
+            fieldWrapper.append(removeButton);
+            $("#selectlist_rd").append(fieldWrapper);
+          });
+
+          $("#add_s_cb").click(function() {
+            var lastField = $("#selectlist_cb div:last");
+            var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
+            var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
+            fieldWrapper.data("idx", intId);
+            var fName = $("<input id=\"content\" class=\"form-control \" name=\"slist" + intId + "\" type=\"text\"/>");
+            //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
+            //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
+            var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
+            removeButton.click(function() {
+                $(this).parent().remove();
+            });
+            fieldWrapper.append(fName);
+            // fieldWrapper.append(fType); 
+            fieldWrapper.append(removeButton);
+            $("#selectlist_cb").append(fieldWrapper);
+          });
+
+        });
+        
+      </script>  
 <% include ./template/main_footer %>

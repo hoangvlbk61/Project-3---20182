@@ -1,0 +1,32 @@
+{ 
+    "_id" : ObjectId("5cf8c7af40dd9a2c486152a8"), 
+    "reputations" : NumberInt(0), 
+    "author" : "Yasuoo Fangal", 
+    "content" : " ", 
+    "time" : ISODate("2019-06-05T17:00:00.000+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cf8c7b640dd9a2c486152aa"), 
+    "reputations" : NumberInt(0), 
+    "author" : "Yasuoo Fangal", 
+    "content" : " chả comment gì hco đc ", 
+    "time" : ISODate("2019-06-05T17:00:00.000+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cf8c7bc40dd9a2c486152ac"), 
+    "reputations" : NumberInt(0), 
+    "author" : "Yasuoo Fangal", 
+    "content" : " OKie ", 
+    "time" : ISODate("2019-06-05T17:00:00.000+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cf8c7c340dd9a2c486152ae"), 
+    "reputations" : NumberInt(0), 
+    "author" : "Yasuoo Fangal", 
+    "content" : " Alo", 
+    "time" : ISODate("2019-06-05T17:00:00.000+0000"), 
+    "__v" : NumberInt(0)
+}

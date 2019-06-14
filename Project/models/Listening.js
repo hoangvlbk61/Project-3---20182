@@ -15,8 +15,7 @@ var ReadingSchema = new Schema({
         type: String,
         default: "Listening Content", 
     },
-    part_list : [
-        part
+    part_list : [{}
     ],
     explaination: String,
 }, {

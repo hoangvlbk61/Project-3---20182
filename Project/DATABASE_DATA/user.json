@@ -7,7 +7,7 @@
     "firstname" : "Yasuoo", 
     "lastname" : "Fangal", 
     "reputation" : NumberInt(100), 
-    "last_login" : ISODate("2019-05-31T07:57:23.128+0000"), 
+    "last_login" : ISODate("2019-06-14T11:37:54.044+0000"), 
     "date_joined" : ISODate("2019-02-01T17:00:00.000+0000"), 
     "is_admin" : true, 
     "is_active" : "true", 
@@ -62,5 +62,41 @@
     "list_vocab" : [
 
     ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5cf79f18ea2fac29d8c86c88"), 
+    "reputation" : NumberInt(0), 
+    "last_login" : ISODate("2019-06-04T17:00:00.000+0000"), 
+    "is_admin" : false, 
+    "is_active" : true, 
+    "date_joined" : ISODate("2019-06-04T17:00:00.000+0000"), 
+    "list_vocab" : [
+
+    ], 
+    "firstname" : "hoang ", 
+    "password" : "$2b$10$veThxlsfMMaE3GUdJvfTAufHPJGKGEsrkvH0I0W3vhNO8fUUoc1qa", 
+    "email" : "hoang.vl166163@sis.hust.edu.vn", 
+    "lastname" : "Gold", 
+    "phonenumber" : "651243615243", 
+    "workplace" : "á", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d03dc49f6a76e3a309ea7ad"), 
+    "reputation" : NumberInt(0), 
+    "last_login" : ISODate("2019-06-14T17:41:39.533+0000"), 
+    "is_admin" : false, 
+    "is_active" : true, 
+    "date_joined" : ISODate("2019-06-14T17:00:00.000+0000"), 
+    "list_vocab" : [
+
+    ], 
+    "firstname" : "hoang 12", 
+    "password" : "$2b$10$EacT8ckEs5XEAgoTA8SaEuJ5BZMMwKOwTRdc.xUAUpFQV8J7EkDKa", 
+    "email" : "hoangvlbk63@gmail.com", 
+    "lastname" : "Gold 123", 
+    "phonenumber" : "09190661231", 
+    "workplace" : "áasfas", 
     "__v" : NumberInt(0)
 }

@@ -63,9 +63,604 @@
             "author_id" : "hoangvlbk61@gmail.com", 
             "type" : "UL", 
             "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18c79ea7953678fd516c"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18c89ea7953678fd516d"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18c99ea7953678fd516e"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18c99ea7953678fd516f"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18ca9ea7953678fd5170"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18ca9ea7953678fd5171"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cb9ea7953678fd5172"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cb9ea7953678fd5173"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cc9ea7953678fd5174"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cc9ea7953678fd5175"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cd9ea7953678fd5176"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cd9ea7953678fd5177"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb18cd9ea7953678fd5178"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb19a99ea7953678fd5179"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb1b599ea7953678fd517a"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb1b729ea7953678fd517b"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb21839ea7953678fd517c"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb218a9ea7953678fd517d"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb21d39ea7953678fd517e"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb21e49ea7953678fd517f"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb21f79ea7953678fd5180"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb22039ea7953678fd5181"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb22189ea7953678fd5182"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb252e9ea7953678fd5183"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb253c9ea7953678fd5184"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb25729ea7953678fd5185"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb26239ea7953678fd5186"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb26419ea7953678fd5187"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb267e9ea7953678fd5188"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb26bb9ea7953678fd5189"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb26c09ea7953678fd518a"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb26e99ea7953678fd518b"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb27019ea7953678fd518c"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb270d9ea7953678fd518d"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
+        }, 
+        {
+            "content" : " ", 
+            "questionlist" : [
+                " "
+            ], 
+            "answerlist" : [
+                " "
+            ], 
+            "selectlist" : [
+                " "
+            ], 
+            "_id" : ObjectId("5cfb27199ea7953678fd518e"), 
+            "name" : "", 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "UL", 
+            "__v" : NumberInt(0)
         }
     ], 
     "author_id" : "5cc0f83824ab372d98b5faaa", 
     "explanation" : "Explanation for band 9  ", 
-    "__v" : NumberInt(1)
+    "__v" : NumberInt(36)
 }
