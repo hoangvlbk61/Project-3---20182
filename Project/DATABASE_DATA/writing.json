@@ -25,11 +25,3 @@
     "author_id" : "5cc0f83824ab372d98b5faaa", 
     "__v" : NumberInt(0)
 }
-{ 
-    "_id" : ObjectId("5ce526a00f37c33de4383264"), 
-    "name" : "Speaking", 
-    "content" : " SpeakingSpeakinSpeaking\r\nSpeaking\r\nSpeakingSpeakingSpeaking\r\nSpeakingSpeakingSpeakingSpeaking\r\nSpeakingSpeakingSpeakingSpeakingSpeakingg", 
-    "explanation" : " SpeakingSpeakingSpeaking\r\nSpeakingSpeaking\r\nSpeakingSpeakingSpeaking", 
-    "author_id" : "5cc0f83824ab372d98b5faaa", 
-    "__v" : NumberInt(0)
-}
