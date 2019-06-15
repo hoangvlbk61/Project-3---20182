@@ -4,6 +4,10 @@ var Schema = mongoose.Schema;
 
 var ReadingSchema = new Schema({
     _id: mongoose.Schema.Types.ObjectId,
+    audio: {
+        type: String, 
+        require: true
+    },
     name: {
         type: String,
         default: "Listening"

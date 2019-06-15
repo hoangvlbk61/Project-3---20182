@@ -12,6 +12,35 @@ const perm = require('../api/middleware/checkPerm');
 
 var MongoClient = require('mongodb').MongoClient;
 
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+  destination: function(req, file, cb) {
+    cb(null, './public/audio/');
+  },
+  filename: function(req, file, cb) {
+    cb(null, new Date().toISOString().replace(/:/g, '-') + file.originalname);
+  }
+});
+
+const fileFilter = (req, file, cb) => {
+  // reject a file
+  if (file.mimetype === 'audio/mpeg' || file.mimetype === 'audio/mp3') {
+    cb(null, true);
+  } else {
+    cb(null, false);
+  }
+};
+
+const upload = multer({
+  storage: storage,
+  limits: {
+    fileSize: 1024 * 1024 * 10
+  },
+  fileFilter: fileFilter
+});
+
+
 function UL(variable, id){
     var part = new Part() ;
     part._id = new mongoose.Types.ObjectId(); 
@@ -20,9 +49,14 @@ function UL(variable, id){
     part.type = variable.type; 
     part.content = variable.content; 
     part.explanation = variable.explanation ; 
-    part.questionlist = variable.qlist.split("\n"); 
-    part.answerlist = variable.alist.split("\n"); 
-    part.selectlist = variable.slist.split("\n"); 
+    for (const prop in variable) {
+        if(prop.indexOf("ulqlist") == 0)
+            part.questionlist.push(variable[prop]) ; 
+        else if(prop.indexOf("ulalist") == 0 ) 
+            part.answerlist.push(variable[prop]) ; 
+        else if(prop.indexOf("ulslist") == 0 ) 
+            part.selectlist.push(variable[prop]) ; 
+    }
     part.save();
     return part; 
 };
@@ -34,9 +68,13 @@ function IN(variable, id){
     part.author_id = id; 
     part.type = variable.type; 
     part.content = variable.content; 
-    part.explanation = variable.explanation ; 
-    part.questionlist = variable.qlist.split("\n"); 
-    part.answerlist = variable.alist.split("\n"); 
+    part.explanation = variable.explanation ;
+    for (const prop in variable) {
+        if(prop.indexOf("inqlist") == 0)
+            part.questionlist.push(variable[prop]) ; 
+        else if(prop.indexOf("inalist") == 0 ) 
+            part.answerlist.push(variable[prop]) ; 
+    }
     part.save();
     return part; 
 };
@@ -49,9 +87,14 @@ function RD(variable, id){
     part.type = variable.type; 
     part.content = variable.content; 
     part.explanation = variable.explanation ; 
-    part.questionlist = variable.qlist.split("\n"); 
-    part.answerlist = variable.alist.split("\n"); 
-    part.selectlist = variable.slist.split("\n"); 
+    for (const prop in variable) {
+        if(prop.indexOf("ulqlist") == 0)
+            part.questionlist.push(variable[prop]) ; 
+        else if(prop.indexOf("ulalist") == 0 ) 
+            part.answerlist.push(variable[prop]) ; 
+        else if(prop.indexOf("ulslist") == 0 ) 
+            part.selectlist.push(variable[prop]) ; 
+    }
     part.save();
     return part; 
 }
@@ -64,24 +107,37 @@ function CB(variable, id){
     part.type = variable.type; 
     part.content = variable.content; 
     part.explanation = variable.explanation ; 
-    part.questionlist = variable.qlist.split(" "); 
-    part.answerlist = variable.alist.split("\n"); 
-    part.selectlist = variable.slist.split("\n"); 
+    part.questionlist.push(variable.question);
+    part.answerlist.push(variable.answer);
+
+    for (const prop in variable) 
+    {
+        if(prop.indexOf("ulslist") == 0 ) 
+            part.selectlist.push(variable[prop]) ; 
+    }
     part.save();
     return part; 
 }
 
 function FB(variable, id){
+    console.log("GET IN FB ");
     var part = new Part() ;
     part.name = variable.name;
     part._id = new mongoose.Types.ObjectId(); 
     part.author_id = id; 
     part.type = variable.type; 
     part.content = variable.content; 
-    part.explanation = variable.explanation ; 
-    part.questionlist = variable.qlist.split("\n"); 
-    part.answerlist = variable.alist.split("\n"); 
+    part.explanation = variable.explanation ;
+    var matches = part.content.match(/\[.*?\]/g);
+    console.log(matches.length);
+    
+    for(var i = 0 ; i < matches.length; i ++ )
+    {
+        matches[i] = matches[i].slice(1,matches[i].length -2 );
+    }
+    part.answerlist = matches ; 
     part.save();
+    console.log("Done IN FB ");
     return part; 
 }
 
@@ -398,33 +454,18 @@ router.post('/reading/:_id/addpart', (req, res, next ) => {
             switch(part_info.type) 
             {
                 case("UL"): 
-                    res.status(200).json({
-                        data: part_info 
-                    });
-                    // reading.part_list.push(UL(part_info, req.session.user.email));  
+                    reading.part_list.push(UL(part_info, req.session.user.email));  
                     break;
                 case("IN"): 
-                    res.status(200).json({
-                        data: "IN"
-                    });
                     reading.part_list.push(IN(part_info, req.session.user.email));  
                     break; 
                 case("RD"): 
-                    res.status(200).json({
-                        data: "RD"
-                    });
                     reading.part_list.push(RD(part_info, req.session.user.email));  
                     break; 
                 case("CB"): 
-                    res.status(200).json({
-                        data: "CB"
-                    });
                     reading.part_list.push(CB(part_info, req.session.user.email));  
                     break; 
                 case("FB"): 
-                    res.status(200).json({
-                        data: "FB"
-                    });
                     reading.part_list.push(FB(part_info, req.session.user.email));  
                     break;     
             }
@@ -497,9 +538,13 @@ router.get('/themmoidethi/listening', (req, res, next) => {
     res.render('listening', data= req.session.user);
 })
 
-router.post('/themmoidethi/listening', (req, res, next) => {
+router.post('/themmoidethi/listening', upload.single('file'), (req, res, next) => {
     params = req.body ; 
+    // res.status(200).json({
+    //     form_data: req.body
+    // });
     var newtest = new Listening() ; 
+    newtest.audio = req.file.path ;
     newtest._id = new mongoose.Types.ObjectId;
     newtest.name = params.name ; 
     newtest.content = params.content; 
@@ -541,42 +586,42 @@ router.get('/listening/:_id/addpart', (req, res, next ) => {
 })
 
 router.post('/listening/:_id/addpart', (req, res, next ) => {
+    console.log("---------------------------------------------------------------------");
+    console.log("LISTENING ADD PART !!! ")
     Listening.findById(req.params._id, (err, listening) => {
         if (err)
             throw err ; 
         else 
         {
+            console.log("K co LOI ")
             part_info = req.body ; 
+            console.log(part_info.type)
             switch(part_info.type) 
             {
                 case("UL"): 
-                    res.status(200).json({
-                        data: part_info 
-                    });
-                    // listening.part_list.push(UL(part_info, req.session.user.email));  
+                    console.log("THISS ISS UL");
+                    // res.status(200).json({
+                    //     data: UL(part_info, req.session.user.email)
+                    // })
+                    listening.part_list.push(UL(part_info, req.session.user.email));  
                     break;
                 case("IN"): 
-                    res.status(200).json({
-                        data: "IN"
-                    });
+                    console.log("THISS ISS IN");
                     listening.part_list.push(IN(part_info, req.session.user.email));  
                     break; 
                 case("RD"): 
-                    res.status(200).json({
-                        data: "RD"
-                    });
+                    console.log("THISS ISS RD");
                     listening.part_list.push(RD(part_info, req.session.user.email));  
                     break; 
                 case("CB"): 
-                    res.status(200).json({
-                        data: "CB"
-                    });
+                    console.log("THISS ISS CB");
                     listening.part_list.push(CB(part_info, req.session.user.email));  
                     break; 
                 case("FB"): 
-                    res.status(200).json({
-                        data: "FB"
-                    });
+                    console.log("THISS ISS FB");
+                    // res.status(200).json({
+                    //     data: part_info 
+                    // });
                     listening.part_list.push(FB(part_info, req.session.user.email));  
                     break;     
             }
