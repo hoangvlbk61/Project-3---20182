@@ -1,0 +1,39 @@
+{
+    "id_exam": 1,
+    "Part7": {
+        "id_part": 353462,
+        "dv1":"svds;vbfsbfsbsfb",
+        "dv2":"dsdfbndsgsdavgdsagbdagdsag",
+        "dv3":"sdfvdsfvsdfbsdfbsdfad,fndsfbdfsgdsfgv",
+        "  bo_cau_hoi": [
+            {
+                "id_cauhoi": 31,
+                "dv":"dv1",
+                "answer": 1,
+                "sign": "a71",
+                "explain": "ĐÁP ÁN: (B) Change an appointment time.",
+                "description": {
+                    "question": "ddsskfa?",
+                    "A": "(A) Meet with the president",
+                    "B": "(B) Change an appointment time ",
+                    "C": "(C) Come to the oflice later",
+                    "D": "(D) Contact some clients"
+                }
+            },
+            {
+                "id_cauhoi": 31,
+                "dv":"dv2",
+                "answer": 1,
+                "sign": "a71",
+                "explain": "ĐÁP ÁN: (B) Change an appointment time.",
+                "description": {
+                    "question": "ddsskfa?",
+                    "A": "(A) Meet with the president",
+                    "B": "(B) Change an appointment time ",
+                    "C": "(C) Come to the oflice later",
+                    "D": "(D) Contact some clients"
+                }
+            }
+        ]
+    }
+}

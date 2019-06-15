@@ -1,0 +1,40 @@
+{
+    "id_exam":1,
+    "PartII":{
+        "id_part":14309,
+        "audio_src":"/upload/2016/08/11510.mp3",
+        "bo_cau_hoi":[
+            {"id_cauhoi":14305,"answer":2,"sign":"a11", "explain":"ĐÁP ÁN: (C)Yesterday, with my boss."},
+            { "id_cauhoi":146,"answer":2,"sign":"a12", "explain":"ĐÁP ÁN: (C) Yes. David does." },
+            { "id_cauhoi":339,"answer":0,"sign":"a13", "explain":"ĐÁP ÁN: (A) Right across the street." },
+            { "id_cauhoi":340,"answer":1,"sign":"a14", "explain":"ĐÁP ÁN: (B) Our business hours are from 10 a.m. to 9 p.n on weekends" },
+            { "id_cauhoi":341,"answer":2,"sign":"a15", "explain":"ĐÁP ÁN: (C) Yes. we really do." },
+            { "id_cauhoi":342,"answer":0,"sign":"a16", "explain":"ĐÁP ÁN: (A) In room 403." },
+            { "id_cauhoi":343,"answer":1,"sign":"a17", "explain":"ĐÁP ÁN: (B) By the end of this week." },
+            { "id_cauhoi":344,"answer":1,"sign":"a18", "explain":"ĐÁP ÁN: (B) At least twenty." },
+            { "id_cauhoi":345,"answer":0,"sign":"a19", "explain":"ĐÁP ÁN: (A) No thanks, one is enough." },
+            { "id_cauhoi":346,"answer":1,"sign":"a20", "explain":"ĐÁP ÁN: (B) We must get a permit first." },
+            { "id_cauhoi":347,"answer":0,"sign":"a21", "explain":"ĐÁP ÁN: (A) Yes, since last Tuesday." },
+            { "id_cauhoi":348,"answer":2,"sign":"a22", "explain":"ĐÁP ÁN: (C)Yes. I can check it now." },
+            { "id_cauhoi":349,"answer":2,"sign":"a23", "explain":"ĐÁP ÁN: (C) Oh, sorry I'll turn it down." },
+            { "id_cauhoi":350,"answer":1,"sign":"a24", "explain":"ĐÁP ÁN: (B) It begins in half an hour." },
+            { "id_cauhoi":351,"answer":1,"sign":"a25", "explain":"ĐÁP ÁN: (B) We still have plenty." },
+            { "id_cauhoi":352,"answer":1,"sign":"a26", "explain":"ĐÁP ÁN: (B) The one by the conference center." },
+            { "id_cauhoi":353,"answer":0,"sign":"a27", "explain":"ĐÁP ÁN: (A) I forgot to pick it up." },
+            { "id_cauhoi":354,"answer":1,"sign":"a28", "explain":"ĐÁP ÁN: (B) That sounds like a good idea." },
+            { "id_cauhoi":355,"answer":0,"sign":"a29", "explain":"ĐÁP ÁN: (A) About four days." },
+            { "id_cauhoi":356,"answer":1,"sign":"a30", "explain":"ĐÁP ÁN: (B) Yes, that's the company policy." },
+            { "id_cauhoi":357,"answer":1,"sign":"a31", "explain":"ĐÁP ÁN: (B) No. my meeting was called off." },
+            { "id_cauhoi":358,"answer":2,"sign":"a32", "explain":"ĐÁP ÁN: (C) I’ll need a few more minutes." },
+            { "id_cauhoi":359,"answer":2,"sign":"a33", "explain":"ĐÁP ÁN: (C) No, he wants to have it right now." },
+            { "id_cauhoi":360,"answer":0,"sign":"a34", "explain":"ĐÁP ÁN: (A) Most of the clients speak Japanese." },
+            { "id_cauhoi":361,"answer":1,"sign":"a35", "explain":"ĐÁP ÁN: (B) Then we'd better hurry." },
+            { "id_cauhoi":362,"answer":2,"sign":"a36", "explain":"ĐÁP ÁN: (C) Yes, he did a good job." },
+            { "id_cauhoi":363,"answer":2,"sign":"a37", "explain":"ĐÁP ÁN: (C) I'll be free at about three." },
+            { "id_cauhoi":364,"answer":2,"sign":"a38", "explain":"ĐÁP ÁN: (C) Why don't you open the window ?" },
+            { "id_cauhoi":365,"answer":0,"sign":"a39", "explain":"ĐÁP ÁN: (A) Yes. here's a copy of my proposal." },
+            { "id_cauhoi":366,"answer":0,"sign":"a40", "explain":"ĐÁP ÁN: (A) Sure, what's your extension again?." }
+        
+        ]
+    } 
+}

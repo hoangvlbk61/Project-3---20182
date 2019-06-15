@@ -1,31 +1,110 @@
 <% include ./template/main_header %>
 <% include ./template/main_top_navigation %>
-            <!-- /top navigation -->
+<!-- /top navigation -->
 
-            <!-- page content -->
-            <div class="right_col" role="main">
-                <!-- top tiles -->
-                <div class="row tile_count">
-            
-                </div>
-                <!-- /top tiles -->
-            
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12" style="color:red; text-align:center">
-                        <h3>Kiểm tra từ vựng
-                            
-                        </h3>
-                    </div>
-            
-                </div>
-                <br />
-            
-            
-            
-            
-            
+<!-- page content -->
+<div class="right_col" role="main">
+    <!-- top tiles -->
+    <div class="row tile_count">
+
+    </div>
+    <!-- /top tiles -->
+    <div class="container">
+        <div class="col-xs-offset-2 col-xs-8 text-center" style="color:red; text-align:center">
+            <h3>Kiểm tra từ vựng
+
+            </h3>
+
+        </div>
+        <div class="col-xs-offset-2 col-xs-8">
+            <div class='row'>
+                <% vocal.map((x,index)=>{ %>
+                <p><%= x.meaning %></p>
+                <input class="form-control" style="border-radius: 2px" type="text" id=<%= index %> placeholder="word">
+                <p class="message <%= index %>"style="color:red;height:30px" id=<%= index %> > </p>
+        
+                <%     }) %>
+        
+                
+                
+        
             </div>
-            <!-- /page content -->
+        </div>
+        <div class="col-xs-offset-4 col-xs-4">
+            <input type="submit" class="btn btn-success btn-block text-center" id="Submit" value="Submit"></div>
+        </div>
+        <div class="col-xs-offset-4 col-xs-4">
+            <div class="btn btn-info btn-block" id="next">Next</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <br />
 
-            <!-- footer content -->
+    
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script>
+        $('.message').hide()
+        $('#next').click(() => window.location.reload())
+        $('#Submit').click(() => {
+            Submit()
+        })
+        function Submit() {
+            let word1 = $('#0').val()
+            let word2 = $('#1').val()
+            let word3 = $('#2').val()
+            let word4 = $('#3').val()
+            let word5 = $('#4').val()
+            let word = [
+                {
+                    _id: `<%= vocal[0]._id %>`,
+                    word:word1
+                },
+                {
+                    _id: `<%= vocal[1]._id %>`,
+                    word: word2
+                },
+                {
+                    _id: `<%= vocal[2]._id %>`,
+                    word: word3
+                },
+                {
+                    _id: `<%= vocal[3]._id %>`,
+                    word: word4
+                },{
+                    _id: `<%= vocal[4]._id %>`,
+                    word:word5
+                }
+
+                 ]
+            console.log(word)
+            // if (word.length == 0) {
+            //     $('#message').show()
+            //     setTimeout(() => $('#message').hide(), 2000)
+            //     $('#word').focus()
+            // }
+
+            // else
+            $.post('/kiemtratuvung/check', {  word }).done(result => {
+                console.log(result)
+                
+                result.map((x,index)=>{
+                    let y='p#'+index
+                    console.log(y.toString())
+                    if(x=="Chinh xac")
+                    $('.'+index).show().html("<p style='color:green'>Chinh xac</p>")
+                    else  $('.'+index).show().text(x)
+                })
+            });
+            setTimeout(() => $('.message').hide(), 4000)
+        }
+    </script>
+
+
+</div>
+<!-- /page content -->
+
+<!-- footer content -->
 <% include ./template/main_footer %>

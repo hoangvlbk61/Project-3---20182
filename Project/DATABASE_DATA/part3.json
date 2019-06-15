@@ -1,0 +1,399 @@
+{
+    "id_exam": 1,
+    "PartIII": {
+            "id_part": 14309,
+            "audio_src": "/upload/2016/08/11510.mp3",
+            "bo_cau_hoi": [
+                    {
+                            "id_cauhoi": 1,
+                            "answer": 1,
+                            "sign": "a41",
+                            "explain": "ĐÁP ÁN: (B) Change an appointment time.",
+                            "description": {
+                                    "question": "Question 41. What would the man like Julie to do?",
+                                    "A": "(A) Meet with the president",
+                                    "B": "(B) Change an appointment time ",
+                                    "C": "(C) Come to the oflice later",
+                                    "D": "(D) Contact some clients"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 2,
+                            "answer": 0,
+                            "sign": "a42",
+                            "explain": "ĐÁP ÁN: (A) Meet with some clients. ",
+                            "description": {
+                                    "question": "Question 42. What will the man do this afternoon? ",
+                                    "A": "(A) Meet with some clients",
+                                    "B": "(B) Call the president's office",
+                                    "C": "(C) Go to the emergency room",
+                                    "D": "(D) Relocate his office"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 3,
+                            "answer": 3,
+                            "sign": "a43",
+                            "explain": "ĐÁP ÁN: (D) At 4 o'clock",
+                            "description": {
+                                    "question": " Question 43. What time will the man start his appointment this afternoon?",
+                                    "A": "(A) At 1 o'clock",
+                                    "B": "(B) At 2 o'clock ",
+                                    "C": "(C) At 3 o'clock ",
+                                    "D": "(D) At 4 o'clock "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 4,
+                            "answer": 2,
+                            "sign": "a44",
+                            "explain": "ĐÁP ÁN: (C) A mobile phone company",
+                            "description": {
+                                    "question": "Question 44. What kind of company does the man work for? ",
+                                    "A": "(A) A delivery service company ",
+                                    "B": "(B) An Internet provider ",
+                                    "C": "(C) A mobile phone company ",
+                                    "D": "(D) An accountant's office "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 5,
+                            "answer": 0,
+                            "sign": "a45",
+                            "explain": "ĐÁP ÁN:  (A) The price may have risen.",
+                            "description": {
+                                    "question": "Question 45. How does the man explain the change in the woman's bill? ",
+                                    "A": "(A) The price may have risen. ",
+                                    "B": "(B) The woman has two cell phones. ",
+                                    "C": "(C) There was an accounting error. ",
+                                    "D": "(D) The woman may have used her cell phone more than usual. "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 6,
+                            "answer": 1,
+                            "sign": "a46",
+                            "explain": "ĐÁP ÁN:  (B) Her telephone number.",
+                            "description": {
+                                    "question": "Question 46. What information does the man ask the woman for?",
+                                    "A": "(A) Her invoice number",
+                                    "B": "(B) Her telephone number ",
+                                    "C": "(C) Her monthly balance ",
+                                    "D": "(D) Her identification number "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 7,
+                            "answer": 3,
+                            "sign": "a47",
+                            "explain": "ĐÁP ÁN: (D) The retirement of a colleague.",
+                            "description": {
+                                    "question": "Question 47. What is the celebration for?",
+                                    "A": " (A) The promotion of a coworker ",
+                                    "B": " (B) The opening of a new oanquet facility ",
+                                    "C": " (C) The anniversary of the hotel ",
+                                    "D": " (D) The retirement of a colleague"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 8,
+                            "answer": 2,
+                            "sign": "a48",
+                            "explain": "ĐÁP ÁN: (C) At 7:00 .",
+                            "description": {
+                                    "question": "Question 48. When will the celebration start?",
+                                    "A": "(A) At 6:00 ",
+                                    "B": "(B) At 6:30 ",
+                                    "C": "(C) At 7:00 ",
+                                    "D": "(D) At 7:30 "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 9,
+                            "answer": 2,
+                            "sign": "a49",
+                            "explain": "ĐÁP ÁN: (C) To a bakery.",
+                            "description": {
+                                    "question": "Question 49. Where will the woman go before the party? ",
+                                    "A": "(A) To a banquet hall ",
+                                    "B": "(B) To a hotel lobby ",
+                                    "C": "(C) To a bakery ",
+                                    "D": "(D) To a supermarket "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 10,
+                            "answer": 1,
+                            "sign": "a50",
+                            "explain": "ĐÁP ÁN: (B) He recently won a prize.",
+                            "description": {
+                                    "question": "Question 50. Why is William happy? ",
+                                    "A": "(A) He created a new painting. ",
+                                    "B": "(B) He recently won a prize. ",
+                                    "C": "(C) He met his favorite artist. ",
+                                    "D": "(D) He taught his first art workshop. "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 11,
+                            "answer": 1,
+                            "sign": "a51",
+                            "explain": "ĐÁP ÁN: (B) Sign up for a workshop.",
+                            "description": {
+                                    "question": "Question 51. What does William hope to do? ",
+                                    "A": "(A) Take a vacation in the fall ",
+                                    "B": "(B) Sign up for a workshop ",
+                                    "C": "(C) Attend an awards banquet ",
+                                    "D": "(D) Join a group of artists "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 12,
+                            "answer": 0,
+                            "sign": "a52",
+                            "explain": "ĐÁP ÁN: (A) An oil painting.",
+                            "description": {
+                                    "question": "Question 52. What is William working on these days? ",
+                                    "A": "(A) An oil painting ",
+                                    "B": "(B) A workshop manual ",
+                                    "C": "(C) A watercolor painting ",
+                                    "D": "(D) A sculpture "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 13,
+                            "answer": 1,
+                            "sign": "a53",
+                            "explain": "ĐÁP ÁN: (B) At an office building.",
+                            "description": {
+                                    "question": "Question 53. Where is the conversation most likely taking place?",
+                                    "A": "(A) At a shipping company ",
+                                    "B": "(B) At an office building ",
+                                    "C": "(C) At an office supplies store",
+                                    "D": "(D) At a library"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 14,
+                            "answer": 2,
+                            "sign": "a54",
+                            "explain": "(C) Sign the form.",
+                            "description": {
+                                    "question": "Question 54. What does the assistant offer to do? ",
+                                    "A": "(A) Help move the supplies ",
+                                    "B": "(B) Phone his manager ",
+                                    "C": "(C) Sign the form",
+                                    "D": "(D) Open the conference room"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 15,
+                            "answer": 1,
+                            "sign": "a55",
+                            "explain": "ĐÁP ÁN:  (B) A filing cabinet.",
+                            "description": {
+                                    "question": "Question 55. What will be delivered to the conference room? ",
+                                    "A": " (A) A bookshelf ",
+                                    "B": " (B) A filing cabinet ",
+                                    "C": " (C) OffiCG supplies ",
+                                    "D": " (D) Meeting tables"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 16,
+                            "answer": 0,
+                            "sign": "a56",
+                            "explain": "ĐÁP ÁN: (A) An information desk clerk ",
+                            "description": {
+                                    "question": "Question 56. Who most likely is the man? ",
+                                    "A": "(A) An information desk clerk ",
+                                    "B": "(B) A gift shop owner",
+                                    "C": "(C) A parking attendant ",
+                                    "D": "(D) A supermarket cashier "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 17,
+                            "answer": 2,
+                            "sign": "a57",
+                            "explain": "ĐÁP ÁN:  (C) To check her order.",
+                            "description": {
+                                    "question": "Question 57. Where is the woman going? ",
+                                    "A": "(A) To meet with a boutique owner ",
+                                    "B": "(B) To visit an art gallery ",
+                                    "C": "(C) To check her order",
+                                    "D": "(D) To walk around a shopping mall"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 18,
+                            "answer": 2,
+                            "sign": "a58",
+                            "explain": "ĐÁP ÁN: (C) Using a discount coupon.",
+                            "description": {
+                                    "question": "Question 58. How does the man suggest lowering the admission price? ",
+                                    "A": "(A) Returning another day ",
+                                    "B": "(B) Calling the shop owner ",
+                                    "C": "(C) Using a discount coupon",
+                                    "D": "(D) Charging her the senior's rate"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 19,
+                            "answer": 0,
+                            "sign": "a59",
+                            "explain": "ĐÁP ÁN: (A) White.",
+                            "description": {
+                                    "question": "Question 59. What color monitors are available now? ",
+                                    "A": "(A) White ",
+                                    "B": "(B) Silver ",
+                                    "C": "(C) Black ",
+                                    "D": "(D) Red "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 20,
+                            "answer": 2,
+                            "sign": "a60",
+                            "explain": "ĐÁP ÁN: (C) $ 200 .",
+                            "description": {
+                                    "question": "Question 60. How much does it cost to increase the size of the monitor? ",
+                                    "A": "(A) $ 100 ",
+                                    "B": "(B) $ 170 ",
+                                    "C": "(C) $ 200 ",
+                                    "D": "(D) $ 300"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 21,
+                            "answer": 1,
+                            "sign": "a61",
+                            "explain": "(B) In about two weeks.",
+                            "description": {
+                                    "question": "Question 61. When can the man expect to receive his monitor? ",
+                                    "A": "(A) In about a week ",
+                                    "B": "(B) In about two weeks ",
+                                    "C": "(C) In about three weeks ",
+                                    "D": "(D) In about four weeks "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 22,
+                            "answer": 2,
+                            "sign": "a62",
+                            "explain": "ĐÁP ÁN: (C) He can’t open the garage gate by himself.",
+                            "description": {
+                                    "question": "62. What problem is the man faced with? ",
+                                    "A": "(A) He doesn't know where the HR department is. ",
+                                    "B": "(B) He has too much work to prepare for the meeting . ",
+                                    "C": " (C) He can't open the garage gate by himself. ",
+                                    "D": " (D) He wasn't able to contact the parking attendant. "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 23,
+                            "answer": 3,
+                            "sign": "a63",
+                            "explain": "ĐÁP ÁN: (D) On Tuesday.",
+                            "description": {
+                                    "question": "63. When did the woman receive her parking permit? ",
+                                    "A": "(A) On Thursday ",
+                                    "B": "(B) On Friday ",
+                                    "C": "(C) On Monday ",
+                                    "D": "(D) On Tuesday "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 24,
+                            "answer": 3,
+                            "sign": "a64",
+                            "explain": "ĐÁP ÁN: (D) Contact the HR department.",
+                            "description": {
+                                    "question": "64. What does the woman suggest the man do? ",
+                                    "A": "(A) Find the parking attendant ",
+                                    "B": "(B) Park in another garage ",
+                                    "C": "(C) Arrive at the office early",
+                                    "D": "(D) Contact the HR department "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 25,
+                            "answer": 1,
+                            "sign": "a65",
+                            "explain": "ĐÁP ÁN: (B) At a hair salon.",
+                            "description": {
+                                    "question": "65. Where most likely does this conversation take place? ",
+                                    "A": "(A) At a shopping mall ",
+                                    "B": "(B) At a hair salon ",
+                                    "C": "(C) At a fashion boutique ",
+                                    "D": "(D) At an art studio "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 26,
+                            "answer": 3,
+                            "sign": "a66",
+                            "explain": "ĐÁP ÁN: (D) Change her hair color.",
+                            "description": {
+                                    "question": "66. What would the woman like to do? ",
+                                    "A": "(A) Meet the receptionist ",
+                                    "B": "(A) Meet the receptionist ",
+                                    "C": "(C) Find a new hair stylist ",
+                                    "D": "(D) Change her hair color "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 27,
+                            "answer": 3,
+                            "sign": "a67",
+                            "explain": "(D) To attend a training seminar.",
+                            "description": {
+                                    "question": "67. Why did the man visit New York? ",
+                                    "A": "(A) To see the sights ",
+                                    "B": "(B) To learn about fashion ",
+                                    "C": "(C) To buy hair products ",
+                                    "D": "(D) To attend a training seminar "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 28,
+                            "answer": 2,
+                            "sign": "a68",
+                            "explain": "ĐÁP ÁN: (C) He can't access his messages.",
+                            "description": {
+                                    "question": "Question 68. What is the man's problem? ",
+                                    "A": " (A) He forgot his new password. ",
+                                    "B": " (B) He left his ID card in the HR department",
+                                    "C": " (C) He can't access his messages.",
+                                    "D": " (D) His phone lines have been down all afternoon"
+                            }
+                    },
+                    {
+                            "id_cauhoi": 29,
+                            "answer": 1,
+                            "sign": "a69",
+                            "explain": "ĐÁP ÁN:  (B) To technical services.",
+                            "description": {
+                                    "question": "Question 69. Where will the man probably go next? ",
+                                    "A": "(A) To the HR department ",
+                                    "B": "(B) To technical services ",
+                                    "C": "(C) To the reception desk",
+                                    "D": "(D) To the mail room "
+                            }
+                    },
+                    {
+                            "id_cauhoi": 30,
+                            "answer": 3,
+                            "sign": "a70",
+                            "explain": "ĐÁP ÁN: (D) Near the HR department.",
+                            "description": {
+                                    "question": "Question 70. Where is the technical support staff office located? ",
+                                    "A": "(A) Beside the reception desk ",
+                                    "B": "(B) Next to the elevators ",
+                                    "C": "(C) Across from the mail room ",
+                                    "D": "(D) Near the HR department "
+                            }
+                    }
+            ]
+    }
+}

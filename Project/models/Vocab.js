@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var VocabSchema = new Schema({
-    _id: mongoose.Schema.Types.ObjectId,
+
     word: {
       type: String  
     },
@@ -15,9 +15,5 @@ var VocabSchema = new Schema({
     synonyms: {
         type: String
     }
-    }, 
-    {
-        collection:"vocab"
-    
-});
-module.exports = mongoose.model('Vocab', VocabSchema);
+    });
+module.exports = mongoose.model('vocabs', VocabSchema);

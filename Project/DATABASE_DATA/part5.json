@@ -1,0 +1,60 @@
+{
+    "id_exam": 1,
+    "Part5": {
+        "id_part": 353462,
+        "  bo_cau_hoi": [
+            {
+                "id_cauhoi": 61,
+                "answer": 1,
+                "sign": "a71",
+                "explain": "ĐÁP ÁN: (B) her",
+                "description": {
+                    "question": "Question 101. Ms. Durkin asked for volunteers to help _____ with the employee fitness program. ",
+                    "A": "(A) she",
+                    "B": "(B) her ",
+                    "C": "(C) hers",
+                    "D": "(D) herself"
+                }
+            },
+            {
+                "id_cauhoi": 62,
+                "answer": 1,
+                "sign": "a99",
+                "explain": "ĐÁP ÁN:  (B) known",
+                "description": {
+                        "question": "Question 102. Lasner Electronics' staff have extensive _____ of current hardware systems. ",
+                        "A": "(A) know ",
+                        "B": "(B) known ",
+                        "C": "(C) knowlege",
+                        "D": "(D) knowlegeable "
+                }
+        },
+        {
+            "id_cauhoi": 63,
+            "answer": 1,
+            "sign": "a99",
+            "explain": "ĐÁP ÁN:  (B) known",
+            "description": {
+                    "question": "Question 103. _____ a year, Tarrin Industrial Supply audits the accounts of all of its factories. ",
+                    "A": "(A) Once ",
+                    "B": "(B) Immediately ",
+                    "C": "(C) Directly",
+                    "D": "(D) yet "
+            }
+    },
+    {
+        "id_cauhoi": 64,
+        "answer": 1,
+        "sign": "a99",
+        "explain": "ĐÁP ÁN:  (B) known",
+        "description": {
+                "question": "Question 104. Ms. Pham requested a refund _____ the coffeemaker she received was damaged. ",
+                "A": "(A) despite ",
+                "B": "(B)  why ",
+                "C": "(C) concerning",
+                "D": "(D) because "
+        }
+}
+        ]
+    }
+}
