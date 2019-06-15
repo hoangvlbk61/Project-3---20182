@@ -42,7 +42,7 @@ app.use((req, res, next) => {
   next();
 })
 
-mongoose.connect('mongodb://database_data:abc1234@ds131676.mlab.com:31676/database_data', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/englishWebsite', { useNewUrlParser: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -51,61 +51,3 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-
-// ........Them de hien giao dien
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(session({
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: false }
-}))
-
-app.use('/static', express.static(path.join(__dirname, 'public')));
-app.use(express.static('public'));
-app.use('/vendor', express.static('/vendor'));
-app.use('/build', express.static('/build'));
-app.use('/stylesheets', express.static('/stylesheets'));
-app.use('/img', express.static('/img'));
-app.use('/images', express.static('/images'));
-// app.use('/ImagesProduct', express.static('/ImagesProduct'));
-
-
-app.use('/', indexRouter);
-app.use('/user', usersRouter);
-app.use('/dashboard', dashboardRouter);
-app.use('/thietlapdanhsachhoc', vocabListSettingRoutes);
-
-app.use('/quanlythanhvien', memberManager);
-app.use('/quanlytuvung', vocabManager);
-app.use('/quanlydethi', testManager);
-app.use('/forum', forum);
-app.use('/profile', profile);
-app.use('/kiemtratuvung', kiemtratuvung)
-
-app.use('/checkin', checkin);
-// var memberManager = require('./routes/memberManager');
-// app.use('/quanlythanhvien', memberManager);
-
-
-// catch 404 and forward to error handler
-  // app.use(function (req, res, next) {
-  //   next(createError(404));
-  // });
-
-// error handler
-// app.use(function (err, req, res, next) {
-//   // set locals, only providing error in development
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-//   // render the error page
-//   res.status(err.status || 500);
-//   res.render('page_404');
-// });
-
-
-
-module.exports = app;
