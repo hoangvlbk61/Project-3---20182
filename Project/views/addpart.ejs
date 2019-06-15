@@ -16,8 +16,6 @@
             <div class="title_left">
               
             </div>
-
-
           </div>
 
           <div class="clearfix"></div>
@@ -86,7 +84,7 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12" id="selectlist">
                             <div class="input-group">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="ulslist0">
                               <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary" id="add_s_ul"> <i class="fa fa-plus"></i> </button>
                               </span>
@@ -99,7 +97,7 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12" id="questionlist">
                           <div class="input-group">
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" name="ulqlist0">
                             <span class="input-group-btn">
                               <button type="button" class="btn btn-primary" id="add_q_ul"> <i class="fa fa-plus"></i> </button>
                             </span>
@@ -113,7 +111,7 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
 
                         <div class="col-md-6 col-sm-6 col-xs-12" id="answerlist">
                           <div class="input-group">
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" name="ulalist0">
                             <span class="input-group-btn">
                               <button type="button" class="btn btn-primary" id="add_a_ul"> <i class="fa fa-plus"></i> </button>
                             </span>
@@ -147,7 +145,7 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                     </div>
 
                     <div id="IN">
-                        <form class="form-horizontal form-label-left" action="." method="POST">
+                        <form class="form-horizontal form-label-left" action="" method="POST">
                         <div class="item form-group">
                           <label class="control-label col-md-3 col-sm-3 col-xs-12" > Name <span class="required">*</span>
                           </label>
@@ -178,21 +176,21 @@ Nhập vào đáp án
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Question<span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="question1"  type="text"> </textarea>
+                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="question"  type="text"> </textarea>
                             </div>
                         </div>
                         <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Answer<span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="answer1"  type="text"> </textarea>
+                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="answer"  type="text"> </textarea>
                             </div>
                           </div>
                         <div class="item form-group">
                           <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
                           </label>
                           <div class="col-md-6 col-sm-6 col-xs-12">
-                            <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation1"  type="text"> </textarea>
+                            <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation"  type="text"> </textarea>
                           </div>
                         </div>
                         <div class="ln_solid"></div>
@@ -207,7 +205,7 @@ Nhập vào đáp án
                       </div>
 
                       <div id="RD">
-                          <form class="form-horizontal form-label-left" action="." method="POST">
+                          <form class="form-horizontal form-label-left" action="" method="POST">
                           <div class="item form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Name <span class="required">*</span>
                             </label>
@@ -232,7 +230,7 @@ Nhập danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                               <label class="control-label col-md-3 col-sm-3 col-xs-12" > Question<span class="required">*</span>
                               </label>
                               <div class="col-md-6 col-sm-6 col-xs-12">
-                                <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="question2"  type="text"> </textarea>
+                                <textarea id="content" class="form-control col-md-7 col-xs-12" rows="3" name="question"  type="text"> </textarea>
                               </div>
                           </div>
                           <div class="item form-group">
@@ -251,7 +249,7 @@ Nhập danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Answer<span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <input id="content" class="form-control col-md-7 col-xs-12" rows="3" name="answer2"  type="text"/>
+                              <input id="content" class="form-control col-md-7 col-xs-12" rows="3" name="answer"  type="text"/>
                             </div>
                           </div>
                           
@@ -259,7 +257,7 @@ Nhập danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
                             </label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation2"  type="text"> </textarea>
+                              <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation"  type="text"> </textarea>
                             </div>
                           </div>
                           <div class="ln_solid"></div>
@@ -274,7 +272,7 @@ Nhập danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                         </div>
 
                         <div id="CB">
-                            <form class="form-horizontal form-label-left" action="." method="POST">
+                            <form class="form-horizontal form-label-left" action="" method="POST">
                             <div class="item form-group">
                               <label class="control-label col-md-3 col-sm-3 col-xs-12" > Name <span class="required">*</span>
                               </label>
@@ -341,8 +339,8 @@ Nhập vào danh sách các lựa chọn, tách nhau bởi dấu xuống dòng
                           </div>
 
                           <div id="FB">
-                              <form class="form-horizontal form-label-left" action="." method="POST">
-                              <input id="" class="form-control col-md-7 col-xs-12" rows="10" name="type" style="display: none" type="text" value="UL" />
+                              <form class="form-horizontal form-label-left" action="" method="POST">
+                              <input id="" class="form-control col-md-7 col-xs-12" name="type" style="display: none" type="text" value="FB" />
                               <div class="item form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" > Name <span class="required">*</span>
                                 </label>
@@ -365,14 +363,14 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
                                   <label class="control-label col-md-3 col-sm-3 col-xs-12" > Content<span class="required">*</span>
                                   </label>
                                   <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="content3"  type="text"> </textarea>
+                                    <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="content"  type="text"> </textarea>
                                   </div>
                                 </div>
                               <div class="item form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" > Explanation<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                  <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation3"  type="text"> </textarea>
+                                  <textarea id="content" class="form-control col-md-7 col-xs-12" rows="10" name="explanation"  type="text"> </textarea>
                                 </div>
                               </div>
                               <div class="ln_solid"></div>
@@ -386,15 +384,6 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
                   </form>
                             </div>
               
-                    <!-- <div class="ln_solid"></div>
-                    <div class="form-group">
-                      <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4">
-                        <button class="btn btn-primary" type="button"><a href="" style="color:white ">Cancel</a> </button>
-                        <button class="btn btn-primary" type="reset"><a style="color:white ">Reset</a></button>
-                        <button type="submit" class="btn btn-success"><a style="color:white ">Save and back</a> </button>
-                      </div>
-                    </div>
-                  </form> -->
                 </div>
               </div>
             </div>
@@ -433,7 +422,7 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
                 var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
                 var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
                 fieldWrapper.data("idx", intId);
-                var fName = $("<input id=\"content\" class=\"form-control \" name=\"qlist" + intId + "\" type=\"text\"/>");
+                var fName = $("<input id=\"content\" class=\"form-control \" name=\"ulqlist" + intId + "\" type=\"text\"/>");
                 //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
                 //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
                 var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
@@ -450,7 +439,7 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
               var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
               var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
               fieldWrapper.data("idx", intId);
-              var fName = $("<input id=\"content\" class=\"form-control \" name=\"alist" + intId + "\" type=\"text\"/>");
+              var fName = $("<input id=\"content\" class=\"form-control \" name=\"ulalist" + intId + "\" type=\"text\"/>");
               //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
               //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
               var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
@@ -468,7 +457,7 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
             var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
             var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
             fieldWrapper.data("idx", intId);
-            var fName = $("<input id=\"content\" class=\"form-control \" name=\"slist" + intId + "\" type=\"text\"/>");
+            var fName = $("<input id=\"content\" class=\"form-control \" name=\"ulslist" + intId + "\" type=\"text\"/>");
             //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
             //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
             var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
@@ -486,7 +475,7 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
             var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
             var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
             fieldWrapper.data("idx", intId);
-            var fName = $("<input id=\"content\" class=\"form-control \" name=\"slist" + intId + "\" type=\"text\"/>");
+            var fName = $("<input id=\"content\" class=\"form-control \" name=\"rdslist" + intId + "\" type=\"text\"/>");
             //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
             //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
             var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
@@ -504,7 +493,7 @@ Ví dụ: che từ "you" trong câu "I love you": i love [you]
             var intId = (lastField && lastField.length && lastField.data("idx") + 1) || 1;
             var fieldWrapper = $("<div class=\" input-group\" id=\"field\"/>");
             fieldWrapper.data("idx", intId);
-            var fName = $("<input id=\"content\" class=\"form-control \" name=\"slist" + intId + "\" type=\"text\"/>");
+            var fName = $("<input id=\"content\" class=\"form-control \" name=\"cbslist" + intId + "\" type=\"text\"/>");
             //var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
             //var removeButton = $("<input type=\"button\" class=\"remove\" value=\"-\" />");
             var removeButton = $("<span class=\"input-group-btn\"><button type=\"button\" class=\"btn btn-danger\" > <i class=\"fa fa-close\"></i> </button></span>");
