@@ -12,25 +12,10 @@ let obj = require('../DATABASE_DATA/vocab')
 const auth = require('../api/middleware/checkAuth');
 const perm = require('../api/middleware/checkPerm');
 
-// router.all('*', auth); 
+router.all('*', auth); 
 
 router.get('/', (req, res) => {
-    // let vocal = obj[Math.floor(Math.random() * obj.length)]
-    // console.log(obj)
-    // let u = [obj[Math.floor(Math.random() * obj.length)], obj[Math.floor(Math.random() * obj.length)], obj[Math.floor(Math.random() * obj.length)], obj[Math.floor(Math.random() * obj.length)], obj[Math.floor(Math.random() * obj.length)]]
-    // console.log(u)
-    // res.render('kiemtratuvung', {
-    //     data: {
-    //         firstname: "dfdf",
-    //         lastname: 'cxgfvdsg'
-    //     },
-    //     vocal: u
-    // })
-    let f = new vocab({
-        meaning: "Hello",
-        word: "hello",
-
-    })
+    //lấyngẫu nhiên 5 từ trong dâtbáe
     vocab.aggregate([
         { $sample: { size: parseInt(5) } }
     ]).exec((err, ok) => {
@@ -45,9 +30,10 @@ router.get('/', (req, res) => {
     })
 })
 router.post('/check', (req, res) => {
-    // 
+    //  check các từ bằng cách check từng từ 1
     let ans = req.body
     let result = []
+    //check tuần tự từng từ 1 theo id
     console.log(ans)
     console.log(ans['word[0][_id]'])
     vocab.findById(ans['word[0][_id]'], (err, ok) => {

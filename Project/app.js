@@ -43,7 +43,7 @@ app.use((req, res, next) => {
     next() ;
 })
 
-mongoose.connect('mongodb://database_data:abc1234@ds131676.mlab.com:31676/database_data',{ useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/englishWebsite',{ useNewUrlParser: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

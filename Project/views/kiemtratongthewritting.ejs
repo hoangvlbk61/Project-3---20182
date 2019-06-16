@@ -89,7 +89,7 @@
         setTimeout(()=>{$('#message').html('')},4000)
         }
             else
-                $.post('/kiemtratongthe/' + id + '/check?action=speaking&url=' + url, {
+                $.post('/kiemtratongthe/' + id + '/check?action=writting&url=' + url, {
 
                 }).done(re => {
                     $('#message').html("<span>Bài lam da dc gui di</span>")
