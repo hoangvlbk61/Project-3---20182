@@ -1,0 +1,109 @@
+<% include ./template/main_header %>
+<% include ./template/main_top_navigation %>
+<!-- /top navigation -->
+
+<!-- page content -->
+<div class="right_col" role="main">
+    <!-- top tiles -->
+    <div class="row tile_count">
+
+    </div>
+    <!-- /top tiles -->
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="color:red; text-align:center">
+            <h3>Kiểm tra tổng thể
+
+            </h3>
+        </div>
+
+    </div>
+    <br />
+
+    <h1>Writting</h1>
+
+    <div id="time"><span id="min">60</span><span>:</span><span id="sec">00</span> <span id="start">Start</span></div>
+
+
+    <form id="form">
+
+        
+
+        <% part9.data.map((x,index)=>{%>
+
+        <div class="col-xs-12 col-md-12">
+            <span class="col-xs-12 col-md-12">Cau <%= index+1 %></span>
+            <span class="col-xs-12 col-md-12"><%= x %></span>
+
+
+        </div>
+
+        <%}) %>
+
+        <span id="result"></span>
+        <input type="text" id="speaking" placeholder="url file speaking">
+        <span id="message"></span>
+        <h1 id="Submit">Nop bai</h1>
+    </form>
+
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script>
+        $('#form').hide()
+        let min = 60
+        let sec = 00
+
+        $('#Submit').click(() => {
+            Submit()
+        })
+        $('#start').click(() => {
+
+            $('#form').show()
+            $('.message').hide()
+            coudown()
+        })
+        function coudown() {
+            $('#start').html("")
+            setInterval(() => {
+                if (sec == 0) {
+                    min = min - 1;
+                    if (min < 0) {
+                        sec = 1
+                        $('#time').html('<span>Het gio</span>')
+                        Submit()
+                    }
+                    sec = 59;
+                    $('#min').html('<span>' + min + '</span>')
+                    $('#sec').html('<span>' + sec + '</span>')
+                } else {
+                    sec = sec - 1
+                    $('#min').html('<span>' + min + '</span>')
+                    $('#sec').html('<span>' + sec + '</span>')
+                }
+            }, 1000)
+        }
+        function Submit() {
+            let id = `<%= part9.id_exam %>`
+            let url = $('#speaking').val()
+            if (url.length == 0) {$('#speaking').focus()
+        $('#message').html('<span>Vui long nhap url</span>')
+        setTimeout(()=>{$('#message').html('')},4000)
+        }
+            else
+                $.post('/kiemtratongthe/' + id + '/check?action=speaking&url=' + url, {
+
+                }).done(re => {
+                    $('#message').html("<span>Bài lam da dc gui di</span>")
+                    $('#Submit').html('')
+                })
+
+        }
+
+
+    </script>
+
+
+</div>
+<!-- /page content -->
+
+<!-- footer content -->
+<% include ./template/main_footer %>

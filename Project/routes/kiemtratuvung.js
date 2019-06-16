@@ -12,7 +12,7 @@ let obj = require('../DATABASE_DATA/vocab')
 const auth = require('../api/middleware/checkAuth');
 const perm = require('../api/middleware/checkPerm');
 
-router.all('*', auth); 
+// router.all('*', auth); 
 
 router.get('/', (req, res) => {
     // let vocal = obj[Math.floor(Math.random() * obj.length)]

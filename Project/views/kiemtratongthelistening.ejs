@@ -1,0 +1,152 @@
+<% include ./template/main_header %>
+<% include ./template/main_top_navigation %>
+<!-- /top navigation -->
+
+<!-- page content -->
+<div class="right_col" role="main">
+    <!-- top tiles -->
+    <div class="row tile_count">
+
+    </div>
+    <!-- /top tiles -->
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="color:red; text-align:center">
+            <h3>Kiểm tra tổng thể
+
+            </h3>
+        </div>
+
+    </div>
+    <br />
+
+    <h1>Listening</h1>
+
+    <div id="time"><span id="min">30</span><span>:</span><span id="sec">00</span> <span id="start">Start</span></div>
+
+
+    <form id="form">
+        <audio id="audio" controls>
+            <source type="audio/mp3" src=<%= part1.audio_src %> >
+        </audio>
+        <h2>Part 1</h2>
+        <% part1.data.map((x,index)=>{%>
+        <div class="col-xs-12 col-md-12">
+                <span class="col-xs-12 col-md-12">Cau <%= index+1 %></span>
+            <img class="col-xs-6 col-md-6" src=<%= x.image_src %> <br>
+            <span>Chon dap an dung</span>
+            <span class="message <%= x.id_cauhoi%> col-xs-12 col-md-12" style="color:red"> Sai</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="0" /><span>A</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="1" /> <span>B</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="2" /><span>C</span>
+            <input type="radio" name=<%= x.id_cauhoi %>value="3" /><span>D</span>
+
+        </div>
+
+        <%}) %>
+        <h2>Part2</h2>
+        <% part2.data.map((x,index)=>{ %>
+        <div class="col-xs-12 col-md-12">
+            <span class="col-xs-12 col-md-12">Cau <%= 10+index+1 %></span>
+            <span class="message <%= x.id_cauhoi%> col-xs-12 col-md-12" style="color:red"> Sai</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="0" /><span>A</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="1" /> <span>B</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="2" /><span>C</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="3" /><span>D</span>
+
+        </div>
+
+        <% }) %>
+        <h2>Part3</h2>
+        <% part3.data.map((x,index)=>{%>
+        <div class="col-xs-12 col-md-12">
+            <span class="col-xs-12 col-md-12">Cau <%= 20+index+1 %></span>
+            <span><%= x.description.question %></span>
+            <span class="message <%= x.id_cauhoi%> col-xs-12 col-md-12" style="color:red"> Sai</span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="0" /><span><%= x.description.A %></span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="1" /><span><%= x.description.B %></span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="2" /><span><%= x.description.C %></span>
+            <input type="radio" name=<%= x.id_cauhoi %> value="3" /><span><%= x.description.D %></span>
+        </div>
+        <%}) %>
+        <h2>Part4</h2>
+        <% part4.data.map((x,index)=>{%>
+        <div class="col-xs-12 col-md-12">
+            <span class="col-xs-12 col-md-12">Cau <%= 30+index+1 %></span>
+            <span><%= x.description.question %></span>
+            <span class="message <%= x.id_cauhoi%> col-xs-12 col-md-12" style="color:red"> Sai</span>
+            <input alt="0" type="radio" name=<%= x.id_cauhoi %> value="0" /><span><%= x.description.A %></span>
+            <input alt="1" type="radio" name=<%= x.id_cauhoi %> value="1" /><span><%= x.description.B %></span>
+            <input alt="2" type="radio" name=<%= x.id_cauhoi %> value="2" /><span><%= x.description.C %></span>
+            <input alt="3" type="radio" name=<%= x.id_cauhoi %> value="3" /><span><%= x.description.D %></span>
+        </div>
+        <%}) %>
+      
+         <span id="result"></span>
+    <h1 id="Submit">Nop bai</h1>
+</form>
+  
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script>
+    $('#form').hide()
+    let min = 30
+    let sec = 00
+
+    $('#Submit').click(() => {
+        Submit()
+    })
+    $('#start').click(() => {
+        document.getElementById('audio').play()
+        $('#form').show()
+        $('.message').hide()
+        coudown()
+    })
+    function coudown() {
+        $('#start').html("")
+        setInterval(() => {
+            if (sec == 0) {
+                min = min - 1;
+                if (min < 0) {
+                    sec = 1
+                    $('#time').html('<span>Het gio</span>')
+                    Submit()
+                }
+                sec = 59;
+                $('#min').html('<span>' + min + '</span>')
+                $('#sec').html('<span>' + sec + '</span>')
+            } else {
+                sec = sec - 1
+                $('#min').html('<span>' + min + '</span>')
+                $('#sec').html('<span>' + sec + '</span>')
+            }
+        }, 1000)
+    }
+    function Submit() {
+        document.getElementById('audio').pause()
+        let r = $('#form').serialize()
+        let id = `<%= part1.id_exam %>`
+        console.log(r + ">>>>>>" + id)
+        $.post('/kiemtratongthe/' + id + '/check?action=listening&' + r, {
+            r
+        }).done(re => {
+            console.log(re)
+
+            $('.message').show()
+            re.map(x => {
+                console.log('#' + x)
+                $('.' + x).html("<span style='color:green'>Chinh xac</span>")
+            })
+            $('#result').html("<span>" + re.length + "/40</span>")
+        })
+
+    }
+
+
+</script>
+
+
+</div>
+<!-- /page content -->
+
+<!-- footer content -->
+<% include ./template/main_footer %>
