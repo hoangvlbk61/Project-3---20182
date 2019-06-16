@@ -28,11 +28,7 @@ router.get('/', (req, res, next) => {
     })
 })
 
-<<<<<<< HEAD
-router.get('/chitietdiemdanh', (req, res, next) => {
-=======
 router.get('/checkin', (req, res, next) => {
->>>>>>> f0bac1865fde86f7bdbcf3c67353d238993ff0c1
     User.findById(req.session.user._id, (err, _user) => {
         res.render('chitietdiemdanh', {data: _user});
     })
