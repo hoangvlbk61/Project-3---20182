@@ -128,7 +128,9 @@ router.post("/login", function (req, res, next) {
       else 
       {
         bcrypt.compare(params._password, user.password, (err, ret) => {
-          if(err)
+          if(err) 
+            throw (err) ; 
+          else if(ret == false)
             res.render("login", { error_msg: "Mật khẩu không đúng !"  }); 
           else 
           {

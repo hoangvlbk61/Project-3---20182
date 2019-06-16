@@ -46,33 +46,44 @@ router.get('/:uid/:vid',(req, res, next) => {
             error: error
         })        
     }
-    Vocab.findById(vid, (err, vocab ) => {
+    Vocab.findById(vid, (err, svocab ) => {
+        User.findById(req.session.user._id, (err, myUser) => {
         if(err) 
             error += err ; 
         else 
         {
-            var user = req.session.user ; 
+            var user = myUser ; 
             var us_vocab_list = user.list_vocab; 
+            var flag = 0 ; 
             us_vocab_list.forEach(element => {
-                if(element.vocab._id == vocab._id) 
+                if(element.vocab._id == svocab._id) 
                 {
+                    console.log(element.vocab._id + " " + svocab._id) ; 
+                    flag = 1;
                     error += vocab_added ; 
                     res.render('thietlapdanhsachhoc',{
-                        data: req.session.user , 
+                        data: myUser , 
                         error: error
-                    })   
+                    });
                 }
             });
-            var newvc = {
-                vocab: vocab , 
-                date: new Date() ,  
+            if(flag==1) 
+                console.log("Từ đã tồn tại trong list nên k thêm");
+            else{
+                var newvc = {
+                    vocab: svocab , 
+                    date: new Date() ,  
+                }
+                user.list_vocab.push(newvc); 
+                myUser.list_vocab = user.list_vocab;
+                myUser.save() ; 
+                res.render('thietlapdanhsachhoc',{
+                    data: myUser , 
+                    error: error
+                })   
             }
-            user.list_vocab.push(newvc); 
-            res.render('thietlapdanhsachhoc',{
-                data: req.session.user , 
-                error: error
-            })   
         }
+        })
     })
     
 })
@@ -107,7 +118,9 @@ router.get('/:query', (req, res, next) => {
             }
         } 
         else query_list = temp_arr.slice(0,5);
-        res.render('thietlapdanhsachhoc', {data: req.session.user, query_list: query_list});
+        User.findById(req.session.user._id, (err, us) => {
+            res.render('thietlapdanhsachhoc', {data: us, query_list: query_list});
+        })
     })
 })
 

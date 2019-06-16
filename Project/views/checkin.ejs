@@ -1,0 +1,67 @@
+<% include ./template/main_header %>
+<% include ./template/main_top_navigation %>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+                <h3 style="text-align:center"><b> Điểm danh </b></h3>
+                
+                <div class="title_left">
+                  
+                </div>
+    
+    
+              </div>
+        <div class="clearfix"></div>
+        <%if(checkinlist.length==0){ %>
+          <h4 style="text-align: center">Hôm nay bạn chưa điểm danh ! Hãy <a href="checkin/docheckin"><b>điểm danh</b></a> !</h4>
+        <%}%>
+        <div class="row">
+            <div class="col-md-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <!-- start project list -->
+                  <table class="table table-striped projects text-center">
+                    <thead>
+                      <tr>
+                        <th style="width: 1%" class="text-center">#</th>
+                        <th style="width: 10%" class="text-center"> Checkin Id </th>
+                        <th style="width: 15%" class="text-center"> Date </th>
+                        <th style="width: 15%" class="text-center"> Quanity </th>
+                        <th style="width: 15%" class="text-center"> Result</th>
+                      </tr>
+                    </thead>
+                    <%if(checkinlist.length==0){ %>
+                      <h4>Bạn chưa điểm danh lần nào ! Hãy <a href="checkin/docheckin"><b>điểm danh</b></a> !</h4>
+                    <%}%>
+                    <tbody>
+                      <% checkinlist.forEach((checkin)=>{%>
+                      <tr>
+                        <td> # </td>
+                        <td> <a href=""> <%=checkin._id%> </a> </td>
+                        <td> <%=checkin.date.getDate() + "/" + (checkin.date.getMonth()+1) + "/" + checkin.date.getFullYear() %> </td>
+                        <td> <%=checkin.vocab_list.length%> </td>
+                        <td> <%=checkin.result%> </td>
+                      <%})%>
+                    </tbody>
+                  </table>
+                  <!-- end project list -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <% include ./template/main_footer %>
