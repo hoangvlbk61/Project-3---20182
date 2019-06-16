@@ -6,6 +6,11 @@ const mongoose = require('mongoose');
 const auth = require('../api/middleware/checkAuth');
 const perm = require('../api/middleware/checkPerm');
 
+//Error list 
+const user_err = "User đã nhập không hợp lệ ! " ; 
+const vocab_not_exist = "Từ cần thêm không có trong csdl" ; 
+const vocab_added = "Từ đã được thêm trước đó ! " ; 
+
 function compare(obj1, obj2)
 {
     let comparison = 0 ; 
@@ -27,6 +32,49 @@ router.get('/', (req, res, next) => {
             res.render('thietlapdanhsachhoc', {data: usr });
         }
     });
+})
+
+router.get('/:uid/:vid',(req, res, next) => {
+    const uid = req.params.uid ; 
+    const vid = req.params.vid; 
+    var error = "" ; 
+    if(uid !== req.session.user._id ) 
+    {
+        error += user_err ; 
+        res.render('thietlapdanhsachhoc',{
+            data: req.session.user , 
+            error: error
+        })        
+    }
+    Vocab.findById(vid, (err, vocab ) => {
+        if(err) 
+            error += err ; 
+        else 
+        {
+            var user = req.session.user ; 
+            var us_vocab_list = user.list_vocab; 
+            us_vocab_list.forEach(element => {
+                if(element.vocab._id == vocab._id) 
+                {
+                    error += vocab_added ; 
+                    res.render('thietlapdanhsachhoc',{
+                        data: req.session.user , 
+                        error: error
+                    })   
+                }
+            });
+            var newvc = {
+                vocab: vocab , 
+                date: new Date() ,  
+            }
+            user.list_vocab.push(newvc); 
+            res.render('thietlapdanhsachhoc',{
+                data: req.session.user , 
+                error: error
+            })   
+        }
+    })
+    
 })
 
 router.get('/:query', (req, res, next) => {

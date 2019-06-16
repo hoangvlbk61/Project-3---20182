@@ -15,12 +15,15 @@
                       <button class="btn btn-default" type="button">Search !</button>
                     </span>
                   </div>
+                  <% if(typeof error !== "undefined"){ %> 
+                      <h6 style="color: red"> <%=error%> </h6>
+                  <%}%>
                   <%if(typeof query_list !== "undefined"){%>
                   <%query_list.forEach((q) => {%>
                   <div class="input-group">
                     <input type="text" class="form-control" value="<%=q.word%>" disabled>
                     <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Thêm !</button>
+                      <a href="<%=data._id%>/<%=q._id%>"><button class="btn btn-default" type="button">Thêm !</button></a>
                     </span>
                   </div>
                   <%})%>
@@ -71,18 +74,18 @@
                       <%var vlist =data.list_vocab%>
                       <%vlist.forEach( (vocab) =>{ %>
                         <tr>
-                          <td><%=vocab._id%></td>
+                          <td><%=vocab.vocab._id%></td>
                           <td>
-                            <%=vocab.word%>
+                            <%=vocab.vocab.word%>
                           </td>
                           <td>
-                            <%=vocab.meaning%>
+                            <%=vocab.vocab.meaning%>
                           </td>
                           <td>
-                            <%=vocab.synonyms%>
+                            <%=vocab.vocab.synonyms%>
                           </td>
                           <td>
-                              <%=vocab.examples%>
+                              <%=vocab.vocab.examples%>
                           </td>
                         </tr>
                       <% }) %>
