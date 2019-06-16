@@ -5,8 +5,10 @@ function checkPerm(req, res, next) {
     User.findById(id, (err, data) => {
         if(err) 
             throw(err) ; 
+        else if(data == null)
+            return false;
         else if (data.is_admin) 
-             next(); 
+            next(); 
         else  {
             res.status(200).json({
                 err: id,

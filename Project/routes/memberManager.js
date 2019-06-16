@@ -114,7 +114,7 @@ router.post('/:_id/capnhatthongtinthanhvien', (req, res, next) => {
     User.update({ _id: id }, { $set: updateOps })
         .exec()
         .then(result => {
-            res.redirect("/");
+            res.redirect("/quanlythanhvien/"+id);
         })
         .catch(err => {
             console.log(err);
