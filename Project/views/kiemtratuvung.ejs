@@ -30,16 +30,13 @@
         
             </div>
         </div>
-        <div class="col-xs-offset-4 col-xs-4">
+        <br>
+        <div class="col-xs-offset-4 col-xs-4" style="margin-top:10px;">
             <input type="submit" class="btn btn-success btn-block text-center" id="Submit" value="Submit"></div>
         </div>
         <div class="col-xs-offset-4 col-xs-4">
             <div class="btn btn-info btn-block" id="next">Next</div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
     </div>
     <br />
 
@@ -93,9 +90,9 @@
                 result.map((x,index)=>{
                     let y='p#'+index
                     console.log(y.toString())
-                    if(x=="Chinh xac")
-                    $('.'+index).show().html("<p style='color:green'>Chinh xac</p>")
-                    else  $('.'+index).show().text(x)
+                    if(x=="correct")
+                    $('.'+index).show().html("<p style='color:green'>correct</p>")
+                    else  $('.'+index).show().text("incorrect")
                 })
             });
             setTimeout(() => $('.message').hide(), 4000)

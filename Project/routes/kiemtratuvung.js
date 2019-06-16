@@ -1,14 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const Post = require('../models/Post');
-const Answer = require('../models/Answer');
-const User = require('../models/User');
-const vocab = require('../models/Vocab')
-var MongoClient = require('mongodb').MongoClient;
-var fs = require('fs');
-let obj = require('../DATABASE_DATA/vocab')
+const vocab = require('../models/Vocab');
+// const mongoose = require('mongoose');
+// const bcrypt = require('bcrypt');
+// const Post = require('../models/Post');
+// const Answer = require('../models/Answer');
+// const User = require('../models/User');
+// var MongoClient = require('mongodb').MongoClient;
+// var fs = require('fs');
+// let obj = require('../DATABASE_DATA/vocab')
+
+
 const auth = require('../api/middleware/checkAuth');
 const perm = require('../api/middleware/checkPerm');
 
@@ -38,34 +40,34 @@ router.post('/check', (req, res) => {
     console.log(ans['word[0][_id]'])
     vocab.findById(ans['word[0][_id]'], (err, ok) => {
         if (ok) {
-            if (ok.word == ans['word[0][word]']) result.push("Chinh xac")
-            else result.push("sai")
+            if (ok.word == ans['word[0][word]']) result.push("correct")
+            else result.push("incorrect")
 
-        } else result.push("sai")
+        } else result.push("incorrect")
         vocab.findById(ans['word[1][_id]'],(err,ok1)=>{
             if (ok1) {
-                if (ok1.word == ans['word[1][word]']) result.push("Chinh xac")
-                else result.push("sai")
+                if (ok1.word == ans['word[1][word]']) result.push("correct")
+                else result.push("incorrect")
     
-            } else result.push("sai")
+            } else result.push("incorrect")
             vocab.findById(ans['word[2][_id]'],(err,ok2)=>{
                 if (ok2) {
-                    if (ok2.word == ans['word[2][word]']) result.push("Chinh xac")
-                    else result.push("sai")
+                    if (ok2.word == ans['word[2][word]']) result.push("correct")
+                    else result.push("incorrect")
         
-                } else result.push("sai")  
+                } else result.push("incorrect")  
                 vocab.findById(ans['word[3][_id]'],(err,ok3)=>{
                     if (ok3) {
-                        if (ok3.word == ans['word[3][word]']) result.push("Chinh xac")
-                        else result.push("sai")
+                        if (ok3.word == ans['word[3][word]']) result.push("correct")
+                        else result.push("incorrect")
             
-                    } else result.push("sai") 
+                    } else result.push("incorrect") 
                     vocab.findById(ans['word[4][_id]'],(err,ok4)=>{
                         if (ok4) {
-                            if (ok4.word == ans['word[4][word]']) result.push("Chinh xac")
-                            else result.push("sai")
+                            if (ok4.word == ans['word[4][word]']) result.push("correct")
+                            else result.push("incorrect")
                 
-                        } else result.push("sai")
+                        } else result.push("incorrect")
                         res.json(result)
                     })
                 })
@@ -77,8 +79,8 @@ router.post('/check', (req, res) => {
 
 
     // if(g.length==0) return res.json({message:"Cau khong ton tai"})
-    // if(g[0].word.toLocaleLowerCase()==ans.word.toLocaleLowerCase()) return res.json({message:"chinh xac"})
-    // else return res.json({message:"Oh! Sai roi"})
+    // if(g[0].word.toLocaleLowerCase()==ans.word.toLocaleLowerCase()) return res.json({message:"correct"})
+    // else return res.json({message:"Oh! incorrect roi"})
     // User.find({},(err,ok)=>{
     //     console.log(ok)
     // })

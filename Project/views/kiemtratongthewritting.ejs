@@ -1,7 +1,27 @@
 <% include ./template/main_header %>
 <% include ./template/main_top_navigation %>
 <!-- /top navigation -->
-
+<style>
+        #time{
+            text-align: center;
+        }
+        .clock{
+            font-size: 2em;
+            margin-bottom: 0.4em;
+        }
+        #start{
+            padding: 1em 2em;
+            color: black;
+            cursor: pointer;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .btn-submit{
+            margin-top: 1em;
+            height: 3em;
+            width: 6em;
+        }
+    </style>
 <!-- page content -->
 <div class="right_col" role="main">
     <!-- top tiles -->
@@ -22,7 +42,12 @@
 
     <h1>Writting</h1>
 
-    <div id="time"><span id="min">60</span><span>:</span><span id="sec">00</span> <span id="start">Start</span></div>
+    <div id="time">
+        <div class="clock">
+            <span id="min">60</span><span>:</span><span id="sec">00</span>
+        </div>
+        <span id="start">Start</span
+    ></div>
 
 
     <form id="form">
@@ -41,9 +66,18 @@
         <%}) %>
 
         <span id="result"></span>
-        <input type="text" id="speaking" placeholder="url file speaking">
-        <span id="message"></span>
-        <h1 id="Submit">Nop bai</h1>
+        <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-12">
+                <input type="text" id="speaking" placeholder="url file speaking">
+                <br>
+                <span id="message"></span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-12">
+            <div class="col-xs-12 col-md-12">
+                <input class="btn-submit" id="Submit" type="submit" value="Submit"/>
+            </div>
+        </div>
     </form>
 
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
