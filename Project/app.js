@@ -23,6 +23,7 @@ var profile = require('./routes/profile');
 var checkin = require('./routes/diemdanh');
 var kiemtratuvung = require('./routes/kiemtratuvung')
 var kiemtratongthe = require('./routes/kiemtratongthe')
+var checkin = require('./routes/checkin');
 
 var app = express();
 
@@ -105,6 +106,10 @@ app.use('/kiemtratuvung',kiemtratuvung)
 
 //   // render the error page
 //   res.status(err.status || 500);
+//   res.render('page_404');
+// });
+  // render the error page
+  // res.status(err.status || 500);
 //   res.render('page_404');
 // });
 

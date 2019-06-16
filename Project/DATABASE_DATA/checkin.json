@@ -1,0 +1,35 @@
+{ 
+    "_id" : ObjectId("5d060e2864220236e06ec4ef"), 
+    "vocab_list" : [
+        {
+            "_id" : "5cd3f02cf32f6a30a8e6314a", 
+            "word" : "We", 
+            "meaning" : "Chúng tôi", 
+            "examples" : "I work everyday / I go to work ", 
+            "synonyms" : ""
+        }, 
+        {
+            "_id" : "5cd3f035f32f6a30a8e6314b", 
+            "word" : "They", 
+            "meaning" : "Bọn họ", 
+            "examples" : "I work everyday / I go to work ", 
+            "synonyms" : ""
+        }, 
+        {
+            "_id" : "5cd3f03cf32f6a30a8e6314c", 
+            "word" : "He", 
+            "meaning" : "Anh ấy", 
+            "examples" : "I work everyday / I go to work ", 
+            "synonyms" : ""
+        }
+    ], 
+    "input" : [
+        "Chúng tôi", 
+        "Bọn họ", 
+        "Anh ấy"
+    ], 
+    "date" : ISODate("2019-06-16T09:38:48.986+0000"), 
+    "user_id" : ObjectId("5d05bbc93a7d250c58f3b2cf"), 
+    "result" : NumberInt(3), 
+    "__v" : NumberInt(0)
+}

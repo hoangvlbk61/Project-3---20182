@@ -1,34 +1,4 @@
 { 
-    "_id" : ObjectId("5cc0f83824ab372d98b5faaa"), 
-    "email" : "hoangvlbk61@gmail.com", 
-    "phonenumber" : "0919066123", 
-    "workplace" : "Summoner Rift", 
-    "password" : "Lehoang606", 
-    "firstname" : "Yasuoo", 
-    "lastname" : "Fangal", 
-    "reputation" : NumberInt(100), 
-    "last_login" : ISODate("2019-06-14T19:03:28.512+0000"), 
-    "date_joined" : ISODate("2019-02-01T17:00:00.000+0000"), 
-    "is_admin" : true, 
-    "is_active" : "true", 
-    "list_vocab" : [
-        {
-            "word" : "Work", 
-            "_id" : "1", 
-            "meaning" : "Công việc", 
-            "synonyms" : "task, job", 
-            "examples" : "I work everyday/ My job is SE"
-        }, 
-        {
-            "word" : "High", 
-            "_id" : "2", 
-            "meaning" : "Cao", 
-            "synonyms" : "tall", 
-            "examples" : "I am so high"
-        }
-    ]
-}
-{ 
     "_id" : ObjectId("5cd3abfb2fd4301dfcc94819"), 
     "reputation" : NumberInt(0), 
     "last_login" : ISODate("2019-05-08T17:00:00.000+0000"), 
@@ -99,4 +69,69 @@
     "phonenumber" : "09190661231", 
     "workplace" : "áasfas", 
     "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d04627d2b5d53338c800122"), 
+    "reputation" : NumberInt(0), 
+    "last_login" : ISODate("2019-06-16T03:46:29.021+0000"), 
+    "is_admin" : true, 
+    "is_active" : true, 
+    "date_joined" : ISODate("2019-06-14T17:00:00.000+0000"), 
+    "list_vocab" : [
+
+    ], 
+    "firstname" : "12", 
+    "password" : "$2b$10$kq9ypErXFVntIPguBHrIzuLPkvTJVpj/dsgMLutUqjMszPhpzeNc6", 
+    "email" : "123@gmail.com", 
+    "lastname" : "345", 
+    "phonenumber" : "0000000000000", 
+    "workplace" : "1234", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d05bbc93a7d250c58f3b2cf"), 
+    "reputation" : NumberInt(0), 
+    "last_login" : ISODate("2019-06-16T17:00:38.188+0000"), 
+    "is_admin" : true, 
+    "is_active" : true, 
+    "date_joined" : ISODate("2019-06-15T17:00:00.000+0000"), 
+    "list_vocab" : [
+        {
+            "vocab" : {
+                "_id" : "5cd3f03cf32f6a30a8e6314c", 
+                "word" : "He", 
+                "meaning" : "Anh ấy", 
+                "examples" : "I work everyday / I go to work ", 
+                "synonyms" : ""
+            }, 
+            "date" : "2019-06-16T07:54:36.520Z"
+        }, 
+        {
+            "vocab" : {
+                "_id" : "5cd3f035f32f6a30a8e6314b", 
+                "word" : "They", 
+                "meaning" : "Bọn họ", 
+                "examples" : "I work everyday / I go to work ", 
+                "synonyms" : ""
+            }, 
+            "date" : "2019-06-16T07:54:40.652Z"
+        }, 
+        {
+            "vocab" : {
+                "_id" : "5cd3f02cf32f6a30a8e6314a", 
+                "word" : "We", 
+                "meaning" : "Chúng tôi", 
+                "examples" : "I work everyday / I go to work ", 
+                "synonyms" : ""
+            }, 
+            "date" : "2019-06-16T07:54:43.722Z"
+        }
+    ], 
+    "firstname" : "Vũ", 
+    "password" : "$2b$10$7ODE8nlv2mpS4EGE0Nv3UOmygEdiHEaMv5y1ToJz4g/HL00X0uDnS", 
+    "email" : "hoangvlbk61@gmail.com", 
+    "lastname" : "Lê Hoàng", 
+    "phonenumber" : "0919066123", 
+    "workplace" : "BK U ", 
+    "__v" : NumberInt(27)
 }
