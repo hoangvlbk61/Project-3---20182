@@ -11,10 +11,10 @@ const vocab = require('../models/Vocab');
 // let obj = require('../DATABASE_DATA/vocab')
 
 
-const auth = require('../api/middleware/checkAuth');
-const perm = require('../api/middleware/checkPerm');
+// const auth = require('../api/middleware/checkAuth');
+// const perm = require('../api/middleware/checkPerm');
 
-router.all('*', auth); 
+// router.all('*', auth); 
 
 router.get('/', (req, res) => {
     //lấyngẫu nhiên 5 từ trong dâtbáe

@@ -3,7 +3,7 @@ const router = express.Router();
 let Part = require('../models/Part')
 let MediaPart = require('../models/Mediapart')
 
-router.all('*', auth); 
+// router.all('*', auth); 
 
 router.get('/', (req, res) => {
     res.render('kiemtratongthe', {
