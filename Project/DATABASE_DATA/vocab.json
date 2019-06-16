@@ -48,3 +48,11 @@
     "synonyms" : "Hub, Co-", 
     "__v" : NumberInt(0)
 }
+{ 
+    "_id" : ObjectId("5d06016d6f4e81349cfa4a12"), 
+    "word" : "Sense", 
+    "meaning" : "Giác quan", 
+    "examples" : "He has sense of  humour", 
+    "synonyms" : "No synonyms now !", 
+    "__v" : NumberInt(0)
+}

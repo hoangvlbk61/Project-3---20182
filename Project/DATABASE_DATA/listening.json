@@ -1,11 +1,27 @@
 { 
-    "_id" : ObjectId("5d03ede90d189c21c03641ea"), 
+    "_id" : ObjectId("5d04d07a6b840916fccfd914"), 
     "name" : "Vũ lê hoàng", 
-    "content" : "Vũ lê hoàngVũ lê hoàng", 
+    "content" : "asd", 
     "part_list" : [
+        {
+            "questionlist" : [
 
+            ], 
+            "answerlist" : [
+
+            ], 
+            "selectlist" : [
+
+            ], 
+            "name" : "Part 1", 
+            "_id" : ObjectId("5d05be3a0f58de089cfd81e2"), 
+            "author_id" : "hoangvlbk61@gmail.com", 
+            "type" : "IN", 
+            "__v" : NumberInt(0)
+        }
     ], 
+    "audio" : "public\\audio\\2019-06-15T11-03-21.694Z0「Lyrics + Vietsub」Somebody Else - The 1975 ( Ebony Day Cover ).mp3", 
     "author_id" : "5cc0f83824ab372d98b5faaa", 
-    "explanation" : " Vũ lê hoàngVũ lê hoàngVũ lê hoàngVũ lê hoàngVũ lê hoàngVũ lê hoàng", 
-    "__v" : NumberInt(0)
+    "explanation" : " assasd", 
+    "__v" : NumberInt(1)
 }

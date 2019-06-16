@@ -101,8 +101,8 @@
 }
 { 
     "_id" : ObjectId("5cf8c79c40dd9a2c486152a7"), 
-    "views" : NumberInt(5), 
-    "reputations" : NumberInt(1), 
+    "views" : NumberInt(6), 
+    "reputations" : NumberInt(2), 
     "answers" : [
         {
             "reputations" : NumberInt(0), 

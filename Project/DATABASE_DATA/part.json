@@ -691,3 +691,557 @@
     "type" : "UL", 
     "__v" : NumberInt(0)
 }
+{ 
+    "_id" : ObjectId("5d04678995b01f3b78bdcae9"), 
+    "content" : "  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt ", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : " Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt  Lisstening parrt ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d046f4be35f3834a45b4cc3"), 
+    "content" : " variable", 
+    "questionlist" : [
+        "variable"
+    ], 
+    "answerlist" : [
+        "variable"
+    ], 
+    "selectlist" : [
+        "variable"
+    ], 
+    "name" : "variable", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0474781ab0e43efc96d229"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "FITB", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0474dd74dac1357cf33996"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "FITB", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0475123c570f3e24e8eac6"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "FITB", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0475353c570f3e24e8eac7"), 
+    "content" : " FITB FITBFITBFITB", 
+    "questionlist" : [
+        "FITBFITBFITB"
+    ], 
+    "answerlist" : [
+        "FITB"
+    ], 
+    "selectlist" : [
+        "FITBFITB"
+    ], 
+    "name" : "FITB", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0475a94d4e8e1e74ce19c3"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "res.status(200).json({                         data: part_info                      })", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0475fa989f6d3d6cabe8df"), 
+    "content" : " console.log(\"GET IN UL \");", 
+    "questionlist" : [
+        "console.log(\"GET IN UL \");"
+    ], 
+    "answerlist" : [
+        "console.log(\"GET IN UL \");"
+    ], 
+    "selectlist" : [
+        "console.log(\"GET IN UL \");"
+    ], 
+    "name" : "console.log(\"GET IN UL \");", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d04763166212a0aacea9249"), 
+    "content" : " console.log(\"GET IN UL \");", 
+    "questionlist" : [
+        "console.log(\"GET IN UL \");"
+    ], 
+    "answerlist" : [
+        "console.log(\"GET IN UL \");"
+    ], 
+    "selectlist" : [
+        "console.log(\"GET IN UL \");"
+    ], 
+    "name" : "console.log(\"GET IN UL \");", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0476e90f1b3525c08a1357"), 
+    "content" : " UL(part_info, req.session.user.email)", 
+    "questionlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "answerlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "selectlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d047773dd794b0fe0983519"), 
+    "content" : " UL(part_info, req.session.user.email)", 
+    "questionlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "answerlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "selectlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0477ebb0a4062528bdcfeb"), 
+    "content" : " UL(part_info, req.session.user.email)", 
+    "questionlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "answerlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "selectlist" : [
+        "UL(part_info, req.session.user.email)"
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d047831b0a4062528bdcfec"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d047866b0a4062528bdcfed"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d047916b0a4062528bdcfee"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0479445cec3421e08e9c16"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "UL(part_info, req.session.user.email)", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0479ac5f3cca39844b0850"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "console.log(\"THISS ISS DATAA\")", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0479d45f3cca39844b0851"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "console.log(\"THISS ISS DATAA\")", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0486b4665f392d48fd12b7"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "FTIB", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0487b8f2b2822198989503"), 
+    "content" : " ", 
+    "questionlist" : [
+        ""
+    ], 
+    "answerlist" : [
+        ""
+    ], 
+    "selectlist" : [
+        ""
+    ], 
+    "name" : "", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "UL", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0489e0147ed30f381d1cdc"), 
+    "content" : " part_info.type [part_info.type ] part_info.type  [part_info.type ] part_info.type part_info.type ", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[part_info.type ]", 
+        "part_info.type "
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "part_info.type ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d048a9181ffd12b2c606044"), 
+    "content" : " [part_info.type ] part_info.type part_info.type  [part_info.type ] part_info.type part_info.type ", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[part_info.type ] part_info.type part_info.type  [part_info.type ]", 
+        "part_info.type ] part_info.type part_info.type  [part_info.type "
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "part_info.type ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d048c327d95f21d643aea84"), 
+    "content" : " FITBSD [FITBSD ] [FITBSD FITBSD ] FITBSD FITBSD  [FITBSD FITBSD FITBSD ] FITBSD FITBSD FITBSD ", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[FITBSD ] [FITBSD FITBSD ] FITBSD FITBSD  [FITBSD FITBSD FITBSD ]", 
+        "FITBSD ] [FITBSD FITBSD ] FITBSD FITBSD  [FITBSD FITBSD FITBSD "
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "FITBSD ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d048d2d7d2ed43df44d50aa"), 
+    "content" : "Helaosa [Helaosa ] [Helaosa Helaosa ] leu lue [Helaosa ] Helaosa Helaosa ", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[Helaosa ]", 
+        "[Helaosa Helaosa ]", 
+        "[Helaosa ]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "\\[.*?\\]", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d048d997d2ed43df44d50ab"), 
+    "content" : " Helaosa [Helaosa Helaosa ] [Helaosa Helaosa ] Helaosa Helaosa [Helaosa Helaosa Helaosa ]", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[Helaosa Helaosa ]", 
+        "[Helaosa Helaosa ]", 
+        "[Helaosa Helaosa Helaosa ]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "Helaosa ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d048fb05faef73c50545800"), 
+    "content" : " Akhasf [Akhasf ]  Akhasf Akhasf  [Akhasf Akhasf ] Akhasf Akhasf Akhasf ", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[Akhasf ]", 
+        "[Akhasf Akhasf ]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "Akhasf ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d04901efb4ddb1ed04860cc"), 
+    "content" : " Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf Akhasf [Akhasf Akhasf Akhasf ] [Akhasf ] Akhasf Akhasf Akhasf Akhasf [asfasfka hsfa6786s]35354 aqr", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[Akhasf Akhasf Akhasf ]", 
+        "[Akhasf ]", 
+        "[asfasfka hsfa6786s]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d04907370dd1b2b24f96aa3"), 
+    "content" : " sajshfs [sajshfs sajshfs ] [sajshfs sajshfs sajshfs ] sajshfs sajshfs [sajshfs ] sajshfs sajshfs sajshfs [slfka6524654as]", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[sajshfs sajshfs ]", 
+        "[sajshfs sajshfs sajshfs ]", 
+        "[sajshfs ]", 
+        "[slfka6524654as]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "sajshfs ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d049104985dcc3dd82ef1d0"), 
+    "content" : " akshfashflasjf as akshfashflasjf as akshfashflasjf as [akshfashflasjf asakshfashflasjf as] [35465a4s] akshfashflasjf as [akshfashflasjf as]", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[akshfashflasjf asakshfashflasjf as]", 
+        "[35465a4s]", 
+        "[akshfashflasjf as]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "akshfashflasjf as", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d0491672374840e080a002f"), 
+    "content" : " asfasfas32f asfasfas32f [asfasfas32f ] [5a4sd6] asfasfas32f asfasfas32f  [asd5a4s6d] asfasfas32f asfasfas32f  [asd6a5s4d]", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "[asfasfas32f ]", 
+        "[5a4sd6]", 
+        "[asd5a4s6d]", 
+        "[asd6a5s4d]"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "asfasfas32f ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d04925abb11b7232c36bc7a"), 
+    "content" : " matches [matches ] [sjha3s] matches matches  [sda] matches [as5d4] [s6fa4s]", 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+        "matches", 
+        "sjha3", 
+        "sd", 
+        "as5d", 
+        "s6fa4"
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "matches ", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "FB", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5d05be3a0f58de089cfd81e2"), 
+    "questionlist" : [
+
+    ], 
+    "answerlist" : [
+
+    ], 
+    "selectlist" : [
+
+    ], 
+    "name" : "Part 1", 
+    "author_id" : "hoangvlbk61@gmail.com", 
+    "type" : "IN", 
+    "__v" : NumberInt(0)
+}
