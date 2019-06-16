@@ -12,7 +12,6 @@ const perm = require('../api/middleware/checkPerm');
 
 router.all('*', auth); 
 
-
 router.get('/', (req, res, next) => {
     Vocab.find({}, function (err, result) { 
         if (err)
@@ -28,7 +27,7 @@ router.get('/', (req, res, next) => {
     })
 })
 
-router.get('./checkin', (req, res, next) => {
+router.get('/checkin', (req, res, next) => {
     User.findById(req.session.user._id, (err, _user) => {
         res.render('chitietdiemdanh', {data: _user});
     })
@@ -65,11 +64,5 @@ router.get('./checkin', (req, res, next) => {
 //                     }
 //                 });
 // })
-
-
-
-
-
-
 
 module.exports = router; 
