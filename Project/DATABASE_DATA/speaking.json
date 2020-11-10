@@ -1,9 +1,0 @@
-{ 
-    "_id" : ObjectId("5ce527917140e8327c302cf7"), 
-    "name" : "SpeakingSpeaking", 
-    "content" : " SpeakingSpeakingSpeaking ", 
-    "author_id" : "5cc0f83824ab372d98b5faaa", 
-    "cuecards" : " SpeakingSpeakingSpeakingSpeaking ", 
-    "explanation" : " Explanation for Speaking tesstttt \r\nUpdate the first time, hope you work properly ", 
-    "__v" : NumberInt(0)
-}

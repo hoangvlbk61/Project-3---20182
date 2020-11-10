@@ -20,6 +20,9 @@ var forum = require('./routes/forum');
 
 var profile = require('./routes/profile');
 
+var checkin = require('./routes/diemdanh');
+var kiemtratuvung = require('./routes/kiemtratuvung')
+var kiemtratongthe = require('./routes/kiemtratongthe')
 var checkin = require('./routes/checkin');
 
 var app = express();
@@ -41,7 +44,7 @@ app.use((req, res, next) => {
     next() ;
 })
 
-mongoose.connect('mongodb://localhost/englishWebsite',{ useNewUrlParser: true });
+mongoose.connect('mongodb://database_data:abc1234@ds131676.mlab.com:31676/database_data',{ useNewUrlParser: true });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -84,25 +87,31 @@ app.use('/forum', forum) ;
 app.use('/profile', profile);
 
 app.use('/checkin', checkin);
+app.use('/kiemtratongthe',kiemtratongthe)
+app.use('/kiemtratuvung',kiemtratuvung)
 // var memberManager = require('./routes/memberManager');
 // app.use('/quanlythanhvien', memberManager);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+// app.use(function(err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render('page_404');
+// });
   // render the error page
   // res.status(err.status || 500);
-  res.render('page_404');
-});
+//   res.render('page_404');
+// });
 
   
 

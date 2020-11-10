@@ -1,31 +1,119 @@
 <% include ./template/main_header %>
 <% include ./template/main_top_navigation %>
-            <!-- /top navigation -->
+<!-- /top navigation -->
 
-            <!-- page content -->
-            <div class="right_col" role="main">
-                <!-- top tiles -->
-                <div class="row tile_count">
+<style>
 
-                </div>
-                <!-- /top tiles -->
+    .head-d1{
+        text-align: center;
+        background: #bdbdbd;
+        padding: 0.2em;
+        color: black;
+        margin-bottom: 1em;
+    }
 
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12" style="color:red; text-align:center">
-                        <h3>Kiểm tra tổng thể
+    .prac{
+        display: inline-table;
+        width: 24%;
+    }
+    .inner-prac{
+        text-align: center;
+    }
 
-                        </h3>
+    .ico-prac{
+        width: 70px;
+        height: 70px;
+    }
+
+    .div-ico{
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    .btn-prac{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 1em 3em;
+        background: #32b3c7;
+        color: white;
+    }
+
+    .btn-prac:hover{
+        color: white;
+    }
+</style>
+
+<!-- page content -->
+<div class="right_col" role="main">
+    <!-- top tiles -->
+    <div class="row tile_count">
+
+    </div>
+    <!-- /top tiles -->
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12" style="color:red; text-align:center">
+            <h1>Kiểm tra tổng thể</h1>
+
+        </div>
+
+    </div>
+    <br />
+   
+    <div class="row">
+        <div class="col-12">
+            <h1 class="head-d1">Pactice Test 1</h1>
+        </div>
+        <div class="row">
+            <div class="prac">
+                <div class="inner-prac">
+                    <div class="div-ico">
+                        <img class="ico-prac" src="https://ieltsonlinetests.com/themes/iot/images/icon_listen.png">
                     </div>
-
+                    <a class="btn-prac" href="/kiemtratongthe/1?action=listening">Listening</a>
                 </div>
-                <br />
-
-
-
-
-
             </div>
-            <!-- /page content -->
+            <div class="prac">
+                <div class="inner-prac">
+                    <div class="div-ico">
+                        <img class="ico-prac" src="https://ieltsonlinetests.com/themes/iot/images/icon_speaking.png">
+                    </div>
+                    <a  class="btn-prac" href="/kiemtratongthe/1?action=speaking">Speaking</a>
+                </div>
+            </div>
 
-            <!-- footer content -->
+            <div class="prac">
+                <div class="inner-prac">
+                    <div class="div-ico">
+                        <img class="ico-prac" src="https://ieltsonlinetests.com/themes/iot/images/icon_reading.png">
+                    </div>
+                    <a class="btn-prac" style="background: #c76478" href="/kiemtratongthe/1?action=reading">Reading</a>
+                </div>
+            </div>
+
+            <div class="prac">
+                <div class="inner-prac">
+                    <div class="div-ico">
+                        <img class="ico-prac" src="https://ieltsonlinetests.com/themes/iot/images/icon_writing.png">
+                    </div>
+                    <a class="btn-prac" style="background: #f9a95a" href="/kiemtratongthe/1?action=writting">Writting</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   
+  
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+<script>
+    
+
+</script>
+
+
+</div>
+<!-- /page content -->
+
+<!-- footer content -->
 <% include ./template/main_footer %>
